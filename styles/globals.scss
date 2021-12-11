@@ -54,6 +54,9 @@ a {
 .bg-EFF2FF {
   background: #eff2ff;
 }
+.bg-002E5B {
+  background: #002e5b;
+}
 .bg-165df5 {
   background: #165df5;
 }
@@ -116,8 +119,11 @@ a {
   color: #6d839d;
 }
 .banner-bg {
-  background: transparent linear-gradient(119deg, #1238dc 0%, #101b92 100%) 0%
-    0% no-repeat padding-box !important;
+  // background: transparent linear-gradient(119deg, #1238dc 0%, #101b92 100%) 0%
+  //   0% no-repeat padding-box !important;
+  background: transparent
+    linear-gradient(180deg, #002e5b 0%, #002e5b 72%, #002e5b 100%) 0% 0%
+    no-repeat padding-box;
 }
 .reques-bg {
   background: transparent linear-gradient(256deg, #5a7aff 0%, #4b6cf9 100%) 0%
@@ -320,7 +326,7 @@ a {
   border: 1px solid #ebeef7;
 }
 .active-tab {
-  background: transparent linear-gradient(114deg, #5a7aff 0%, #4b6cf9 100%) 0%
+  background: transparent linear-gradient(114deg, #002e5b 0%, #1e8bc3 100%) 0%
     0% no-repeat padding-box;
   color: #fff;
   border-radius: 0.5rem;
@@ -334,18 +340,19 @@ a {
 }
 .cards_item {
   display: flex;
-  padding: 1rem;
+  padding: 0rem 1rem;
 }
 
 @media (min-width: 40rem) {
   .cards_item {
-    width: 50%;
+    width: 100%;
   }
 }
 
 @media (min-width: 56rem) {
   .cards_item {
-    width: 33.3333%;
+    // width: 33.3333%;
+    width: 100%;
   }
 }
 .pa-08 {

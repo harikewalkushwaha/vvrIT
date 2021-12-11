@@ -3,7 +3,7 @@ import AirbonLogo from "../assets/svg/Home Page/footerlogo.svg";
 import RightArrow from "../assets/svg/Home Page/Arrow.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
-
+import BackGround from "../assets/svg/about/wave.png";
 import Link from "next/link";
 
 const Footer = styled.footer`
@@ -12,14 +12,21 @@ const Footer = styled.footer`
 const MyP = styled.p`
   color: #b9c4d5;
 `;
+
+var sectionStyle = {
+  width: "100%",
+  backgroundSize: "cover",
+  backgroundImage: `url(${BackGround})`,
+};
 export default function index(props) {
   return (
     <>
       <div>
-        <footer id="colophon" className="site-footer dark style_old">
+        <footer id="colophon" className="site-footer dark style_old ">
           <div className="shape shape-1">
-            <img src="../assets/svg/about/footershape.svg" alt="shape" />
+            <img src="../assets/svg/about/wave.svg" alt="shape" />
           </div>
+
           <div className="shape shape-2">
             <img src="../assets/svg/about/shape-2.svg" alt="shape" />
           </div>

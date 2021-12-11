@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ReactLogoArrow from "../assets/svg/Home Page/pattern.svg";
 
 const MyTop = styled.div`
-  background: #3056d3;
+  background: #002e5b;
 `;
 
 export default function CommonTopBar(props) {

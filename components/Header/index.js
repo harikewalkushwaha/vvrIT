@@ -5,6 +5,7 @@ import AirbonLogo from "../assets/svg/Home Page/VVRdigitallogo.svg";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Nav = styled.nav`
   height: 85px;
@@ -78,8 +79,9 @@ const Overlay = styled.div`
   height: ${(props) => (props.open ? "90vh" : 0)};
   width: 100vw;
   transition: height 0.4s ease-in-out;
-  background: transparent linear-gradient(119deg, #1238dc 0%, #101b92 100%) 0%
-    0% no-repeat padding-box;
+  background: transparent
+    linear-gradient(to bottom, rgba(0, 46, 91, 0.75), rgba(0, 46, 91, 0.75))
+    no-repeat padding-box;
   z-index: 999;
   @media (min-width: 981px) {
     display: none;
@@ -97,7 +99,9 @@ const OverlayMenu = styled.div`
     opacity: ${(props) => (props.open ? 1 : 0)};
     font-size: 25px;
     margin: 50px 0px;
-    transition: opacity 0.4s ease-in-out;
+    transform-origin: 0% 100%;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
   li:nth-child(2) {
@@ -197,7 +201,7 @@ const Header = (props) => {
                   color: menuColor ? "#000" : "#fff",
                 }}
               >
-                VVR Digital
+                VVR Group
               </span>
             </a>
           </Link>
@@ -251,9 +255,9 @@ const Header = (props) => {
             </Link>
           </Menu>
           <Menu className="sc-eCApGN fplya-D no-mob ">
-            <div
+            {/* <div
               className="f-16 fw4 tc min-211 grow medium-font no-underline white dib  pv3 pointer br3 bg-165df5 animation-request"
-              onClick={() => props.openDrawer(true)}
+              onClick={() => props.openDrawer(false)}
             >
               <div className="dib">Get Quotes</div>
               <span className="pl2" />
@@ -261,6 +265,56 @@ const Header = (props) => {
                 <div className="rightArr">
                   <img src={RightArrow} />
                 </div>
+              </div>
+            </div> */}
+            <div className="secondary-menu ">
+              <div className="secondary-inner">
+                <ul>
+                  <a
+                    href="https://www.facebook.com/VVR-Learning-110011397576687"
+                    target="_blank"
+                    style={{
+                      padding: "5px",
+                      color: "white",
+                      marginRight: "5px",
+                    }}
+                  >
+                    <FontAwesomeIcon icon={["fab", "facebook"]} />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/vvrlearning/"
+                    target="_blank"
+                    style={{
+                      padding: "5px",
+                      color: "white",
+                      marginRight: "5px",
+                    }}
+                  >
+                    <FontAwesomeIcon icon={["fab", "instagram"]} />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/the-vvr-group/about/"
+                    target="_blank"
+                    style={{
+                      padding: "5px",
+                      color: "white",
+                      marginRight: "5px",
+                    }}
+                  >
+                    <FontAwesomeIcon icon={["fab", "linkedin"]} />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCzRKhnVuWng8vvnFuTF-ODA"
+                    target="_blank"
+                    style={{
+                      padding: "5px",
+                      color: "white",
+                      marginRight: "5px",
+                    }}
+                  >
+                    <FontAwesomeIcon icon={["fab", "youtube"]} />
+                  </a>
+                </ul>
               </div>
             </div>
           </Menu>

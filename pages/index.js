@@ -10,9 +10,12 @@ import { data } from "../data/cust_stories";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styled from "styled-components";
-import BackGround from "../public/assets/img/1.png";
+import BackGround from "../public/assets/img/10.png";
 import BackGround2 from "../public/assets/img/3.png";
 import Typewriter from "typewriter-effect";
+import CountUp from "react-countup";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 import {
   webdevelopment,
@@ -24,8 +27,8 @@ import {
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+    items: 4,
+    slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: 1024, min: 960 },
@@ -34,14 +37,14 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 959, min: 0 },
-    items: 1,
+    items: 2,
     slidesToSlide: 1, // optional, default to 1.
   },
 };
 
 const MyTop = styled.div`
   background: transparent
-    linear-gradient(180deg, #3056d3 0%, #3056d3 72%, #3056d3 100%) 0% 0%
+    linear-gradient(180deg, #002e5b 0%, #002e5b 72%, #002e5b 100%) 0% 0%
     no-repeat padding-box;
 `;
 
@@ -62,44 +65,44 @@ export default function index() {
     nextRef.current.getAlert(kaunsa);
   };
 
-  const [activeTab, setActiveTab] = useState("webdevelopment");
-  const [showCards, setshowCards] = useState(webdevelopment);
-  useEffect(() => {
-    // console.log(webdevelopment);
-    var d = document.getElementById("webdevelopment");
-    d.className += " active-tab";
-  }, []);
+  // const [activeTab, setActiveTab] = useState("webdevelopment");
+  // const [showCards, setshowCards] = useState(webdevelopment);
+  // useEffect(() => {
+  //    console.log(webdevelopment);
+  //   var d = document.getElementById("webdevelopment");
+  //   d.className += " active-tab";
+  // }, []);
 
-  const onChangeTab = (val) => {
-    var d = document.getElementById(val);
-    //remove class
-    var active = document.getElementById(activeTab);
-    const element = document.querySelector("#" + activeTab);
-    if (element.classList.contains("active-tab")) {
-      element.classList.remove("active-tab");
-    }
+  // const onChangeTab = (val) => {
+  //   var d = document.getElementById(val);
+  //   //remove class
+  //   var active = document.getElementById(activeTab);
+  //   const element = document.querySelector("#" + activeTab);
+  //   if (element.classList.contains("active-tab")) {
+  //     element.classList.remove("active-tab");
+  //   }
 
-    d.className += " active-tab";
-    setActiveTab(val);
+  //   d.className += " active-tab";
+  //   setActiveTab(val);
 
-    switch (val) {
-      case "webdevelopment":
-        setshowCards(webdevelopment);
-        break;
-      case "file_access":
-        setshowCards(marketing);
-        break;
-      case "collaboration":
-        setshowCards(uidesign);
-        break;
-      case "security":
-        setshowCards(outsourcing);
-        break;
-      default:
-        setshowCards(webdevelopment);
-        break;
-    }
-  };
+  //   switch (val) {
+  //     case "webdevelopment":
+  //       setshowCards(webdevelopment);
+  //       break;
+  //     case "file_access":
+  //       setshowCards(marketing);
+  //       break;
+  //     case "collaboration":
+  //       setshowCards(uidesign);
+  //       break;
+  //     case "security":
+  //       setshowCards(outsourcing);
+  //       break;
+  //     default:
+  //       setshowCards(webdevelopment);
+  //       break;
+  //   }
+  // };
 
   const ref = useRef(null);
 
@@ -116,267 +119,85 @@ export default function index() {
   return (
     <div>
       <Head>
-        <title>VVR Digital</title>
+        <title>VVR Group</title>
       </Head>
-      <MyTop>
-        <div className="" style={{ height: "85px" }} />
+      <section>
+        <MyTop>
+          <div className="" style={{ height: "85px" }}></div>
 
-        <div className="banner-main">
-          <div className="tc-l banner-hg mob-distab lef-ri-pa ">
-            <div className="hero-content mob-bannercon pt6-l center w-100">
-              {/* <div className="pattern-bg absolute left-0 ">
+          <div
+            className="banner-main"
+            id="bannershap"
+            // style={{ "--img": `url(${BackGround})` }}
+          >
+            <div className="shape shape-4">
+              <img src="/assets/img/12.svg" alt="shape" />
+            </div>
+            <div className="tc-l banner-hg mob-distab lef-ri-pa ">
+              <div className="hero-content mob-bannercon pt6-l center w-100">
+                {/* <div className="pattern-bg absolute left-0 ">
                 <AirbonLogo className="mw-100" />
               </div> */}
 
-              <div className="items-container1">
-                <div className="he-max-w center">
-                  <h5 className=" white pb3"> We Make It Simple</h5>
-                  <h1 className=" f3 f1-l fw2 white semibold-font mb0 mt0 lh-title ">
-                    <Typewriter
-                      options={{
-                        strings: [" Welcome to VVR Digital"],
-                        autoStart: true,
-                        loop: true,
-                      }}
-                    />
-                  </h1>
-                </div>
-                <div className="width-50a center pt3 ">
-                  <span className="fw1 f-1em white regular-font o-80 mt3 mb4 lh-copy ">
-                    Looking to start a new business or boost an existing one?
-                    Here at VVR Digital, we’ve got all the right tools to help
-                    you out. Not only can we enable a thriving online presence,
-                    but we also provide end-to-end business support.
-                  </span>
-                </div>
-                <div className="pt4">
-                  <a href="/contact" className="link">
-                    <div className="f-16 no-underline grow dib v-mid bg-white clr-302E43 br3 pl3 pr2 pv3 mb3  medium-font f-20">
-                      <div className="dib"> Contact Us</div>
-                      <span className="pl2" />
-                      <div className="dib arrow-box v-mid">
-                        <div className="rightArr">
-                          <img src={RightArrow} />
+                <div className="items-container1">
+                  <div className="he-max-w center">
+                    <h5 className=" white pb3"> We Make It Simple</h5>
+                    <h1 className=" f3 f1-l fw2 white semibold-font mb0 mt0 lh-title ">
+                      <Typewriter
+                        options={{
+                          strings: [" Welcome to VVR Group"],
+                          autoStart: true,
+                          loop: true,
+                        }}
+                      />
+                    </h1>
+                  </div>
+                  <div className="width-50a center pt3 ">
+                    <span className="fw1 f-1em white regular-font o-80 mt3 mb4 lh-copy ">
+                      Looking to start a new business or boost an existing one?
+                      Here at VVR Digital, we’ve got all the right tools to help
+                      you out. Not only can we enable a thriving online
+                      presence, but we also provide end-to-end business support.
+                    </span>
+                  </div>
+                  <div className="pt4">
+                    <a href="/contact" className="link">
+                      <div className="f-16 no-underline grow dib v-mid bg-white clr-302E43 br3 pl3 pr2 pv3 mb3  medium-font f-20">
+                        <div className="dib"> Contact Us</div>
+                        <span className="pl2" />
+                        <div className="dib arrow-box v-mid">
+                          <div className="rightArr">
+                            <img src={RightArrow} />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
-                  <span className="dib v-mid ph3 white-70 mb3"></span>
-                  <a href="#">
-                    <div className="f6 hide-mobile no-underline grow dib bg-302E43 v-mid white ba b--302E43 ph4 br3 pv3 mb3 medium-font f-16px">
-                      Book Consultation
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* <div className=" hide-mobile">
-              <div className="pt2 tablet-img img-ressd">
-                
-                <img className="mw-100" src="assets/img/Tablet@2x-min.png" />
-              </div>
-            </div> */}
-          </div>
-        </div>
-      </MyTop>
-      {/* <div className="h5-l h6-m" /> */}
-
-      {/* <section className="lef-ri-pa  pb5-l pb4-ms pb4 yo-below">
-        <main className="pb5-l pt0-l pv4-lm">
-          <div className="w-100 tc-m">
-            <div className="dib black tc-m fl-l">
-              <h2 className="semibold-font margin-auto-l f-46 mob-tilte our-fe">
-                Our Feature
-              </h2>
-            </div>
-            <div className="dib  fr">
-              {" "}
-              <div className="f-16 fw4 hide-mobile tc w14em grow medium-font no-underline white dib  pv3  br3 bg-165df5">
-                <div className="dib"> Explore All Fetures</div>
-                <span className="pl2" />
-                <div className="dib arrow-box v-mid">
-                  <div className="rightArr">
-                    <RightArrow />
+                    </a>
+                    <span className="dib v-mid ph3 white-70 mb3"></span>
+                    <a href="#">
+                      <div className="f6 hide-mobile no-underline grow dib bg-302E43 v-mid white ba b--302E43 ph4 br3 pv3 mb3 medium-font f-16px">
+                        Book Consultation
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
-             
             </div>
           </div>
-        </main>
+        </MyTop>
+      </section>
 
-        <div className="pt5-l pb3">
-          <section className="">
-            <article className=" center ">
-              <div className="dt-ns dt--fixed-ns w-100">
-                <div className="dtc-ns v-mid wow fadeInLeft">
-                  <div>
-                    <h2 className="medium-font tc-m f-40 ser-mh fw4 clr-132 mt0 mb3">
-                      Secure and Easy{" "}
-                    </h2>
-                    <p className="clr-6D839D width-100 tc-m regular-font f-18px w-70per lh-copy mv0">
-                      Send and receive fully encrypted files from internal teams
-                      and external collaborators.
-                    </p>
-                    <div className="w-100 image-center h-mid hide-desktop pt5 pb3">
-                      <img
-                        className="mw-100 "
-                        src="/assets/svg/Home Page/Graphics.svg"
-                        alt="next"
-                      />
-                    </div>
-                    <div className="pt4-l tc-m ">
-                      <div className="f-14px margin-auto fw4 tc w4 grow medium-font no-underline white dib  pv3  pointer br3 bg-165df5">
-                        Know More
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className=" hide-mobile dtc-ns v-mid tc wow fadeInRight">
-                  <img
-                    className="mw-100 "
-                    src="/assets/svg/Home Page/Graphics.svg"
-                    alt="next"
-                  />
-                </div>
-              </div>
-            </article>
-          </section>
-        </div>
-
-        <div className="pv3-l pv4">
-          <section className="">
-            <article className=" center ">
-              <div className="dt-ns dt--fixed-ns w-100">
-                <div className="hide-mobile dtc-ns v-mid wow fadeInLeft">
-                  <img
-                    className="mw-100 hide-mobile"
-                    src="/assets/svg/Home Page/Group 91.svg"
-                    alt="next"
-                  />
-                </div>
-                <div className=" dtc-ns v-mid  wow fadeInRight">
-                  <div>
-                    <h2 className="medium-font f-40 ser-mh tc-m fw4 clr-132 mt0 margin-auto mb3 width-100 w-70per">
-                      Access your data from anywhere, at any time, on any device{" "}
-                    </h2>
-                    <p className="clr-6D839D margin-auto tc-m regular-font f-18px w-70per width-100  lh-copy mv0">
-                      Stay productive on the go and enjoy military-grade data
-                      security wherever you are. Airbon is available across all
-                      devices and on all browsers.
-                    </p>
-                    <div className="w-100 image-center h-mid hide-desktop pt5 pb3">
-                      <img
-                        className="mw-100 "
-                        src="/assets/svg/Home Page/Group 91.svg"
-                        alt="next"
-                      />
-                    </div>
-
-                    <div className="pt4-l tc-m  margin-auto w-70per ">
-                      <div className="f-14px margin-auto fw4 tc w4 grow medium-font no-underline white dib pointer pv3   br3 bg-165df5">
-                        Know More
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </section>
-        </div>
-
-        <div className="pv3-l pv4">
-          <section className="">
-            <article className=" center ">
-              <div className="dt-ns dt--fixed-ns w-100">
-                <div className=" dtc-ns v-mid wow fadeInLeft">
-                  <div>
-                    <h2 className="medium-font tc-m f-40 ser-mh fw4 clr-132 mt0 mb3 width-100 w-70per">
-                      Highest standard of data security in the cloud
-                    </h2>
-                    <p className="clr-6D839D regular-font tc-m f-18px w-70per width-100 lh-copy mv0">
-                      Our zero-knowledge encryption algorithms safeguards your
-                      confidential data from unauthorized access and breaches.
-                    </p>
-
-                    <div className="w-100 image-center h-mid hide-desktop pt5 pb3">
-                      <img
-                        className="mw-100"
-                        src="/assets/svg/Home Page/Graphics-1.svg"
-                        alt="next"
-                      />
-                    </div>
-
-                    <div className="pt4-l tc-m  ">
-                      <div className="f-14px margin-auto fw4 tc w4 grow medium-font no-underline white dib pointer pv3   br3 bg-165df5">
-                        Know More
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="hide-mobile dtc-ns v-mid tc  wow fadeInRight">
-                  <img
-                    className="mw-100"
-                    src="/assets/svg/Home Page/Graphics-1.svg"
-                    alt="next"
-                  />
-                </div>
-              </div>
-            </article>
-          </section>
-        </div>
-
-        <div className="pv3-l pv4">
-          <section className="">
-            <article className=" center ">
-              <div className="dt-ns dt--fixed-ns w-100">
-                <div className="hide-mobile dtc-ns v-mid wow fadeInLeft">
-                  <img
-                    className="mw-100"
-                    src="/assets/svg/Home Page/Graphics-2.svg"
-                    alt="next"
-                  />
-                </div>
-                <div className=" dtc-ns v-mid  wow fadeInRight">
-                  <div>
-                    <h2 className="medium-font f-40 ser-mh tc-m fw4 clr-132 mt0 margin-auto mb3 width-100 w-70per">
-                      Large File Transfer
-                    </h2>
-                    <p className="clr-6D839D margin-auto tc-m regular-font f-18px w-70per width-100  lh-copy mv0">
-                      Send large files to teams across the globe with fast file
-                      transfer and streaming protocol
-                    </p>
-                    <div className="w-100 image-center h-mid hide-desktop pt5 pb3 ">
-                      <img
-                        className="mw-100"
-                        src="/assets/svg/Home Page/Graphics-2.svg"
-                        alt="next"
-                      />
-                    </div>
-
-                    <div className="pt4-l tc-m  margin-auto w-70per ">
-                      <div className="f-14px margin-auto fw4 tc w4 grow medium-font no-underline white dib  pv3 pointer  br3 bg-165df5">
-                        Know More
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </section>
-        </div>
-      </section> */}
-      <div className="bg-EFF2FF center pt5-ns">
+      <div className=" center pt5-ns pb5-ns">
         <section className="lef-ri-pa pv2">
-          <h2 className="medium-font f-40 fw4 tc clr-132 mt0 mb3  width-100 belowline">
-            Who we are
-          </h2>
+          {/* <h2 className="medium-font f-40 fw4 tc clr-132 mt0 mb3  width-100 belowline">
+            Our Story
+          </h2> */}
           <div className="dt-ns dt--fixed-ns w-100">
             <div className=" dtc-l v-mid wow fadeInLeft">
               <div>
-                <h2 className="medium-font f-40 fw4 clr-132 mt0 mb3 w-70per width-100">
-                  At VVR Digital,
+                <h2 className="medium-font f-40 fw4 fw4 clr-132 mt0 mb3 w-70per width-100  aboutmission">
+                  WE ARE A <br />
+                  CREATIVE <br />
+                  DESIGN STUDIO ,
                 </h2>
                 <p className="clr-6D839D regular-font w-80per f-18px lh-copy mv0 width-100">
                   We are a team of digitally driven individuals, working in our
@@ -384,35 +205,142 @@ export default function index() {
                   the ever-changing trends of digital and off-line marketing. We
                   want to help businesses establish themselves online, and do it
                   in a way that provides the highest possible quality at
-                  competitive rates. We are extremely passionate about what we
-                  do, and hence are always upgrading our skills and knowledge to
-                  constantly bring value to every project we take on, while
-                  making the process extremely simple and easy for you to
-                  follow.
+                  competitive rates.
                 </p>
               </div>
             </div>
-            <div className=" dtc-l tc  v-mid wow fadeInRight">
-              <img
-                src="/assets/svg/about/aboutgif.gif"
-                className="pt5 mw-100"
-              />
+            <div className=" dtc-l tc  wow fadeInRight">
+              <img src="/assets/svg/about/story.jpg" className=" mw-100" />
             </div>
           </div>
         </section>
       </div>
 
-      <div className="bg-EFF2FF center pt5-ns pb5-ns">
+      <div
+        className="bg-002E5B center pt5-ns pb5-ns "
+        // style={{ "--img": `url(${BackGround})` business}}
+      >
         <section className="lef-ri-pa pv2">
-          <h2 className="medium-font f-40 fw4 tc clr-132 mt0 mb3  width-100 belowline">
-            What VVR Brings to You
+          <h2 className="medium-font f-40 fw4 tc white mt0 mb3  width-100 belowline">
+            Our Businesses
           </h2>
 
           {/* MAIN ROW */}
           <div className="dt-ns dt--fixed-ns w-100 pt4">
+            <div className="row">
+              <h5 className="tc white mt0">
+                VVR Digital are managing following business
+              </h5>
+              <div className="col-md-4">
+                {" "}
+                <div className="ht-box-images style-05">
+                  <div className="image-box-wrap">
+                    <div className="box-image">
+                      <div className="default-image">
+                        <img
+                          className="img-fulid"
+                          src="/assets/svg/Features/vvrlogowhite.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="hover-images">
+                        <img
+                          className="img-fulid"
+                          src="/assets/svg/Features/vvrlearning_icon.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div className="content">
+                      <h5 className="heading">VVR Learning</h5>
+                      <div className="txt1">
+                        We provide the most responsive and functional IT design
+                        for companies and businesses worldwide.
+                      </div>
+                      <div className="box-images-arrow">
+                        <a href="#">
+                          <span className="button-text">Know More</span>
+                          <i className="far fa-long-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="ht-box-images style-05">
+                  <div className="image-box-wrap">
+                    <div className="box-image">
+                      <div className="default-image">
+                        <img
+                          className="img-fulid"
+                          src="/assets/svg/Features/vvrdigital_icon.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="hover-images">
+                        <img
+                          className="img-fulid"
+                          src="/assets/svg/Features/vvrdigital_icon.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div className="content">
+                      <h5 className="heading">VVR Digital </h5>
+                      <div className="txt1">
+                        We provide the most responsive and functional IT design
+                        for companies and businesses worldwide.
+                      </div>
+                      <div className="box-images-arrow">
+                        <a href="#">
+                          <span className="button-text">Know More</span>
+                          <i className="far fa-long-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="ht-box-images style-05">
+                  <div className="image-box-wrap">
+                    <div className="box-image">
+                      <div className="default-image">
+                        <img
+                          className="img-fulid"
+                          src="/assets/svg/Features/vvr_upcoming.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="hover-images">
+                        <img
+                          className="img-fulid"
+                          src="/assets/svg/Features/vvr_upcoming.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div className="content">
+                      <h5 className="heading">VVR Hotels</h5>
+                      <div className="txt1">
+                        We provide the most responsive and functional IT design
+                        for companies and businesses worldwide.
+                      </div>
+                      <div className="box-images-arrow">
+                        <a href="#">
+                          <span className="button-text">Know More</span>
+                          <i className="far fa-long-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             {/* MAIN LEFT COL */}
 
-            <div className=" dtc-l v-mid wow ">
+            {/* <div className=" dtc-l v-mid wow ">
               <div className="dt-ns dt--fixed-ns w-100">
                 <div className=" dtc-l v-mid wow fadeInLeft ph2">
                   <div className="d-flex">
@@ -499,241 +427,146 @@ export default function index() {
                   </p>
                 </div>
               </div>
-            </div>
-            {/* MAIN RIGHT COL */}
-            {/* <div className=" dtc-l v-mid wow fadeInRight">
-              
-              <section name="faq" id="faq">
-                <div className="">
-                 
-                  <div className="accordianalin">
-                    <div className="accordioncourse accordianmargin">
-                      <div>
-                        <input type="checkbox" name="panel" id="panel-1" />
-                        <label
-                          className="clr-132"
-                          for="panel-1"
-                          style={{ marginBottom: "0px" }}
-                        >
-                          Free consultation
-                        </label>
-                        <div className="accordioncourse__content accordioncourse__content--med">
-                          <p className="accordioncourse__header">
-                            Podcasting operational change management inside of
-                            workflows to establish a framework. Taking seamless
-                            key performance indicators offline to maximise the
-                            long tail
-                          </p>
-                        </div>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="panel" id="panel-2" />
-                        <label for="panel-2" style={{ marginBottom: "0px" }}>
-                          Comprehensive project management
-                        </label>
-                        <div className="accordioncourse__content accordioncourse__content--med">
-                          <p className="accordioncourse__header">
-                            Keeping your eye on the ball while performing a deep
-                            dive on the start-up mentality to derive convergence
-                            on cross-platform integration
-                          </p>
-                        </div>
-                      </div>
-
-                     
-                      <div>
-                        <input type="checkbox" name="panel" id="panel-3" />
-                        <label for="panel-3" style={{ marginBottom: "0px" }}>
-                          online presence
-                        </label>
-                        <div className="accordioncourse__content accordioncourse__content--med">
-                          <p className="accordioncourse__header">
-                            We help entrepreneurs get ready to raise capital.
-                            Please note that we cannot help our clients raise
-                            capital. This usually consists of some or all of our
-                            services. This is a service that is heavily
-                            regulated.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="panel" id="panel-3" />
-                        <label for="panel-3" style={{ marginBottom: "0px" }}>
-                          We work hard, together
-                        </label>
-                        <div className="accordioncourse__content accordioncourse__content--med">
-                          <p className="accordioncourse__header">
-                            Harness the combined expertise of a team of
-                            specialists in strategy, user experience, creative
-                            design, web development, SEO and marketing for your
-                            next digital project. We are committed to delivering
-                            human-centric solutions that exceed your
-                            expectations.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="panel" id="panel-3" />
-                        <label for="panel-3" style={{ marginBottom: "0px" }}>
-                          100% Client Satisfaction Guarantee
-                        </label>
-                        <div className="accordioncourse__content accordioncourse__content--med">
-                          <p className="accordioncourse__header">
-                            We want you to be completely satisfied with our
-                            services. We will do whatever it takes to make you
-                            happy. No hassles, no problems.
-                          </p>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div>
-              </section>
             </div> */}
           </div>
         </section>
       </div>
-      {/* <div>
-        <section className="">
-          <div className="container pt3 pb3">
-            <h2 className="medium-font f-40 fw4 tc clr-132 mt0 mb3  width-100 belowline">
-              Our Process
-            </h2>
-            <div className="">
-              <ul className="s-uip__list">
-                <li className="s-uip__item">
-                  <div className="s-uip__item-wrap">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      viewBox="0 0 120 120"
-                      className="s-uip__border"
-                    >
-                      <circle
-                        cx="60"
-                        cy="60"
-                        r="59.5"
-                        stroke-dasharray="0 4.5"
-                        stroke-dashoffset="20"
-                        stroke-linecap="round"
-                        fill="transparent"
-                        className="s-uip__path"
-                      ></circle>
-                    </svg>{" "}
-                    <div className="s-uip__title h4">
-                      Research &amp; Strategy
+
+      <section
+        className="lef-ri-pa pv5 about-banner-bg about-section2"
+        name="Mobile-development"
+        id="Mobile-development"
+      >
+        <div className="pv2">
+          <section className="">
+            <article className=" center ">
+              {/* <h2 className="medium-font f-40 fw4  tc clr-132 mt0 mb3  width-100 belowline">
+                Mobile app development
+              </h2> */}
+              <div className="dt-ns dt--fixed-ns w-100">
+                <div className=" dtc-l v-mid wow fadeInLeft">
+                  <div>
+                    <img
+                      src="/assets/svg/services/webdev/about.png"
+                      className="pt3 mw-100"
+                    />
+                  </div>
+                </div>
+                <div className=" dtc-l   v-mid wow fadeInRight">
+                  <h2 className="medium-font f-40 fw4 fw4 pl4 clr-132 mt0 mb3 w-70per width-100  aboutmission">
+                    Whats makes us different?
+                  </h2>
+                  <div className="mb4">
+                    <p className="clr-6D839D regular-font tl pl4  f-18px lh-copy mv0 width-100">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                      enim ipsam voluptatem quia voluptas sit aspernatur aut
+                      odit aut fugit, sed quia consequuntur magni dolores.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="pl4">
+                      {" "}
+                      <hr></hr>
+                    </p>
+                  </div>
+                  <div class="flex justify-center">
+                    <div class=" w-25  mr2">
+                      <div>
+                        <p className="num-proect">
+                          <CountUp duration={5} end={4} />
+                        </p>
+                        <h2 className="project-title">Our Business</h2>
+                      </div>
+                    </div>
+                    <div class=" w-25  mr2">
+                      <div>
+                        <p className="num-proect">
+                          <CountUp duration={5} end={25} />
+                        </p>
+                        <h2 className="project-title">Team member</h2>
+                      </div>
+                    </div>
+                    <div class=" w-25  mr2">
+                      <p className="num-proect">
+                        <CountUp duration={5} end={2} />
+                      </p>
+                      <h2 className="project-title">Years in Business</h2>
                     </div>
                   </div>
-                </li>
-                <li className="s-uip__item">
-                  <div className="s-uip__item-wrap">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      viewBox="0 0 120 120"
-                      className="s-uip__border"
-                    >
-                      <circle
-                        cx="60"
-                        cy="60"
-                        r="59.5"
-                        stroke-dasharray="0 4.5"
-                        stroke-dashoffset="20"
-                        stroke-linecap="round"
-                        fill="transparent"
-                        className="s-uip__path"
-                      ></circle>
-                    </svg>{" "}
-                    <div className="s-uip__title h4 white">
-                      Wireframing &amp; Prototyping
-                    </div>
-                  </div>
-                </li>
-                <li className="s-uip__item">
-                  <div className="s-uip__item-wrap">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      viewBox="0 0 120 120"
-                      className="s-uip__border"
-                    >
-                      <circle
-                        cx="60"
-                        cy="60"
-                        r="59.5"
-                        stroke-dasharray="0 4.5"
-                        stroke-dashoffset="20"
-                        stroke-linecap="round"
-                        fill="transparent"
-                        className="s-uip__path"
-                      ></circle>
-                    </svg>{" "}
-                    <div className="s-uip__title h4">Visual Design</div>
-                  </div>
-                </li>
-                <li className="s-uip__item">
-                  <div className="s-uip__item-wrap">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      viewBox="0 0 120 120"
-                      className="s-uip__border"
-                    >
-                      <circle
-                        cx="60"
-                        cy="60"
-                        r="59.5"
-                        stroke-dasharray="0 4.5"
-                        stroke-dashoffset="20"
-                        stroke-linecap="round"
-                        fill="transparent"
-                        className="s-uip__path"
-                      ></circle>
-                    </svg>{" "}
-                    <div className="s-uip__title h4">UI Development</div>
-                  </div>
-                </li>
-                <li className="s-uip__item">
-                  <div className="s-uip__item-wrap">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      viewBox="0 0 120 120"
-                      className="s-uip__border"
-                    >
-                      <circle
-                        cx="60"
-                        cy="60"
-                        r="59.5"
-                        stroke-dasharray="0 4.5"
-                        stroke-dashoffset="20"
-                        stroke-linecap="round"
-                        fill="transparent"
-                        className="s-uip__path"
-                      ></circle>
-                    </svg>{" "}
-                    <div className="s-uip__title h4">Usability Testing</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </div> */}
-      <section className="homebanner" style={{ "--img": `url(${BackGround})` }}>
-        {/* <div className="center pv6">
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <section
+        className=" pv5 about-banner-bg about-section2"
+        name="Mobile-development"
+        id="Mobile-development"
+      >
+        <div className="pv2">
+          <section className="">
+            <article className=" center ">
+              {/* <h2 className="medium-font f-40 fw4  tc clr-132 mt0 mb3  width-100 belowline">
+                Mobile app development
+              </h2> */}
+              <div className="dt-ns dt--fixed-ns w-100">
+                <Carousel
+                  swipeable={true}
+                  draggable={true}
+                  showDots={false}
+                  responsive={responsive}
+                  ssr={true} // means to render carousel on server-side.
+                  infinite={true}
+                  //autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                  autoPlay={true}
+                  autoPlaySpeed={100}
+                  slidesPerView={1}
+                  //centerMode={true}
+
+                  slidesToSlide={true}
+                  currentSlide={true}
+                  keyBoardControl={true}
+                  customTransition="all .5s ease"
+                  transitionDuration={5000}
+                  arrows={false}
+                  containerClass="carousel-container"
+                  removeArrowOnDeviceType={["tablet", "mobile"]}
+                  //deviceType={this.props.deviceType}
+                  renderButtonGroupOutside={true}
+                  customButtonGroup={<ButtonGroup action={nextRef} />}
+                  dotListClass="custom-dot-list-style"
+                  itemClass="carousel-item-padding-40-px"
+                >
+                  <img src="/assets/gallery/1.png" alt="" />
+
+                  <img src="/assets/gallery/2.png" alt="" />
+
+                  <img src="/assets/gallery/3.png" alt="" />
+
+                  <img src="/assets/gallery/4.png" alt="" />
+
+                  <img src="/assets/gallery/5.png" alt="" />
+                </Carousel>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <section className="business" style={{ "--img": `url(${BackGround2})` }}>
+        <div className="center pv6">
           <h1 className="f2 f2-l fw2 white semibold-font tc mt0 mt50 lh-title  ">
-            Looking for a New Startup or existing buisness to grow ? - start
-            with a free consultation
+            Looking For Simple Solutions To All Your Business Needs?
           </h1>
           <div className="tc">
             <a href="" className="link">
               <div className="f-16 no-underline grow dib v-mid bg-white clr-302E43 br3 pl3 pr2 pv3 mb3  medium-font f-20">
-                <div className="dib"> Get Quotes</div>
+                <div className="dib">Get Enquiries</div>
                 <span className="pl2" />
                 <div className="dib arrow-box v-mid">
                   <div className="rightArr">
@@ -743,307 +576,10 @@ export default function index() {
               </div>
             </a>
           </div>
-        </div> */}
-        <div className="container pt3 pb3 pv5">
-          <h2 className="medium-font f-40 fw4 tc white mt0 mb3  width-100 belowline">
-            Our Process
-          </h2>
-          <div className="">
-            <ul className="s-uip__list">
-              <li className="s-uip__item">
-                <div className="s-uip__item-wrap">
-                  <svg
-                    width="100%"
-                    height="100%"
-                    viewBox="0 0 120 120"
-                    className="s-uip__border"
-                  >
-                    <circle
-                      cx="60"
-                      cy="60"
-                      r="59.5"
-                      stroke-dasharray="0 4.5"
-                      stroke-dashoffset="20"
-                      stroke-linecap="round"
-                      fill="transparent"
-                      className="s-uip__path"
-                    ></circle>
-                  </svg>{" "}
-                  <div className="s-uip__title h4 white">
-                    Research & Analysis
-                  </div>
-                </div>
-              </li>
-              <li className="s-uip__item">
-                <div className="s-uip__item-wrap">
-                  <svg
-                    width="100%"
-                    height="100%"
-                    viewBox="0 0 120 120"
-                    className="s-uip__border"
-                  >
-                    <circle
-                      cx="60"
-                      cy="60"
-                      r="59.5"
-                      stroke-dasharray="0 4.5"
-                      stroke-dashoffset="20"
-                      stroke-linecap="round"
-                      fill="transparent"
-                      className="s-uip__path"
-                    ></circle>
-                  </svg>{" "}
-                  <div className="s-uip__title h4 white">
-                    Detailed project outline
-                  </div>
-                </div>
-              </li>
-              <li className="s-uip__item">
-                <div className="s-uip__item-wrap">
-                  <svg
-                    width="100%"
-                    height="100%"
-                    viewBox="0 0 120 120"
-                    className="s-uip__border"
-                  >
-                    <circle
-                      cx="60"
-                      cy="60"
-                      r="59.5"
-                      stroke-dasharray="0 4.5"
-                      stroke-dashoffset="20"
-                      stroke-linecap="round"
-                      fill="transparent"
-                      className="s-uip__path"
-                    ></circle>
-                  </svg>{" "}
-                  <div className="s-uip__title h4 white">
-                    Approval and changes{" "}
-                  </div>
-                </div>
-              </li>
-              <li className="s-uip__item">
-                <div className="s-uip__item-wrap">
-                  <svg
-                    width="100%"
-                    height="100%"
-                    viewBox="0 0 120 120"
-                    className="s-uip__border"
-                  >
-                    <circle
-                      cx="60"
-                      cy="60"
-                      r="59.5"
-                      stroke-dasharray="0 4.5"
-                      stroke-dashoffset="20"
-                      stroke-linecap="round"
-                      fill="transparent"
-                      className="s-uip__path"
-                    ></circle>
-                  </svg>{" "}
-                  <div className="s-uip__title h4 white">Implementation</div>
-                </div>
-              </li>
-              <li className="s-uip__item">
-                <div className="s-uip__item-wrap">
-                  <svg
-                    width="100%"
-                    height="100%"
-                    viewBox="0 0 120 120"
-                    className="s-uip__border"
-                  >
-                    <circle
-                      cx="60"
-                      cy="60"
-                      r="59.5"
-                      stroke-dasharray="0 4.5"
-                      stroke-dashoffset="20"
-                      stroke-linecap="round"
-                      fill="transparent"
-                      className="s-uip__path"
-                    ></circle>
-                  </svg>{" "}
-                  <div className="s-uip__title h4 white">
-                    Post Project Support
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
       </section>
-      <div className="bg-EFF2FF center pv5-ns pv4">
-        <h2 className="medium-font f-40 fw4 tc clr-132 mt0 mb3  width-100 belowline">
-          Our Services
-        </h2>
-        <section className="lef-ri-pa  no-padding-1">
-          <div>
-            <div className="tabs-main">
-              <div className="tabs  center mt4">
-                <div className="tabs__menu mob-as flex mb4 br3 border-tabs bg-FAF9FE brd-crl margin-auto width-500">
-                  <label
-                    id="webdevelopment"
-                    onClick={(e) => onChangeTab(e.target.id)}
-                    className=" clr-132 tabs__menu-item w-25  regular-font yo-mbo f-16px tc  pt3 pb3 bg-animate  pointer "
-                  >
-                    Web Development
-                  </label>
-                  <label
-                    id="file_access"
-                    onClick={(e) => onChangeTab(e.target.id)}
-                    className=" clr-132 tabs__menu-item w-25 regular-font yo-mbo f-16px  tc pt3 pb3 bg-animate  pointer"
-                  >
-                    Marketing
-                  </label>
-                  <label
-                    id="collaboration"
-                    onClick={(e) => onChangeTab(e.target.id)}
-                    className=" clr-132 tabs__menu-item w-25 regular-font yo-mbo f-16px  tc pt3 pb3 bg-animate mob-coll pointer"
-                  >
-                    UI/UX Design
-                  </label>
-                  <label
-                    id="security"
-                    onClick={(e) => onChangeTab(e.target.id)}
-                    className=" clr-132 tabs__menu-item w-25 regular-font yo-mbo f-16px  tc pt3 pb3 bg-animate  pointer"
-                  >
-                    Out Sourcing
-                  </label>
-                </div>
 
-                <div className="tabs__content">
-                  <div>
-                    <div className="tabs__content__info">
-                      <ul className="cardsGrid">
-                        {showCards.map((item) => (
-                          <li className="cards_item" key={item.id}>
-                            <article className=" center bg-white br3  pv4  wow fadeInDown">
-                              <div className="tc">
-                                <Link href={`/${item.link}`}>
-                                  <a>
-                                    <img
-                                      className="pb2 height-70"
-                                      src={`/assets/svg/Features/${item.icon}`}
-                                      alt="next"
-                                    />
-                                  </a>
-                                </Link>
-                                {/* <webdevelopmentImg1 className="pb2" /> */}
-                                {/* <img src="http://tachyons.io/img/avatar_1.jpg" className="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you" /> */}
-                                <h1 className="f-20px medium-font mb2">
-                                  <Link href={`/${item.link}`}>
-                                    {item.title}
-                                  </Link>
-                                </h1>
-                                <p className="clr-6D839D w-70per margin-auto regular-font f-14px  lh-copy mv0">
-                                  <Link href={`/${item.link}`}>
-                                    <a>{item.descriptio}</a>
-                                  </Link>
-                                </p>
-                              </div>
-                            </article>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <section
-        className="homebanner"
-        style={{ "--img": `url(${BackGround2})` }}
-      >
-        <div className="center pv6">
-          <h1 className="f2 f2-l fw2 white semibold-font tc mt0 mt50 lh-title  ">
-            Looking For Simple Solutions To All Your Business Needs?
-          </h1>
-          <div className="tc">
-            <a href="" className="link">
-              <div className="f-16 no-underline grow dib v-mid bg-white clr-302E43 br3 pl3 pr2 pv3 mb3  medium-font f-20">
-                <div className="dib"> Get Quotes</div>
-                <span className="pl2" />
-                <div className="dib arrow-box v-mid">
-                  <div className="rightArr">
-                    {/* <img src={RightArrow} /> */}
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-      <div className="bg-EFF2FF center pt5-ns">
-        <section className="lef-ri-pa pv2">
-          <h2 className="medium-font f-40 fw4 tc clr-132 mt0 mb3  width-100 belowline">
-            Featured Works
-          </h2>
-          <div className="dt-ns dt--fixed-ns w-100">
-            <div className=" dtc-l v-mid wow fadeInLeft">
-              <div className="pt4 pr2">
-                <img
-                  className=" mw-100 br3"
-                  src="https://consulting.stylemixthemes.com/zurich/wp-content/uploads/sites/22/2016/01/img1-550x525.jpg"
-                  width="550"
-                  height="525"
-                  alt="Consulting WordPress theme"
-                  title="Consulting WordPress theme"
-                />
-              </div>
-            </div>
-            <div className=" dtc-l tc wow fadeInRight">
-              <div className="pt4 mainsection">
-                <img
-                  className=" mw-100 br3"
-                  src="https://consulting.stylemixthemes.com/zurich/wp-content/uploads/sites/22/2016/01/img2-545x255.jpg"
-                  height="255"
-                  width="550"
-                  alt="Consulting WordPress theme"
-                  title="Consulting WordPress theme"
-                />
-                <div className="overlay">
-                  <div className="text">Hello World</div>
-                </div>
-              </div>
-              {/* <div className="pt4">
-                <img src="/assets/img/bg1.jpg" className=" mw-100 br3" />
-              </div> */}
-              <div className="dt-ns dt--fixed-ns w-100">
-                <div className=" dtc-l wow fadeInLeft">
-                  <div className="pt3">
-                    <img
-                      className="mw-100 br3"
-                      src="https://consulting.stylemixthemes.com/zurich/wp-content/uploads/sites/22/2016/01/img3-265x255.jpg"
-                      width="262"
-                      height="255"
-                      alt="Consulting WordPress theme"
-                      title="Consulting WordPress theme"
-                    />
-                  </div>
-                </div>
-                <div className=" dtc-l tc   wow fadeInRight">
-                  <div className="pt3 pl2">
-                    <img
-                      className="mw-100 br3"
-                      src="https://consulting.stylemixthemes.com/zurich/wp-content/uploads/sites/22/2016/01/img4-265x255.jpg"
-                      width="265"
-                      height="255"
-                      alt="Consulting WordPress theme"
-                      title="Consulting WordPress theme"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <div className="bg-EFF2FF center pv5-ns pv4">
+      <div className=" center pv5-ns pv4">
         <section className="lef-ri-pa pv2">
           <div className="cf  pt2">
             <div className="fl yomob-1  w-25-l w-50-ns ">
@@ -1100,10 +636,14 @@ export default function index() {
               ssr={true} // means to render carousel on server-side.
               infinite={true}
               //autoPlay={this.props.deviceType !== "mobile" ? true : false}
-              autoPlaySpeed={1000}
+              autoPlay={true}
+              autoPlaySpeed={5000}
+              slidesPerView={1}
+              slidesToSlide={true}
+              currentSlide={true}
               keyBoardControl={true}
               customTransition="all .5s ease"
-              transitionDuration={500}
+              transitionDuration={5000}
               arrows={false}
               containerClass="carousel-container"
               removeArrowOnDeviceType={["tablet", "mobile"]}
