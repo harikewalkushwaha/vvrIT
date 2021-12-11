@@ -152,11 +152,11 @@ export default function about() {
               <div className="dt-ns dt--fixed-ns w-100">
                 <div
                   className="aboutbanner"
-                  style={{ "--img": `url(${BackGround1})`, height: "450px" }}
+                  style={{ "--img": `url(${BackGround1})` }}
                 >
                   <div className="dt-ns  dt--fixed-ns w-100 ">
                     <h2 className="medium-font f-40 fw4 tc white mt0 mb3 pt5 width-100 "></h2>
-                    <div className="container ">
+                    <div className="container mb5 ">
                       <div className="row">
                         <div className="col-md-4">
                           <p>
@@ -739,70 +739,68 @@ export default function about() {
       </div>
 
       <section>
-        <div class="s-indi ob is-visible" data-observe="" data-visible="">
-          <div class="wrap">
-            <div class="s-indi__wrap">
-              <ul class="s-indi__letters">
-                <li class="s-indi__letter js-finish finish">
-                  <span class="s-indi__value">
+        <div className="s-indi ob is-visible" data-observe="" data-visible="">
+          <div className="wrap">
+            <div className="s-indi__wrap">
+              <ul className="s-indi__letters">
+                <li className="s-indi__letter js-finish finish">
+                  <span className="s-indi__value">
                     <b
                       data-speed="1"
                       data-callback="AnimateIndicator"
-                      class="ob is-visible"
+                      className="ob is-visible"
                       data-observe=""
                       data-visible=""
                     >
-                      150
+                      3
                     </b>
-                    <span class="s-indi__plus">+</span>
+                    <span className="s-indi__plus">+</span>
                   </span>{" "}
-                  <span class="s-indi__title">
-                    SUCCESSFULLY LAUNCHED projects
-                  </span>
+                  <span className="s-indi__title">Our buisness</span>
                 </li>
-                <li class="s-indi__letter js-finish finish">
-                  <span class="s-indi__value">
+                <li className="s-indi__letter js-finish finish">
+                  <span className="s-indi__value">
                     <b
                       data-speed="150"
                       data-callback="AnimateIndicator"
-                      class="ob is-visible"
+                      className="ob is-visible"
                       data-observe=""
                       data-visible=""
                     >
-                      9
+                      2
                     </b>
                   </span>{" "}
-                  <span class="s-indi__title">years in business</span>
+                  <span className="s-indi__title">years in business</span>
                 </li>
-                <li class="s-indi__letter js-finish finish">
-                  <span class="s-indi__value">
+                <li className="s-indi__letter js-finish finish">
+                  <span className="s-indi__value">
                     <b
                       data-speed="60"
                       data-callback="AnimateIndicator"
-                      class="ob is-visible"
+                      className="ob is-visible"
                       data-observe=""
                       data-visible=""
                     >
                       20
                     </b>
-                    <span class="s-indi__plus">+</span>
+                    <span className="s-indi__plus">+</span>
                   </span>{" "}
-                  <span class="s-indi__title">supported countries</span>
+                  <span className="s-indi__title">supported countries</span>
                 </li>
-                <li class="s-indi__letter js-finish finish">
-                  <span class="s-indi__value">
+                <li className="s-indi__letter js-finish finish">
+                  <span className="s-indi__value">
                     <b
                       data-speed="20"
                       data-callback="AnimateIndicator"
-                      class="ob is-visible"
+                      className="ob is-visible"
                       data-observe=""
                       data-visible=""
                     >
-                      80
+                      20
                     </b>
-                    <span class="s-indi__plus">+</span>
+                    <span className="s-indi__plus">+</span>
                   </span>{" "}
-                  <span class="s-indi__title">team members</span>
+                  <span className="s-indi__title">team members</span>
                 </li>
               </ul>
             </div>
