@@ -235,18 +235,18 @@ export default function index() {
       </div>
 
       <div
-        className="bg-002E5B center pt5-ns pb5-ns "
+        className=" center pt5-ns pb5-ns "
         // style={{ "--img": `url(${BackGround})` business}}
       >
         <section className="lef-ri-pa pv2">
-          <h2 className="medium-font f-40 fw4 tc white mt0 mb3  width-100 belowline">
+          <h2 className="medium-font f-40 fw4 tc  mt0 mb3  width-100 belowline">
             Our Businesses
           </h2>
 
           {/* MAIN ROW */}
           <div className="dt-ns dt--fixed-ns w-100 pt4">
             <div className="row">
-              <h5 className="tc white mt0">
+              <h5 className="tc  mt0">
                 VVR Digital are managing following business
               </h5>
               {/* <div className="col-md-4">
@@ -521,7 +521,7 @@ export default function index() {
         </div>
       </section>
 
-      <section
+      {/* <section
         className=" pv5 about-banner-bg about-section2"
         name="Mobile-development"
         id="Mobile-development"
@@ -529,23 +529,17 @@ export default function index() {
         <div className="pv2">
           <section className="">
             <article className=" center ">
-              {/* <h2 className="medium-font f-40 fw4  tc clr-132 mt0 mb3  width-100 belowline">
-                Mobile app development
-              </h2> */}
               <div className="dt-ns dt--fixed-ns w-100">
                 <Carousel
                   swipeable={true}
                   draggable={true}
                   showDots={false}
                   responsive={responsive}
-                  ssr={true} // means to render carousel on server-side.
+                  ssr={true}
                   infinite={true}
-                  //autoPlay={this.props.deviceType !== "mobile" ? true : false}
                   autoPlay={true}
                   autoPlaySpeed={100}
                   slidesPerView={1}
-                  //centerMode={true}
-
                   slidesToSlide={true}
                   currentSlide={true}
                   keyBoardControl={true}
@@ -554,7 +548,6 @@ export default function index() {
                   arrows={false}
                   containerClass="carousel-container"
                   removeArrowOnDeviceType={["tablet", "mobile"]}
-                  //deviceType={this.props.deviceType}
                   renderButtonGroupOutside={true}
                   customButtonGroup={<ButtonGroup action={nextRef} />}
                   dotListClass="custom-dot-list-style"
@@ -574,7 +567,7 @@ export default function index() {
             </article>
           </section>
         </div>
-      </section>
+      </section> */}
 
       <section className="business" style={{ "--img": `url(${BackGround2})` }}>
         <div className="container">
@@ -630,7 +623,7 @@ export default function index() {
         </div>
       </section>
 
-      <section className="lef-ri-pa pv5">
+      <section className="lef-ri-pa pv5 mb5">
         <h2 className="medium-font f-40 fw4 tc black mt0 mb3  width-100 belowline">
           What do people praise about VVR Group
         </h2>
@@ -844,267 +837,6 @@ export default function index() {
           </div>
         </Carousel>
       </section>
-
-      <div className=" center pv5-ns pv4 mb5">
-        <section className="lef-ri-pa">
-          <div className="cf">
-            <div className="fl yomob-1  w-25-l w-50-ns ">
-              <article className=" center  br3  h6 pv3-l pv4-ns pb2 card-hei-ns">
-                <div className="justify">
-                  {/* <img className="mw-100" src="http://tachyons.io/img/avatar_1.jpg" className="br-100 h3 w3 dib" title="Photo of a kitty staring at you" /> */}
-                  <h1 className="mt0 mb0 f-40 fw3 semibold-font width-100 tc-xs-1 w-70per">
-                    Client Testimonials
-                  </h1>
-                  {/* <hr className="mw3 bb bw1 b--black-10" /> */}
-                </div>
-                <p className="lh-copy pb1 f-17px measure tc-xs-1 width-100 w-80per justify clr-6D839D regular-font">
-                  Send large files to teams across the globe with fast file
-                  transfer and streaming protocol
-                </p>
-
-                <div className="tc-xs-1">
-                  <div
-                    className="f6 link dim arrs-w dib white  border-clr  "
-                    href="#0"
-                    onClick={() => doSlicderAction("prev")}
-                  >
-                    {" "}
-                    <span className=" v-vid clie-a v-mid  left-pointed">
-                      {" "}
-                      <img
-                        src={LeftArrow}
-                        className="pt3"
-                        fill="#165df5"
-                        width="15"
-                      />
-                    </span>
-                  </div>{" "}
-                  &nbsp;
-                  <div
-                    className="f6 link dim arrs-w dib white  bg-165df5 "
-                    onClick={() => doSlicderAction("next")}
-                  >
-                    {" "}
-                    <span className=" v-vid  clie-a v-mid">
-                      {" "}
-                      <img src={RightArrow} className="pt3" />
-                    </span>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <Carousel
-              swipeable={true}
-              draggable={true}
-              showDots={false}
-              responsive={responsive2}
-              ssr={true} // means to render carousel on server-side.
-              infinite={true}
-              //autoPlay={this.props.deviceType !== "mobile" ? true : false}
-              autoPlay={false}
-              autoPlaySpeed={5000}
-              slidesPerView={1}
-              slidesToSlide={true}
-              currentSlide={true}
-              keyBoardControl={true}
-              customTransition="all .5s ease"
-              transitionDuration={5000}
-              arrows={false}
-              containerClass="carousel-container"
-              removeArrowOnDeviceType={["tablet", "mobile"]}
-              //deviceType={this.props.deviceType}
-              renderButtonGroupOutside={true}
-              customButtonGroup={<ButtonGroup action={nextRef} />}
-              dotListClass="custom-dot-list-style"
-              // itemClass="carousel-item-padding-40-px"
-            >
-              {/* {data.map((story) => (
-                <div
-                  key={story.id}
-                  className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown"
-                >
-                  <div className="tc card-clie ph-1-l w-100 ">
-                    <div className="img-container1 bg-165df5">
-                      <img src={story.icon} className="mw-100" title="media" />
-                    </div>
-                    <div className="pt4">
-                      <h1 className="f5 tc fw3 regular-font clr-132 pt4">
-                        {story.title}
-                      </h1>
-                      <p className="tc pl4 pr4 f-18px clr-132 medium-font">
-                        {story.description}
-                      </p>
-                      <div className="tc pb3">
-                        {" "}
-                        <Link href={story.link}>
-                          <a className="fw1 tc medium-font f-16 pr1">
-                            Read More
-                          </a>
-                        </Link>
-                        <span className=" v-vid clie-a  right-pointed pl2">
-                          {" "}
-                          <img src={RightArrow} fill="#165df5" />
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))} */}
-              <div className="">
-                <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
-                  <div
-                    className="testimony-wrap "
-                    style={{ paddingBottom: "1.5rem", paddingTop: "1.5rem" }}
-                  >
-                    <div className="">
-                      <span>
-                        <img
-                          style={{ width: "20px", float: "right" }}
-                          src="/assets/img/icon.svg"
-                        />
-                      </span>
-                      <div
-                        className="d-flex align-items-center"
-                        style={{ display: "flex", alignItems: "center" }}
-                      >
-                        <div
-                          className="workclr-hana user-img"
-                          style={{ "--img": `url(${Hana})` }}
-                        ></div>
-
-                        <div className="pl-3">
-                          <span className="star">
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
-                          </span>
-
-                          <p className="name">Hana</p>
-                        </div>
-                      </div>
-
-                      <p
-                        className="mb-4 pt3"
-                        style={{ marginBottom: "2rem", fontSize: "1.3rem" }}
-                      >
-                        I have a great experience learning Japanese with VVR
-                        Learning. The teacher is really nice and good. All the
-                        best! <br></br>
-                        <Link href="review">
-                          <a> Read More...</a>
-                        </Link>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
-                <div className="">
-                  <div
-                    className="testimony-wrap "
-                    style={{ paddingBottom: "1.5rem", paddingTop: "1.5rem" }}
-                  >
-                    <div className="">
-                      <span>
-                        <img
-                          style={{ width: "20px", float: "right" }}
-                          src="/assets/img/icon.svg"
-                        />
-                      </span>
-                      <div
-                        className="d-flex align-items-center"
-                        style={{ display: "flex", alignItems: "center" }}
-                      >
-                        <div
-                          className="workclr-hana user-img"
-                          style={{ "--img": `url(${Hana})` }}
-                        ></div>
-
-                        <div className="pl-3">
-                          <span className="star">
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
-                          </span>
-
-                          <p className="name">Hana</p>
-                        </div>
-                      </div>
-
-                      <p
-                        className="mb-4 pt3"
-                        style={{ marginBottom: "2rem", fontSize: "1.3rem" }}
-                      >
-                        I have a great experience learning Japanese with VVR
-                        Learning. The teacher is really nice and good. All the
-                        best! <br></br>
-                        <Link href="review">
-                          <a> Read More...</a>
-                        </Link>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
-                <div className="">
-                  <div
-                    className="testimony-wrap "
-                    style={{ paddingBottom: "1.5rem", paddingTop: "1.5rem" }}
-                  >
-                    <div className="">
-                      <span>
-                        <img
-                          style={{ width: "20px", float: "right" }}
-                          src="/assets/img/icon.svg"
-                        />
-                      </span>
-                      <div
-                        className="d-flex align-items-center"
-                        style={{ display: "flex", alignItems: "center" }}
-                      >
-                        <div
-                          className="workclr-hana user-img"
-                          style={{ "--img": `url(${Hana})` }}
-                        ></div>
-
-                        <div className="pl-3">
-                          <span className="star">
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
-                          </span>
-
-                          <p className="name">Hana</p>
-                        </div>
-                      </div>
-
-                      <p
-                        className="mb-4 pt3"
-                        style={{ marginBottom: "2rem", fontSize: "1.3rem" }}
-                      >
-                        I have a great experience learning Japanese with VVR
-                        Learning. The teacher is really nice and good. All the
-                        best! <br></br>
-                        <Link href="review">
-                          <a> Read More...</a>
-                        </Link>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Carousel>
-          </div>
-        </section>
-      </div>
     </div>
   );
 }
