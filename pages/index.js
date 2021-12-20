@@ -16,6 +16,7 @@ import Typewriter from "typewriter-effect";
 import CountUp from "react-countup";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import Hana from "../public/assets/testimonials/Hana.png";
 
 import {
   webdevelopment,
@@ -28,6 +29,23 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 4,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 960 },
+    items: 2,
+    slidesToSlide: 2, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 959, min: 0 },
+    items: 2,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
+const responsive2 = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 2,
     slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
@@ -231,7 +249,7 @@ export default function index() {
               <h5 className="tc white mt0">
                 VVR Digital are managing following business
               </h5>
-              <div className="col-md-4">
+              {/* <div className="col-md-4">
                 {" "}
                 <div className="ht-box-images style-05">
                   <div className="image-box-wrap">
@@ -259,7 +277,7 @@ export default function index() {
                       </div>
                       <div className="box-images-arrow">
                         <a href="#">
-                          <span className="button-text">Know More</span>
+                          <span className="button-">Know More</span>
                           <i className="far fa-long-arrow-right"></i>
                         </a>
                       </div>
@@ -294,7 +312,7 @@ export default function index() {
                       </div>
                       <div className="box-images-arrow">
                         <a href="#">
-                          <span className="button-text">Know More</span>
+                          <span className="button-">Know More</span>
                           <i className="far fa-long-arrow-right"></i>
                         </a>
                       </div>
@@ -329,105 +347,105 @@ export default function index() {
                       </div>
                       <div className="box-images-arrow">
                         <a href="#">
-                          <span className="button-text">Know More</span>
+                          <span className="button-">Know More</span>
                           <i className="far fa-long-arrow-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div> */}
+              <div className="col-md-4 ph0">
+                <a
+                  href="#"
+                  class="projects-wrap style-01 wow move-up animated"
+                  style={{ visibility: "visible" }}
+                >
+                  <div className="projects-image-box">
+                    <div className="projects-image">
+                      <img
+                        className="img-fluid"
+                        src="https://template.hasthemes.com/mitech/assets/images/projects/case-study-01-480x298.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div className="content">
+                      <h6 className="heading">Mitech-Smart Vision</h6>
+                      <div className="post-categories">Cyber Security</div>
+                      <div className="text12">
+                        At Mitech, we have a holistic and integrated approach
+                        towards core modernization to experience technological
+                        evolution.
+                      </div>
+                      <div className="box-projects-arrow">
+                        <span className="button-text">View case study</span>
+                        <i className="fa fa-long-arrow-right ml-1"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div className="col-md-4 ph0">
+                <a
+                  href="#"
+                  class="projects-wrap style-01 wow move-up animated"
+                  style={{ visibility: "visible" }}
+                >
+                  <div className="projects-image-box">
+                    <div className="projects-image">
+                      <img
+                        className="img-fluid"
+                        src="https://template.hasthemes.com/mitech/assets/images/projects/case-study-02-480x298.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div className="content">
+                      <h6 className="heading">Mitech-Smart Vision</h6>
+                      <div className="post-categories">Cyber Security</div>
+                      <div className="text12">
+                        At Mitech, we have a holistic and integrated approach
+                        towards core modernization to experience technological
+                        evolution.
+                      </div>
+                      <div className="box-projects-arrow">
+                        <span className="button-text">View case study</span>
+                        <i className="fa fa-long-arrow-right ml-1"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div className="col-md-4 ph0">
+                <a
+                  href="#"
+                  class="projects-wrap style-01 wow move-up animated"
+                  style={{ visibility: "visible" }}
+                >
+                  <div className="projects-image-box">
+                    <div className="projects-image">
+                      <img
+                        className="img-fluid"
+                        src="https://template.hasthemes.com/mitech/assets/images/projects/case-study-03-480x298.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div className="content">
+                      <h6 className="heading">Mitech-Smart Vision</h6>
+                      <div className="post-categories">Cyber Security</div>
+                      <div className="text12">
+                        At Mitech, we have a holistic and integrated approach
+                        towards core modernization to experience technological
+                        evolution.
+                      </div>
+                      <div className="box-projects-arrow">
+                        <span className="button-text">View case study</span>
+                        <i className="fa fa-long-arrow-right ml-1"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
-            {/* MAIN LEFT COL */}
-
-            {/* <div className=" dtc-l v-mid wow ">
-              <div className="dt-ns dt--fixed-ns w-100">
-                <div className=" dtc-l v-mid wow fadeInLeft ph2">
-                  <div className="d-flex">
-                    <img src="/assets/svg/Home Page/5.png" fill="blue" />
-                    <h5 className="clr-132 pt3 pl2">No advance payment</h5>
-                  </div>
-                  <p className="f6 lh-copy pt2 ph5">
-                    We’re here because we want to offer value. So, we won’t take
-                    an advance payment before we begin! Only pay us once you are
-                    sure of our capabilities and happy with our plan of action.
-                  </p>
-                </div>
-
-                <div className=" dtc-l  v-mid wow fadeInRight  ph2">
-                  <div className="d-flex">
-                    <img src="/assets/svg/Home Page/6.png" fill="blue" />
-                    <h5 className="clr-132 pt2 pl2">Affordable</h5>
-                  </div>
-                  <p className="f6 lh-copy  ph5">
-                    We want to make success affordable. Hence, we come to you
-                    with prices far more modest than our competitors.
-                  </p>
-                </div>
-              </div>
-              <div className="dt-ns dt--fixed-ns w-100 pv2">
-                <div className=" dtc-l v-mid wow fadeInLeft ph2">
-                  <div className="d-flex">
-                    <img src="/assets/svg/Home Page/1.png" fill="blue" />
-                    <h5 className="clr-132 pt3 pl2">Next-Gen technology</h5>
-                  </div>
-                  <p className="f6 lh-copy pt2 ph5">
-                    The digital world is constantly evolving, and we are
-                    evolving with it. We use the best and most relevant
-                    technology that will last you a long time, so you don’t have
-                    to keep updating it.
-                  </p>
-                </div>
-
-                <div className=" dtc-l  v-mid wow fadeInRight ph2">
-                  <div className="d-flex">
-                    <img src="/assets/svg/Home Page/7.png" fill="blue" />
-                    <h5 className="clr-132 pl2 pt3">Dedicated project team</h5>
-                  </div>
-                  <p className="f6 lh-copy pt2 ph5">
-                    Businesses that choose to work with us, each have a
-                    dedicated team working with them. No distractions, no
-                    delays, just focused, creative and efficient work. Our teams
-                    do not take on multiple projects at a time. They set a
-                    timelines and take projects one at a time, to ensure the
-                    best quality work. .
-                  </p>
-                </div>
-              </div>
-              <div className="dt-ns dt--fixed-ns w-100 pv2">
-                <div className=" dtc-l v-mid wow fadeInLeft ph2">
-                  <div className="d-flex">
-                    <img src="/assets/svg/Home Page/3.png" fill="blue" />
-                    <h5 className="clr-132 pt3 pl2">Post project support</h5>
-                  </div>
-                  <p className="f6 lh-copy pt2 ph5">
-                    We want to watch each one of our projects succeed and
-                    flourish. To make sure everything is as planned, we offer
-                    consistent support for 4 weeks (or more) after the
-                    completion of the project, so you can have complete faith
-                    that we’ve got your back!
-                  </p>
-                </div>
-
-                <div className=" dtc-l  v-mid wow fadeInRight ph2">
-                  <div className="d-flex">
-                    <img src="/assets/svg/Home Page/8.png" fill="blue" />
-                    <h5 className="clr-132 pl2 pt2">
-                      Specialised team for startup
-                    </h5>
-                  </div>
-                  <p className="f6 lh-copy pt2 ph5">
-                    It takes a varied skill-set to nurture a project right from
-                    inception. And we want to always do our best, so we have put
-                    together a team of start-up experts to help build and grow
-                    your start-up. So no need to hire an army of freelancers or
-                    full time employees, we’ve got you covered right from
-                    website building, marketing and admin work, to technical and
-                    moral support.
-                  </p>
-                </div>
-              </div>
-            </div> */}
           </div>
         </section>
       </div>
@@ -559,11 +577,43 @@ export default function index() {
       </section>
 
       <section className="business" style={{ "--img": `url(${BackGround2})` }}>
-        <div className="center pv6">
-          <h1 className="f2 f2-l fw2 white semibold-font tc mt0 mt50 lh-title  ">
+        <div className="container">
+          <div className="row center pv5">
+            <div className="col-lg-6">
+              <div className="conact-us-wrap-one">
+                <h3 className="heading white">
+                  Obtaining further information by make a contact with our
+                  experienced IT staffs.
+                </h3>
+
+                <div className="sub-heading white">
+                  We’re available for 8 hours a day!
+                  <br />
+                  Contact to require a detailed analysis and assessment of your
+                  plan.
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="contact-info-two tc">
+                <div className="icon">
+                  <span className="fa fa-phone"></span>
+                </div>
+                <h6 className="heading font-weight--reguler">Reach out now!</h6>
+                <h2 className="call-us">
+                  <a href="tel:190068668">1900 68668</a>
+                </h2>
+                <div className="contact-us-button mt-3">
+                  <a href="#" className="btn btn--secondary">
+                    Contact us
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* <h1 className="f2 f2-l fw2 white semibold-font tc mt0 mt50 lh-title  ">
             Looking For Simple Solutions To All Your Business Needs?
-          </h1>
-          <div className="tc">
+          </h1> */}
+            {/* <div className="tc">
             <a href="" className="link">
               <div className="f-16 no-underline grow dib v-mid bg-white clr-302E43 br3 pl3 pr2 pv3 mb3  medium-font f-20">
                 <div className="dib">Get Enquiries</div>
@@ -575,13 +625,229 @@ export default function index() {
                 </div>
               </div>
             </a>
+          </div> */}
           </div>
         </div>
       </section>
 
-      <div className=" center pv5-ns pv4">
-        <section className="lef-ri-pa pv2">
-          <div className="cf  pt2">
+      <section className="lef-ri-pa pv5">
+        <h2 className="medium-font f-40 fw4 tc black mt0 mb3  width-100 belowline">
+          What do people praise about VVR Group
+        </h2>
+
+        <Carousel
+          swipeable={true}
+          draggable={true}
+          showDots={false}
+          responsive={responsive2}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          //autoPlay={this.props.deviceType !== "mobile" ? true : false}
+          autoPlay={false}
+          autoPlaySpeed={5000}
+          slidesPerView={1}
+          slidesToSlide={true}
+          currentSlide={true}
+          keyBoardControl={true}
+          customTransition="all .5s ease"
+          transitionDuration={5000}
+          arrows={false}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          //deviceType={this.props.deviceType}
+          renderButtonGroupOutside={true}
+          customButtonGroup={<ButtonGroup action={nextRef} />}
+          dotListClass="custom-dot-list-style"
+          // itemClass="carousel-item-padding-40-px"
+        >
+          {/* {data.map((story) => (
+                <div
+                  key={story.id}
+                  className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown"
+                >
+                  <div className="tc card-clie ph-1-l w-100 ">
+                    <div className="img-container1 bg-165df5">
+                      <img src={story.icon} className="mw-100" title="media" />
+                    </div>
+                    <div className="pt4">
+                      <h1 className="f5 tc fw3 regular-font clr-132 pt4">
+                        {story.title}
+                      </h1>
+                      <p className="tc pl4 pr4 f-18px clr-132 medium-font">
+                        {story.description}
+                      </p>
+                      <div className="tc pb3">
+                        {" "}
+                        <Link href={story.link}>
+                          <a className="fw1 tc medium-font f-16 pr1">
+                            Read More
+                          </a>
+                        </Link>
+                        <span className=" v-vid clie-a  right-pointed pl2">
+                          {" "}
+                          <img src={RightArrow} fill="#165df5" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))} */}
+          <div className="">
+            <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+              <div
+                className="testimony-wrap "
+                style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
+              >
+                <div className="">
+                  <span>
+                    <img
+                      style={{ width: "20px", float: "right" }}
+                      src="/assets/img/icon.svg"
+                    />
+                  </span>
+                  <div
+                    className="d-flex align-items-center"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <div
+                      className="workclr-hana user-img"
+                      style={{ "--img": `url(${Hana})` }}
+                    ></div>
+
+                    <div className="pl-3">
+                      <span className="star">
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
+                      </span>
+
+                      <p className="name">Hana</p>
+                    </div>
+                  </div>
+
+                  <p
+                    className="mb-4 pt3"
+                    style={{ marginBottom: "2rem", fontSize: "1.3rem" }}
+                  >
+                    I have a great experience learning Japanese with VVR
+                    Learning. The teacher is really nice and good. All the best!{" "}
+                    <br></br>
+                    <Link href="review">
+                      <a> Read More...</a>
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+            <div className="">
+              <div
+                className="testimony-wrap "
+                style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
+              >
+                <div className="">
+                  <span>
+                    <img
+                      style={{ width: "20px", float: "right" }}
+                      src="/assets/img/icon.svg"
+                    />
+                  </span>
+                  <div
+                    className="d-flex align-items-center"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <div
+                      className="workclr-hana user-img"
+                      style={{ "--img": `url(${Hana})` }}
+                    ></div>
+
+                    <div className="pl-3">
+                      <span className="star">
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
+                      </span>
+
+                      <p className="name">Hana</p>
+                    </div>
+                  </div>
+
+                  <p
+                    className="mb-4 pt3"
+                    style={{ marginBottom: "2rem", fontSize: "1.3rem" }}
+                  >
+                    I have a great experience learning Japanese with VVR
+                    Learning. The teacher is really nice and good. All the best!{" "}
+                    <br></br>
+                    <Link href="review">
+                      <a> Read More...</a>
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+            <div className="">
+              <div
+                className="testimony-wrap "
+                style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
+              >
+                <div className="">
+                  <span>
+                    <img
+                      style={{ width: "20px", float: "right" }}
+                      src="/assets/img/icon.svg"
+                    />
+                  </span>
+                  <div
+                    className="d-flex align-items-center"
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <div
+                      className="workclr-hana user-img"
+                      style={{ "--img": `url(${Hana})` }}
+                    ></div>
+
+                    <div className="pl-3">
+                      <span className="star">
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
+                        <span className="fa fa-star"></span>
+                      </span>
+
+                      <p className="name">Hana</p>
+                    </div>
+                  </div>
+
+                  <p
+                    className="mb-4 pt3"
+                    style={{ marginBottom: "2rem", fontSize: "1.3rem" }}
+                  >
+                    I have a great experience learning Japanese with VVR
+                    Learning. The teacher is really nice and good. All the best!{" "}
+                    <br></br>
+                    <Link href="review">
+                      <a> Read More...</a>
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Carousel>
+      </section>
+
+      <div className=" center pv5-ns pv4 mb5">
+        <section className="lef-ri-pa">
+          <div className="cf">
             <div className="fl yomob-1  w-25-l w-50-ns ">
               <article className=" center  br3  h6 pv3-l pv4-ns pb2 card-hei-ns">
                 <div className="justify">
@@ -632,11 +898,11 @@ export default function index() {
               swipeable={true}
               draggable={true}
               showDots={false}
-              responsive={responsive}
+              responsive={responsive2}
               ssr={true} // means to render carousel on server-side.
               infinite={true}
               //autoPlay={this.props.deviceType !== "mobile" ? true : false}
-              autoPlay={true}
+              autoPlay={false}
               autoPlaySpeed={5000}
               slidesPerView={1}
               slidesToSlide={true}
@@ -651,9 +917,9 @@ export default function index() {
               renderButtonGroupOutside={true}
               customButtonGroup={<ButtonGroup action={nextRef} />}
               dotListClass="custom-dot-list-style"
-              itemClass="carousel-item-padding-40-px"
+              // itemClass="carousel-item-padding-40-px"
             >
-              {data.map((story) => (
+              {/* {data.map((story) => (
                 <div
                   key={story.id}
                   className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown"
@@ -684,7 +950,157 @@ export default function index() {
                     </div>
                   </div>
                 </div>
-              ))}
+              ))} */}
+              <div className="">
+                <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+                  <div
+                    className="testimony-wrap "
+                    style={{ paddingBottom: "1.5rem", paddingTop: "1.5rem" }}
+                  >
+                    <div className="">
+                      <span>
+                        <img
+                          style={{ width: "20px", float: "right" }}
+                          src="/assets/img/icon.svg"
+                        />
+                      </span>
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ display: "flex", alignItems: "center" }}
+                      >
+                        <div
+                          className="workclr-hana user-img"
+                          style={{ "--img": `url(${Hana})` }}
+                        ></div>
+
+                        <div className="pl-3">
+                          <span className="star">
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                          </span>
+
+                          <p className="name">Hana</p>
+                        </div>
+                      </div>
+
+                      <p
+                        className="mb-4 pt3"
+                        style={{ marginBottom: "2rem", fontSize: "1.3rem" }}
+                      >
+                        I have a great experience learning Japanese with VVR
+                        Learning. The teacher is really nice and good. All the
+                        best! <br></br>
+                        <Link href="review">
+                          <a> Read More...</a>
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+                <div className="">
+                  <div
+                    className="testimony-wrap "
+                    style={{ paddingBottom: "1.5rem", paddingTop: "1.5rem" }}
+                  >
+                    <div className="">
+                      <span>
+                        <img
+                          style={{ width: "20px", float: "right" }}
+                          src="/assets/img/icon.svg"
+                        />
+                      </span>
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ display: "flex", alignItems: "center" }}
+                      >
+                        <div
+                          className="workclr-hana user-img"
+                          style={{ "--img": `url(${Hana})` }}
+                        ></div>
+
+                        <div className="pl-3">
+                          <span className="star">
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                          </span>
+
+                          <p className="name">Hana</p>
+                        </div>
+                      </div>
+
+                      <p
+                        className="mb-4 pt3"
+                        style={{ marginBottom: "2rem", fontSize: "1.3rem" }}
+                      >
+                        I have a great experience learning Japanese with VVR
+                        Learning. The teacher is really nice and good. All the
+                        best! <br></br>
+                        <Link href="review">
+                          <a> Read More...</a>
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+                <div className="">
+                  <div
+                    className="testimony-wrap "
+                    style={{ paddingBottom: "1.5rem", paddingTop: "1.5rem" }}
+                  >
+                    <div className="">
+                      <span>
+                        <img
+                          style={{ width: "20px", float: "right" }}
+                          src="/assets/img/icon.svg"
+                        />
+                      </span>
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ display: "flex", alignItems: "center" }}
+                      >
+                        <div
+                          className="workclr-hana user-img"
+                          style={{ "--img": `url(${Hana})` }}
+                        ></div>
+
+                        <div className="pl-3">
+                          <span className="star">
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                          </span>
+
+                          <p className="name">Hana</p>
+                        </div>
+                      </div>
+
+                      <p
+                        className="mb-4 pt3"
+                        style={{ marginBottom: "2rem", fontSize: "1.3rem" }}
+                      >
+                        I have a great experience learning Japanese with VVR
+                        Learning. The teacher is really nice and good. All the
+                        best! <br></br>
+                        <Link href="review">
+                          <a> Read More...</a>
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Carousel>
           </div>
         </section>

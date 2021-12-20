@@ -1426,3 +1426,85 @@ li {
   opacity: 1;
 }
 /*-----------------services page card ---------------*/
+
+/*---------------------homepage contact section css --------*/
+
+.conact-us-wrap-one .heading {
+  position: relative;
+  padding-left: 34px;
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 40px;
+}
+.conact-us-wrap-one .heading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 4px;
+  height: 94%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #d2a98e;
+}
+.conact-us-wrap-one .sub-heading {
+  margin-top: 15px;
+  font-size: 18px;
+  margin-left: 34px;
+}
+@media only screen and (max-width: 767px) {
+  .conact-us-wrap-one .heading {
+    font-size: 25px;
+  }
+}
+.contact-info-two .icon {
+  color: #fff;
+  font-size: 40px;
+}
+.contact-info-two .heading {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contact-info-two .call-us {
+  color: #d2a98e;
+  font-size: 48px;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-info-two .call-us::before {
+  content: "";
+  height: 1px;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+}
+.contact-info-two .call-us a:hover {
+  color: #d2a98e;
+}
+
+.contact-info-two .call-us:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+.contact-info-two .btn--secondary {
+  background: #ffffff;
+  color: #086ad8;
+  min-width: 230px;
+}
+.contact-info-two .btn--secondary:hover {
+  background: #d2a98e;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+.fa-phone:before {
+  content: "\f095";
+}
+/*---------------------homepage contact section css --------*/

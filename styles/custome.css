@@ -142,3 +142,134 @@
 }
 
 /*--------------------card css home page end -----------------------------*/
+
+/*-----------------------testimonials---------------------*/
+.item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.testimony-wrap {
+  display: block;
+  position: relative;
+  background: #fdfdfd;
+  padding: 0 20px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  /* -webkit-box-shadow: 0px 5px 21px -14px rgb(0 0 0 / 14%);
+  -moz-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px; */
+  border-radius: 5px;
+  margin-top: 3rem;
+}
+.testimony-wrap .text .star {
+  color: #fc9927;
+}
+.testimony-wrap .user-img {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border-radius: 50%;
+}
+.img,
+.blog-img,
+.user-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.testimony-wrap .name {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 0;
+  color: #000000;
+}
+.testimony-wrap .position {
+  font-size: 12px;
+  /* color: #cccccc; */
+  color: #4986fc;
+}
+.pl-3,
+.px-3 {
+  padding-left: 1rem !important;
+}
+
+.workclr-hana {
+  background-image: var(--img);
+}
+/*----------------testimonials ends------------------*/
+
+/*----------------------------case study home page section----------------------*/
+.projects-slider__container .projects-wrap.style-01 {
+  display: block;
+}
+.projects-wrap.style-01 .projects-image-box {
+  margin: 20px 15px 35px;
+}
+
+.projects-wrap.style-01 .projects-image-box {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  /* -webkit-box-shadow: 0 18px 40px -10px rgb(51 51 51 / 10%); */
+  box-shadow: 0 18px 40px -10px rgb(51 51 51 / 10%);
+  position: relative;
+  margin-bottom: 30px;
+  /* margin: 20px 15px 35px; */
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.projects-wrap.style-01 .content {
+  padding: 25px 20px 94px;
+  padding-bottom: 88px;
+}
+.projects-wrap.style-01 .content .heading {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 2px;
+  color: #333 !important;
+}
+.projects-wrap.style-01 .content .post-categories {
+  color: #086ad8;
+  margin-bottom: 2px;
+}
+.projects-wrap.style-01 .content .text12 {
+  color: #696969;
+  margin-top: 13px;
+}
+.projects-wrap.style-01 .content .box-projects-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 56px;
+  line-height: 55px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-top: 1px solid #eee;
+  color: #086ad8;
+}
+
+.projects-wrap.style-01 .content .box-projects-arrow::before {
+  background-color: #086ad8;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transform: translateY(100%);
+
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  z-index: -1;
+}
+/*----------------------------case study home page section----------------------*/
