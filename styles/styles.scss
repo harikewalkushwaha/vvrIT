@@ -599,8 +599,8 @@ footer#colophon.dark .copyright-area .copyright-content {
 .aboutbanner {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 46, 91, 0.85),
-      rgba(0, 46, 91, 0.85)
+      rgba(0, 46, 91, 0.5),
+      rgba(0, 46, 91, 0.5)
     ),
     var(--img);
   // background-attachment: fixed;
@@ -609,11 +609,10 @@ footer#colophon.dark .copyright-area .copyright-content {
 }
 .business {
   background-image: linear-gradient(
-      to bottom,
-      rgba(0, 46, 91, 0.75),
-      rgba(0, 46, 91, 0.75)
-    ),
-    var(--img);
+    to bottom,
+    rgba(0, 46, 91, 1),
+    rgba(0, 46, 91, 1)
+  );
 }
 .userclr-img {
   background-image: var(--img);
@@ -743,8 +742,8 @@ input[name="panel"]:checked
   font-size: 28px;
 }
 .user-img {
-  width: 80px;
-  height: 80px;
+  // width: 80px;
+  // height: 80px;
   position: relative;
   border-radius: 50%;
 }

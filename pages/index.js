@@ -11,13 +11,15 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styled from "styled-components";
 import BackGround from "../public/assets/img/10.png";
-import BackGround2 from "../public/assets/img/3.png";
+import BackGround2 from "../public/assets/img/bannergif.gif";
 import Typewriter from "typewriter-effect";
 import CountUp from "react-countup";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import Hana from "../public/assets/testimonials/Hana.png";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper.min.css";
 import {
   webdevelopment,
   marketing,
@@ -45,32 +47,48 @@ const responsive = {
 const responsive2 = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 2,
+    items: 1,
     slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: 1024, min: 960 },
-    items: 2,
+    items: 1,
     slidesToSlide: 2, // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 959, min: 0 },
-    items: 2,
+    items: 1,
     slidesToSlide: 1, // optional, default to 1.
   },
 };
 
-const MyTop = styled.div`
-  background: transparent
-    linear-gradient(180deg, #002e5b 0%, #002e5b 72%, #002e5b 100%) 0% 0%
-    no-repeat padding-box;
-`;
+const MyTop = styled.div``;
 
 var sectionStyle = {
   width: "100%",
   backgroundSize: "cover",
   backgroundImage: `url(${BackGround})`,
 };
+
+const BannerContent = styled.div`
+  margin: 0;
+  top: 42%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+`;
+const Title = styled.h1`
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 50px;
+  margin-bottom: 1.5rem !important;
+`;
+const Subheading = styled.p`
+  font-size: 1rem;
+  margin-bottom: 0;
+`;
+const Read = styled.p`
+  color: #f5911e;
+`;
 
 export default function index() {
   const nextRef = useRef();
@@ -140,7 +158,10 @@ export default function index() {
         <title>VVR Group</title>
       </Head>
       <section>
-        <MyTop>
+        <MyTop
+          className="aboutbanner"
+          style={{ "--img": `url(${BackGround2})` }}
+        >
           <div className="" style={{ height: "85px" }}></div>
 
           <div
@@ -148,9 +169,9 @@ export default function index() {
             id="bannershap"
             // style={{ "--img": `url(${BackGround})` }}
           >
-            <div className="shape shape-4">
+            {/* <div className="shape shape-4">
               <img src="/assets/img/12.svg" alt="shape" />
-            </div>
+            </div> */}
             <div className="tc-l banner-hg mob-distab lef-ri-pa ">
               <div className="hero-content mob-bannercon pt6-l center w-100">
                 {/* <div className="pattern-bg absolute left-0 ">
@@ -158,7 +179,49 @@ export default function index() {
               </div> */}
 
                 <div className="items-container1">
-                  <div className="he-max-w center">
+                  <div className="app-container center ph3-ns ">
+                    <BannerContent className="">
+                      <Title className="white tj">
+                        <Typewriter
+                          options={{
+                            strings: [" Welcome to VVR Group"],
+                            autoStart: true,
+                            loop: true,
+                          }}
+                        />
+                      </Title>
+                      <Subheading className="fw1 f-1em white regular-font o-80 mt3 mb4 lh-copy tj ">
+                        Looking to start a new business or boost an existing
+                        one? Here at VVR Digital.
+                        <br />
+                        we’ve got all the right tools to help you out. Not only
+                        can we enable a thriving online
+                        <br />
+                        Not only can we enable a thriving online presence, but
+                        we also provide end-to-end business support.
+                      </Subheading>
+                    </BannerContent>
+                    <div className=" absolute">
+                      <a href="/contact" className="link">
+                        <div className="f-16 no-underline grow dib v-mid bg-white clr-302E43 br3 pl3 pr2 pv3 mb3  medium-font f-20">
+                          <div className="dib"> Contact Us</div>
+                          <span className="pl2" />
+                          <div className="dib arrow-box v-mid">
+                            <div className="rightArr">
+                              <img src={RightArrow} />
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <span className="dib v-mid ph3 white-70 mb3"></span>
+                      <a href="#">
+                        <div className="f6 hide-mobile no-underline grow dib bg-302E43 v-mid white ba b--302E43 ph4 br3 pv3 mb3 medium-font f-16px">
+                          Book Consultation
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  {/* <div className="he-max-w ">
                     <h5 className=" white pb3"> We Make It Simple</h5>
                     <h1 className=" f3 f1-l fw2 white semibold-font mb0 mt0 lh-title ">
                       <Typewriter
@@ -169,34 +232,15 @@ export default function index() {
                         }}
                       />
                     </h1>
-                  </div>
-                  <div className="width-50a center pt3 ">
+                  </div> */}
+                  {/* <div className="width-50a center pt3 ">
                     <span className="fw1 f-1em white regular-font o-80 mt3 mb4 lh-copy ">
                       Looking to start a new business or boost an existing one?
                       Here at VVR Digital, we’ve got all the right tools to help
                       you out. Not only can we enable a thriving online
                       presence, but we also provide end-to-end business support.
                     </span>
-                  </div>
-                  <div className="pt4">
-                    <a href="/contact" className="link">
-                      <div className="f-16 no-underline grow dib v-mid bg-white clr-302E43 br3 pl3 pr2 pv3 mb3  medium-font f-20">
-                        <div className="dib"> Contact Us</div>
-                        <span className="pl2" />
-                        <div className="dib arrow-box v-mid">
-                          <div className="rightArr">
-                            <img src={RightArrow} />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <span className="dib v-mid ph3 white-70 mb3"></span>
-                    <a href="#">
-                      <div className="f6 hide-mobile no-underline grow dib bg-302E43 v-mid white ba b--302E43 ph4 br3 pv3 mb3 medium-font f-16px">
-                        Book Consultation
-                      </div>
-                    </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -213,9 +257,10 @@ export default function index() {
             <div className=" dtc-l v-mid wow fadeInLeft">
               <div>
                 <h2 className="medium-font f-40 fw4 fw4 clr-132 mt0 mb3 w-70per width-100  aboutmission">
-                  WE ARE A <br />
-                  CREATIVE <br />
-                  DESIGN STUDIO ,
+                  WE STARTED <br />
+                  WITH A DREAM
+                  <br />
+                  TO HELP ,
                 </h2>
                 <p className="clr-6D839D regular-font w-80per f-18px lh-copy mv0 width-100">
                   We are a team of digitally driven individuals, working in our
@@ -228,7 +273,11 @@ export default function index() {
               </div>
             </div>
             <div className=" dtc-l tc  wow fadeInRight">
-              <img src="/assets/svg/about/story.jpg" className=" mw-100" />
+              <img
+                src="/assets/svg/about/10.png"
+                className=" mw-100"
+                style={{ borderRadius: "10px" }}
+              />
             </div>
           </div>
         </section>
@@ -388,7 +437,7 @@ export default function index() {
               <div className="col-md-4 ph0">
                 <a
                   href="#"
-                  class="projects-wrap style-01 wow move-up animated"
+                  className="projects-wrap style-01 wow move-up animated"
                   style={{ visibility: "visible" }}
                 >
                   <div className="projects-image-box">
@@ -418,7 +467,7 @@ export default function index() {
               <div className="col-md-4 ph0">
                 <a
                   href="#"
-                  class="projects-wrap style-01 wow move-up animated"
+                  className="projects-wrap style-01 wow move-up animated"
                   style={{ visibility: "visible" }}
                 >
                   <div className="projects-image-box">
@@ -466,7 +515,8 @@ export default function index() {
                   <div>
                     <img
                       src="/assets/svg/services/webdev/about.png"
-                      className="pt3 mw-100"
+                      className=" mw-100"
+                      style={{ borderRadius: "10px" }}
                     />
                   </div>
                 </div>
@@ -631,19 +681,19 @@ export default function index() {
         <Carousel
           swipeable={true}
           draggable={true}
-          showDots={false}
+          showDots={true}
           responsive={responsive2}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
           //autoPlay={this.props.deviceType !== "mobile" ? true : false}
-          autoPlay={false}
-          autoPlaySpeed={5000}
+          autoPlay={true}
+          autoPlaySpeed={2500}
           slidesPerView={1}
           slidesToSlide={true}
           currentSlide={true}
           keyBoardControl={true}
           customTransition="all .5s ease"
-          transitionDuration={5000}
+          transitionDuration={2500}
           arrows={false}
           containerClass="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile"]}
@@ -685,52 +735,56 @@ export default function index() {
                   </div>
                 </div>
               ))} */}
-          <div className="">
-            <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+
+          <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+            <div className="">
               <div
                 className="testimony-wrap "
                 style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
               >
                 <div className="">
-                  <span>
+                  {/* <span>
                     <img
                       style={{ width: "20px", float: "right" }}
                       src="/assets/img/icon.svg"
                     />
-                  </span>
+                  </span> */}
                   <div
-                    className="d-flex align-items-center"
-                    style={{ display: "flex", alignItems: "center" }}
+                    className=" align-items-center"
+                    style={{ alignItems: "center" }}
                   >
-                    <div
-                      className="workclr-hana user-img"
-                      style={{ "--img": `url(${Hana})` }}
-                    ></div>
-
-                    <div className="pl-3">
-                      <span className="star">
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
-                      </span>
-
-                      <p className="name">Hana</p>
+                    <div className=" user-img tc">
+                      {/* <div
+                        className="workclr-hana tc"
+                        style={{ "--img": `url(${Hana})` }}
+                      ></div> */}
+                      <img src="/assets/testimonials/Hana.png" className="tc" />
+                      <p className="name">Jonel Alquinto</p>
                     </div>
                   </div>
 
                   <p
                     className="mb-4 pt3"
-                    style={{ marginBottom: "2rem", fontSize: "1.3rem" }}
+                    style={{ marginBottom: "2rem", fontSize: "1rem" }}
                   >
-                    I have a great experience learning Japanese with VVR
-                    Learning. The teacher is really nice and good. All the best!{" "}
+                    I had a pleasure learning from VVR. They are very
+                    professional and will do their best to provide language
+                    learning. <br />I will recommend and they are all kind
+                    personnel. I had fun learning. Thank you VVR Learning Team.
+                    Much appreciated.
                     <br></br>
-                    <Link href="review">
-                      <a> Read More...</a>
-                    </Link>
                   </p>
+                  <div className="">
+                    <span className="star">
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                    </span>
+
+                    <p className="">VVR Learning</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -742,45 +796,49 @@ export default function index() {
                 style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
               >
                 <div className="">
-                  <span>
+                  {/* <span>
                     <img
                       style={{ width: "20px", float: "right" }}
                       src="/assets/img/icon.svg"
                     />
-                  </span>
+                  </span> */}
                   <div
-                    className="d-flex align-items-center"
-                    style={{ display: "flex", alignItems: "center" }}
+                    className=" align-items-center"
+                    style={{ alignItems: "center" }}
                   >
-                    <div
-                      className="workclr-hana user-img"
-                      style={{ "--img": `url(${Hana})` }}
-                    ></div>
-
-                    <div className="pl-3">
-                      <span className="star">
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
-                      </span>
-
-                      <p className="name">Hana</p>
+                    <div className=" user-img tc">
+                      {/* <div
+                        className="workclr-hana tc"
+                        style={{ "--img": `url(${Hana})` }}
+                      ></div> */}
+                      <img src="/assets/testimonials/Hana.png" className="tc" />
+                      <p className="name">David Penaherrera</p>
                     </div>
                   </div>
 
                   <p
                     className="mb-4 pt3"
-                    style={{ marginBottom: "2rem", fontSize: "1.3rem" }}
+                    style={{ marginBottom: "2rem", fontSize: "1rem" }}
                   >
-                    I have a great experience learning Japanese with VVR
-                    Learning. The teacher is really nice and good. All the best!{" "}
+                    I am having a great learning experience with VVR team.{" "}
+                    <br />
+                    The teachers and staff are always well prepared, supportive
+                    and very professional.
+                    <br /> VVR is a great place to learn. I would recommend to
+                    anyone from any level.
                     <br></br>
-                    <Link href="review">
-                      <a> Read More...</a>
-                    </Link>
                   </p>
+                  <div className="">
+                    <span className="star">
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                    </span>
+
+                    <p className="">VVR Learning</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -792,51 +850,68 @@ export default function index() {
                 style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
               >
                 <div className="">
-                  <span>
+                  {/* <span>
                     <img
                       style={{ width: "20px", float: "right" }}
                       src="/assets/img/icon.svg"
                     />
-                  </span>
+                  </span> */}
                   <div
-                    className="d-flex align-items-center"
-                    style={{ display: "flex", alignItems: "center" }}
+                    className=" align-items-center"
+                    style={{ alignItems: "center" }}
                   >
-                    <div
-                      className="workclr-hana user-img"
-                      style={{ "--img": `url(${Hana})` }}
-                    ></div>
-
-                    <div className="pl-3">
-                      <span className="star">
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
-                      </span>
-
+                    <div className=" user-img tc">
+                      {/* <div
+                        className="workclr-hana tc"
+                        style={{ "--img": `url(${Hana})` }}
+                      ></div> */}
+                      <img src="/assets/testimonials/Hana.png" className="tc" />
                       <p className="name">Hana</p>
                     </div>
                   </div>
 
                   <p
                     className="mb-4 pt3"
-                    style={{ marginBottom: "2rem", fontSize: "1.3rem" }}
+                    style={{ marginBottom: "2rem", fontSize: "1rem" }}
                   >
                     I have a great experience learning Japanese with VVR
-                    Learning. The teacher is really nice and good. All the best!{" "}
+                    Learning.
+                    <br /> The teacher is really nice and good. All the best!{" "}
                     <br></br>
-                    <Link href="review">
-                      <a> Read More...</a>
-                    </Link>
                   </p>
+                  <div className="">
+                    <span className="star">
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                    </span>
+
+                    <p className="">VVR Learning</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </Carousel>
       </section>
+      {/* <section className="lef-ri-pa pv5 mb5">
+        <h2 className="medium-font f-40 fw4 tc black mt0 mb3  width-100 belowline">
+          What do people praise about VVR Group
+        </h2>
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={3}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+        </Swiper>
+      </section> */}
     </div>
   );
 }
