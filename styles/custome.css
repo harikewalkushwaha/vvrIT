@@ -210,6 +210,7 @@
 }
 .projects-wrap.style-01 .projects-image-box {
   margin: 20px 15px 35px;
+  transition: all 0.5s ease-in-out;
 }
 
 .projects-wrap.style-01 .projects-image-box {
@@ -244,7 +245,7 @@
   color: #696969;
   margin-top: 13px;
 }
-.projects-wrap.style-01 .content .box-projects-arrow {
+.box-projects-arrow {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -259,7 +260,7 @@
   color: #086ad8;
 }
 
-.projects-wrap.style-01 .content .box-projects-arrow::before {
+.box-projects-arrow::before {
   background-color: #086ad8;
   content: "";
   position: absolute;
@@ -273,7 +274,16 @@
   transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   z-index: -1;
 }
-.projects-wrap.style-01:hover {
-  transform: translateY(-5px);
+.projects-image-box:hover {
+  transform: translateY(-15px);
 }
 /*----------------------------case study home page section----------------------*/
+
+/*---------mmission vision and values-------------*/
+
+.mshado {
+  box-shadow: 0 0 25px 0 rgb(29 25 0 / 25%);
+  /* border-radius: 10px; */
+}
+
+/*---------mmission vision and values-------------*/

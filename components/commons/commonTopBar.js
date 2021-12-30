@@ -2,14 +2,13 @@ import React from "react";
 // import AirbonLogo from "../assets/svg/Home Page/pattern.svg";
 import styled from "styled-components";
 import ReactLogoArrow from "../assets/svg/Home Page/pattern.svg";
+import Bgimg from "../assets/svg/about/13.png";
 
-const MyTop = styled.div`
-  background: #002e5b;
-`;
+const MyTop = styled.div``;
 
 export default function CommonTopBar(props) {
   return (
-    <MyTop>
+    <MyTop className="aboutbanner" style={{ "--img": `url(${Bgimg})` }}>
       <div className="" style={{ height: "85px" }} />
 
       <div className="tc-l about-banner-hg align-centerdiv ">

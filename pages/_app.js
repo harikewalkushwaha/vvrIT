@@ -20,6 +20,7 @@ import useScrollPosition from "../hooks/useScrollPosition";
 import { useRouter } from "next/router";
 import Backdrop from "../components/Slider/backdrop";
 import Slider from "../components/Slider";
+import "react-modal-video/scss/modal-video.scss";
 import { ToastContainer } from "react-nextjs-toast";
 // import WOW from "wowjs";
 const isServer = typeof window === "undefined";

@@ -12,6 +12,9 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Link from "next/link";
 
+import video1 from "../public/assets/video/Japvideovvr.mp4";
+import Model from "../components/videoModal";
+
 import {
   webdevelopment,
   marketing,
@@ -108,36 +111,89 @@ export default function about() {
       <section className="lef-ri-pa pv5 about-banner-bg about-section2">
         <div className="pv2">
           <section className="">
-            <article className=" center ">
+            <article className="center">
               {/* <h2 className="medium-font f-40 fw4  tc clr-132 mt0 mb3  width-100 belowline">
                 Who we are
               </h2> */}
               <div className="dt-ns dt--fixed-ns w-100">
-                <div className=" dtc-l v-mid wow fadeInLeft">
+                <h2 className="medium-font f-40 fw4 clr-132 mt0 mb4 tc width-100 belowline">
+                  About VVR Group
+                </h2>
+                <p className="black regular-font tc f-18px lh-copy mv0 width-100">
+                  We are a team of digitally driven individuals, working in our
+                  fields of proficiency to enhance and realign your business to
+                  the ever-changing trends of digital and off-line marketing. We
+                  want to help businesses establish themselves online, and do it
+                  in a way that provides the highest possible quality at
+                  competitive rates. We are extremely passionate about what we
+                  do, and hence are always upgrading our skills and knowledge to
+                  constantly bring value to every project we take on, while
+                  making the process extremely simple and easy for you to
+                  follow.
+                </p>
+                {/* <div className=" dtc-l v-mid wow fadeInLeft">
                   <div className="sec2bgclr  width-100">
                     <div className="pa4-ns pa3">
-                      <h3 className="white quote">About Us</h3>
-                      <p className="white regular-font f-18px lh-copy mv0 width-100">
-                        We are a team of digitally driven individuals, working
-                        in our fields of proficiency to enhance and realign your
-                        business to the ever-changing trends of digital and
-                        off-line marketing. We want to help businesses establish
-                        themselves online, and do it in a way that provides the
-                        highest possible quality at competitive rates. We are
-                        extremely passionate about what we do, and hence are
-                        always upgrading our skills and knowledge to constantly
-                        bring value to every project we take on, while making
-                        the process extremely simple and easy for you to follow.
-                      </p>
+                      <img
+                        src="/assets/svg/about/Aboutus.png"
+                        className="pt1 pl4 mw-100"
+                      />
                     </div>
                   </div>
-                </div>
-                <div className=" dtc-l tc   wow fadeInRight">
-                  <img
-                    src="/assets/svg/about/Aboutus.png"
-                    className="pt1 pl4 mw-100"
-                  />
-                </div>
+                </div> */}
+                {/* <div className=" dtc-l tc   wow fadeInRight">
+                 
+                </div> */}
+                <section
+                  className="section video-popupabout ptabout ob is-visible mt4"
+                  data-observe=""
+                  data-visible=""
+                >
+                  <div className="wrap video-popup__wrap">
+                    <div
+                      className="video-popup__video ob is-visible"
+                      data-observe=""
+                      data-visible=""
+                    >
+                      <div className="video-popup__video-btn">
+                        <div className="video-popup__video-tag">
+                          <video
+                            autoplay="autoplay"
+                            loop="loop"
+                            muted="muted"
+                            playsinline=""
+                          >
+                            <source src={video1} type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="video-popup__u-overlay"></div>
+                        <div className="video-popup__u-title">
+                          <Model />
+                        </div>
+                        {/* <div className="video-popup__video-action">
+                        <div className="video-popup__video-play">
+                          <div className="video-popup__u-play">
+                            <svg
+                              width="12"
+                              height="14"
+                              viewBox="0 0 12 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              className=""
+                            >
+                              <path
+                                d="M11.475 6.136a1 1 0 010 1.73l-9.709 5.637a1 1 0 01-1.502-.865V1.364A1 1 0 011.766.499l9.71 5.637z"
+                                fill="#4c1864"
+                              ></path>
+                            </svg>
+                          </div>
+                          <span>Watch video</span>
+                        </div>
+                      </div> */}
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </div>
             </article>
           </section>
@@ -145,92 +201,110 @@ export default function about() {
       </section>
       {/* <div className="h3-l h6-m" /> */}
 
-      <section className=" pv5 about-banner-bg about-section2">
+      <section className=" pb5 about-banner-bg about-section2">
         <div className="pv2">
           <section className="">
             <article className=" center ">
               <div className="dt-ns dt--fixed-ns w-100">
+                <h2 className="medium-font f-40 fw4 clr-132 mt0 mb4 tc width-100 belowline">
+                  What VVR Group Stands For
+                </h2>
                 <div
                   className="aboutbanner"
-                  style={{ "--img": `url(${BackGround1})` }}
+                  // style={{ "--img": `url(${BackGround1})` }}
                 >
                   <div className="dt-ns  dt--fixed-ns w-100 ">
-                    <h2 className="medium-font f-40 fw4 tc white mt0 mb3 pt5 width-100 "></h2>
+                    {/* <h2 className="medium-font f-40 fw4 tc white mt0 mb3 pt5 width-100 "></h2> */}
                     <div className="container mb5 ">
                       <div className="row">
                         <div className="col-md-4">
-                          <p>
-                            <img
-                              src="https://www.rafamemmel.com/templates/corpboot/template/assets/img/mission.jpg"
-                              alt="Mission"
-                              className="img-responsive mb15"
-                            />
-                          </p>
-                          <h3
-                            className="white wow fadeInUp"
-                            style={{
-                              visibility: "visible",
-                              animationName: "fadeInUp",
-                            }}
-                          >
-                            Mission
-                          </h3>
-                          <p className="white">
-                            Mauris accumsan vitae mi id laoreet. Nam suscipit
-                            lacus dictum diam tincidunt, eget tristique justo
-                            porta. Mauris congue dolor at enim semper mattis,
-                            quis ornare tellus volutpat sit amet.
-                          </p>
+                          <div className="mshado">
+                            <div className="">
+                              <img
+                                src="https://www.rafamemmel.com/templates/corpboot/template/assets/img/mission.jpg"
+                                alt="Mission"
+                                className="img-responsive mb15 "
+                              />
+                            </div>
+                            <div className="pa3">
+                              <h3
+                                className="clr-132 wow fadeInUp tc"
+                                style={{
+                                  visibility: "visible",
+                                  animationName: "fadeInUp",
+                                }}
+                              >
+                                Mission
+                              </h3>
+                              <p className="black tc ">
+                                Mauris accumsan vitae mi id laoreet. Nam
+                                suscipit lacus dictum diam tincidunt, eget
+                                tristique justo porta. Mauris congue dolor at
+                                enim semper mattis, quis ornare tellus volutpat
+                                sit amet.
+                              </p>
+                            </div>
+                          </div>
                         </div>
                         <div className="col-md-4">
-                          {" "}
-                          <p>
-                            <img
-                              src="	https://www.rafamemmel.com/templates/corpboot/template/assets/img/vision.jpg"
-                              alt="Vision"
-                              className="img-responsive mb15"
-                            />
-                          </p>
-                          <h3
-                            className="white wow fadeInUp"
-                            style={{
-                              visibility: "visible",
-                              animationName: "fadeInUp",
-                            }}
-                          >
-                            Vision
-                          </h3>
-                          <p className="white">
-                            Mauris accumsan vitae mi id laoreet. Nam suscipit
-                            lacus dictum diam tincidunt, eget tristique justo
-                            porta. Mauris congue dolor at enim semper mattis,
-                            quis ornare tellus volutpat sit amet.
-                          </p>
+                          <div className="mshado">
+                            {" "}
+                            <div>
+                              <img
+                                src="	https://www.rafamemmel.com/templates/corpboot/template/assets/img/vision.jpg"
+                                alt="Vision"
+                                className="img-responsive mb15 "
+                              />
+                            </div>
+                            <div className="pa3">
+                              <h3
+                                className=" clr-132 wow fadeInUp tc"
+                                style={{
+                                  visibility: "visible",
+                                  animationName: "fadeInUp",
+                                }}
+                              >
+                                Vision
+                              </h3>
+                              <p className="black tc">
+                                Mauris accumsan vitae mi id laoreet. Nam
+                                suscipit lacus dictum diam tincidunt, eget
+                                tristique justo porta. Mauris congue dolor at
+                                enim semper mattis, quis ornare tellus volutpat
+                                sit amet.
+                              </p>
+                            </div>
+                          </div>
                         </div>
                         <div className="col-md-4">
-                          {" "}
-                          <p>
-                            <img
-                              src="	https://www.rafamemmel.com/templates/corpboot/template/assets/img/values.jpg"
-                              alt="Mission"
-                              className="img-responsive mb15"
-                            />
-                          </p>
-                          <h3
-                            className="white wow fadeInUp"
-                            style={{
-                              visibility: "visible",
-                              animationName: "fadeInUp",
-                            }}
-                          >
-                            Values
-                          </h3>
-                          <p className="white">
-                            Mauris accumsan vitae mi id laoreet. Nam suscipit
-                            lacus dictum diam tincidunt, eget tristique justo
-                            porta. Mauris congue dolor at enim semper mattis,
-                            quis ornare tellus volutpat sit amet.
-                          </p>
+                          <div className="mshado">
+                            {" "}
+                            <div>
+                              <img
+                                src="	https://www.rafamemmel.com/templates/corpboot/template/assets/img/values.jpg"
+                                alt="Mission"
+                                className="img-responsive mb15 "
+                              />
+                            </div>
+                            <div className="pa3">
+                              <h3
+                                className="clr-132 wow fadeInUp tc"
+                                style={{
+                                  visibility: "visible",
+                                  animationName: "fadeInUp",
+                                }}
+                              >
+                                Values
+                              </h3>
+                              <p className="black tc">
+                                Mauris accumsan vitae mi id laoreet. Nam
+                                suscipit lacus dictum diam tincidunt, eget
+                                tristique justo porta. Mauris congue dolor at
+                                enim semper mattis, quis ornare tellus volutpat
+                                sit amet.
+                              </p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -450,10 +524,10 @@ export default function about() {
           <div className="dt-ns dt--fixed-ns w-100">
             <div className=" dtc-l  wow fadeInLeft">
               <div>
-                <h2 className="medium-font f-40 fw4 clr-132 mt0 mb3 w-70per width-100 aboutmission">
+                <h2 className="medium-font f-40 fw4 clr-132 mt0 mb3 tc width-100 belowline">
                   Our Management Team
                 </h2>
-                <div className="row">
+                <div className="row pt3">
                   <div
                     className="col-sm-6 col-md-3 wow fadeInLeft"
                     data-wow-duration="1000ms"

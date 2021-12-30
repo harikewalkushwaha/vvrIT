@@ -558,7 +558,7 @@ footer#colophon.dark .copyright-area .copyright-content {
   display: block;
   width: 35px;
   height: 6px;
-  background: #165df5;
+  background: #002e5b;
   border-radius: 3px;
   text-align: center;
 }
@@ -1507,3 +1507,223 @@ li {
   content: "\f095";
 }
 /*---------------------homepage contact section css --------*/
+
+/* ------video background section */
+@media screen and (min-width: 375px) {
+  .video-popup.pt {
+    padding-top: calc(67.70492px + 3.27869vw);
+  }
+}
+@media screen and (min-width: 375px) {
+  .video-popupabout.ptabout {
+    padding-top: calc(2.70492px + 0.27869vw);
+  }
+}
+.video-popup {
+  padding: 0;
+  position: relative;
+  background-color: #fff;
+}
+.video-popup__wrap {
+  width: 100%;
+}
+.wrap {
+  padding: 0 40px;
+  margin: 0 auto;
+  max-width: 1280px;
+  /* width: 100%; */
+}
+.ob.is-visible.video-popup__video {
+  transform: none;
+  opacity: 1;
+  transition: transform 0.5s, opacity 0.8s;
+}
+.video-popup__video {
+  position: relative;
+  padding-top: 53.334%;
+}
+.video-popup__video-btn {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 130px;
+  justify-content: flex-end;
+}
+.video-popup__video-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.video-popup__video-tag video {
+  width: 100%;
+  height: 100%;
+  /* -o-object-fit: cover; */
+  object-fit: cover;
+}
+.video-popup__u-overlay {
+  opacity: 0.5;
+}
+.video-popup__overlay,
+.video-popup__u-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: all 0.4s;
+  background-color: #000;
+  /* opacity: 0; */
+}
+@media screen and (min-width: 760px) {
+  .video-popup__u-title {
+    line-height: 5.26316vw;
+  }
+}
+.video-popup__u-title {
+  line-height: 40px;
+}
+@media screen and (min-width: 760px) {
+  .video-popup__u-title {
+    font-size: calc(6.66667px + 4.38596vw);
+  }
+}
+.video-popup__u-title {
+  color: #fff;
+  margin-bottom: 10rem;
+  position: relative;
+  z-index: 1;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 65px;
+  font-family: "Rubik";
+  line-height: 1;
+  font-weight: bolder;
+}
+.video-popup__video-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+.video-popup__video-play {
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+.video-popup__u-play {
+  transition: all 0.3s;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7b205;
+}
+.video-popup__video-play span {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.case-board__item:nth-child(1) {
+  transition-delay: 255ms !important;
+}
+
+.case-board__item:nth-child(2) {
+  transition-delay: 392ms !important;
+}
+
+.case-board__item:nth-child(3) {
+  transition-delay: 331ms !important;
+}
+
+.case-board__item:nth-child(4) {
+  transition-delay: 78ms !important;
+}
+
+#vx-play-button {
+  width: 80px;
+  height: 80px;
+  margin: 5px auto 0;
+  position: relative;
+  z-index: 3;
+  border-radius: 200px !important;
+  display: -moz-box;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  opacity: 0.7;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid hsla(0, 0%, 100%, 0.6);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -moz-transition: transform 0.3s, -moz-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s;
+}
+#vx-play-button svg {
+  width: 20px;
+  fill: #fff;
+}
+/* ------video background section */
+
+/*---------------ripple button -----------------------------*/
+.wrap-ripl .btn-ripl {
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+  height: 130px;
+  width: 130px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 100%;
+  text-transform: uppercase;
+  font-family: "Muli-LightItalic", Helvetica;
+  font-size: 20px;
+  line-height: 30px;
+  animation: ripple 1.5s linear infinite;
+  transition: all 0.7s ease;
+}
+button:hover {
+  transform: scale(1.1);
+}
+button:focus {
+  outline: none;
+}
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3),
+      0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 0 3px rgba(255, 255, 255, 0.3),
+      0 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3),
+      0 0 0 4px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0),
+      0 0 0 30px rgba(255, 255, 255, 0);
+  }
+}
+/*---------------ripple button end-----------------------------*/
+.modal-video {
+  position: absolute !important ;
+}
