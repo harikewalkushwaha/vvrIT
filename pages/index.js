@@ -256,7 +256,7 @@ export default function index() {
           <div className="dt-ns dt--fixed-ns w-100">
             <div className=" dtc-l v-mid wow fadeInLeft">
               <div>
-                <h2 className="medium-font f-40 fw4 fw4 clr-132 mt0 mb3 w-70per width-100  aboutmission">
+                <h2 className="medium-font f-40 fw4 fw4 clr-132 mt0-ns  pt3 mb3 w-70per width-100  aboutmission">
                   WE STARTED <br />
                   WITH A DREAM
                   <br />
@@ -272,10 +272,10 @@ export default function index() {
                 </p>
               </div>
             </div>
-            <div className=" dtc-l tc  wow fadeInRight">
+            <div className=" dtc-l tc  wow fadeInRight imgspace">
               <img
                 src="/assets/svg/about/10.png"
-                className=" mw-100"
+                className=" mw-100 "
                 style={{ borderRadius: "10px" }}
               />
             </div>
@@ -288,12 +288,12 @@ export default function index() {
         // style={{ "--img": `url(${BackGround})` business}}
       >
         <section className="lef-ri-pa pv2">
-          <h2 className="medium-font f-40 fw4 tc  mt0 mb3  width-100 belowline">
+          <h2 className="medium-font f-40 fw4 tc  mt0 mb3  width-100 belowline imgspace">
             Our Businesses
           </h2>
 
           {/* MAIN ROW */}
-          <div className="dt-ns dt--fixed-ns w-100 pt4">
+          <div className="dt-ns dt--fixed-ns w-100 pt4-ns">
             <div className="row">
               <h5 className="tc  mt0">
                 VVR Digital are managing following business
@@ -521,7 +521,7 @@ export default function index() {
                   </div>
                 </div>
                 <div className=" dtc-l   v-mid wow fadeInRight">
-                  <h2 className="medium-font f-40 fw4 fw4 pl4 clr-132 mt0 mb3 w-70per width-100  aboutmission">
+                  <h2 className="medium-font f-40 fw4 fw4 pl4 clr-132 mt0 mb3 w-70per width-100  aboutmission wmud">
                     Whats makes us different?
                   </h2>
                   <div className="mb4">

@@ -116,7 +116,7 @@ export default function about() {
                 Who we are
               </h2> */}
               <div className="dt-ns dt--fixed-ns w-100">
-                <h2 className="medium-font f-40 fw4 clr-132 mt0 mb4 tc width-100 belowline">
+                <h2 className="medium-font f-40-ns fw4 clr-132 mt0 mb4 tc width-100 belowline">
                   About VVR Group
                 </h2>
                 <p className="black regular-font tc f-18px lh-copy mv0 width-100">
@@ -201,12 +201,12 @@ export default function about() {
       </section>
       {/* <div className="h3-l h6-m" /> */}
 
-      <section className=" pb5 about-banner-bg about-section2">
+      <section className=" pb5-ns about-banner-bg about-section2">
         <div className="pv2">
           <section className="">
             <article className=" center ">
               <div className="dt-ns dt--fixed-ns w-100">
-                <h2 className="medium-font f-40 fw4 clr-132 mt0 mb4 tc width-100 belowline">
+                <h2 className="medium-font f-40-ns fw4 clr-132 mt0 mb4 tc width-100 belowline">
                   What VVR Group Stands For
                 </h2>
                 <div
@@ -247,7 +247,7 @@ export default function about() {
                           </div>
                         </div>
                         <div className="col-md-4">
-                          <div className="mshado">
+                          <div className="mshado mobilemshado">
                             {" "}
                             <div>
                               <img
@@ -277,7 +277,7 @@ export default function about() {
                           </div>
                         </div>
                         <div className="col-md-4">
-                          <div className="mshado">
+                          <div className="mshado mobilemshado">
                             {" "}
                             <div>
                               <img
@@ -524,12 +524,12 @@ export default function about() {
           <div className="dt-ns dt--fixed-ns w-100">
             <div className=" dtc-l  wow fadeInLeft">
               <div>
-                <h2 className="medium-font f-40 fw4 clr-132 mt0 mb3 tc width-100 belowline">
+                <h2 className="medium-font f-40-ns fw4 clr-132 mt0 mb3 tc width-100 belowline">
                   Our Management Team
                 </h2>
                 <div className="row pt3">
                   <div
-                    className="col-sm-6 col-md-3 wow fadeInLeft"
+                    className="col-sm-6 col-md-3 wow fadeInLeft "
                     data-wow-duration="1000ms"
                     data-wow-delay="300ms"
                     style={{
@@ -564,7 +564,7 @@ export default function about() {
                     <div className="visible-xs-block visible-sm-block pt20"></div>
                   </div>
                   <div
-                    className="col-sm-6 col-md-3 wow fadeInLeft"
+                    className="col-sm-6 col-md-3 wow fadeInLeft teamspace-mobile"
                     data-wow-duration="1000ms"
                     data-wow-delay="300ms"
                     style={{
@@ -599,7 +599,7 @@ export default function about() {
                     <div className="visible-xs-block visible-sm-block pt20"></div>
                   </div>
                   <div
-                    className="col-sm-6 col-md-3 wow fadeInRight"
+                    className="col-sm-6 col-md-3 wow fadeInRight teamspace-mobile"
                     data-wow-duration="1000ms"
                     data-wow-delay="200ms"
                     style={{
@@ -634,7 +634,7 @@ export default function about() {
                     <div className="visible-xs-block visible-sm-block pt20"></div>
                   </div>
                   <div
-                    className="col-sm-6 col-md-3 wow fadeInRight"
+                    className="col-sm-6 col-md-3 wow fadeInRight teamspace-mobile"
                     data-wow-duration="1000ms"
                     data-wow-delay="200ms"
                     style={{

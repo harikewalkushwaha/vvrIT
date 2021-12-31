@@ -1727,3 +1727,36 @@ button:focus {
 .modal-video {
   position: absolute !important ;
 }
+/*---------------mobile responsive start-----------------------------*/
+@media only screen and (max-width: 600px) {
+  .lbyomu {
+    font-size: 1.5rem !important;
+  }
+  .HnlLM {
+    transform: translateY(-22%) !important;
+  }
+  .imgspace {
+    padding-top: 1.5rem !important;
+  }
+  .wmud {
+    padding-top: 3rem;
+  }
+  .testimony-wrap {
+    margin-top: 0rem !important ;
+  }
+  .wrap {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+  .video-popup__u-title {
+    margin-bottom: -2rem !important;
+  }
+  .mobilemshado {
+    margin-top: 1rem !important;
+  }
+  .teamspace-mobile {
+    margin-top: 1.5rem;
+  }
+}
+/*---------------mobile responsive start-----------------------------*/
