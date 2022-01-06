@@ -232,14 +232,24 @@ const Header = (props) => {
               </a>
             </Link>
 
-            <Link href="/services">
+            <Link href="/business/vvrlearning">
               <a
                 className="f-17px fw4 hover-white medium-font no-underline  ghbumr"
                 style={{
                   color: menuColor ? "#000" : "#fff",
                 }}
               >
-                Services
+                VVR Learning
+              </a>
+            </Link>
+            <Link href="/vvrdigital">
+              <a
+                className="f-17px fw4 hover-white medium-font no-underline  ghbumr"
+                style={{
+                  color: menuColor ? "#000" : "#fff",
+                }}
+              >
+                VVR Digital
               </a>
             </Link>
 
@@ -355,7 +365,14 @@ const Header = (props) => {
             <Item>
               <Linka href="/services">
                 <a className="f-17px fw4 hover-white medium-font no-underline white ">
-                  Services
+                  VVR Learning
+                </a>
+              </Linka>
+            </Item>
+            <Item>
+              <Linka href="/services">
+                <a className="f-17px fw4 hover-white medium-font no-underline white ">
+                  VVR Digital
                 </a>
               </Linka>
             </Item>
