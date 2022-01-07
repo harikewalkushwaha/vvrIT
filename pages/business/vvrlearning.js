@@ -101,7 +101,7 @@ export default function Feature() {
                 <div class="box-large-image__midea">
                   <div class="images-midea">
                     <img
-                      src="/assets/business/eng.png"
+                      src="/assets/business/Eng.png"
                       width="330"
                       height="330"
                       class="img-fluid"
@@ -139,7 +139,7 @@ export default function Feature() {
                 <div class="box-large-image__midea">
                   <div class="images-midea">
                     <img
-                      src="/assets/business/jap.png"
+                      src="/assets/business/Jap.png"
                       width="330"
                       height="330"
                       class="img-fluid"
