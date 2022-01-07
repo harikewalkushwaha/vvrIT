@@ -337,5 +337,13 @@
   display: block;
   max-height: 100%;
   max-width: 100%;
+  /* border: 5px solid #fc9927; */
+  border-radius: 5px;
+}
+
+.react-multi-carousel-track {
+  transition: -webkit-transform 3000ms ease 0s !important;
+}
+@media only screen and (max-width: 600px) {
 }
 /*---------Our business vvr learning-------------*/
