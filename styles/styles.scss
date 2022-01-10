@@ -1760,3 +1760,118 @@ button:focus {
   }
 }
 /*---------------mobile responsive start-----------------------------*/
+
+/*----------------------------contact us page new  form  -------------------------*/
+
+.appointment-contact-bg {
+  background: url(https://template.hasthemes.com/mitech/assets/images/bg/home-appointment-contact-bg-image.webp);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.section-space--ptb_100 {
+  // padding-top: 100px;
+  padding-bottom: 50px;
+}
+.section-space--mb_50 {
+  margin-bottom: 50px;
+}
+.contact-title .sub-title {
+  font-size: 18px;
+}
+.contact-input {
+  margin: 0 -10px;
+}
+.contact-input .contact-inner {
+  float: left;
+  margin: 0 0 20px;
+  padding: 0 10px;
+  width: 50%;
+}
+.contact-inner input,
+.contact-inner textarea {
+  // width: 100%;
+  color: #000;
+  border-color: #f8f8f8;
+  background-color: #f8f8f8;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  // border: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #eee;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: 5px;
+  padding: 3px 20px;
+  height: 56px;
+}
+.contact-inner textarea {
+  height: 150px;
+  padding: 15px;
+}
+.comment-submit-btn .ht-btn {
+  padding: 0 54px;
+}
+.ms-auto {
+  margin-left: auto !important;
+}
+.contact-info-three .heading {
+  margin-bottom: 30px;
+}
+.contact-info-three .call-us {
+  margin-bottom: 20px;
+}
+.contact-info-three .call-us::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  position: absolute;
+  left: auto;
+  right: 0;
+  z-index: 1;
+
+  transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+  background: currentColor;
+}
+
+.contact-info-three .location-text-button .button-icon {
+  height: 56px;
+  width: 56px;
+  line-height: 56px;
+  border-radius: 50%;
+  text-align: center;
+  background: #f6f2ed;
+  margin-right: 14px;
+  display: inline-block;
+}
+
+.contact-info-three .location-text-button .button-text {
+  font-weight: 500;
+  color: #086ad8;
+  position: relative;
+}
+
+.contact-inner {
+  margin: 0 0 20px;
+}
+
+.contact-inner select {
+  color: #777;
+  padding: 3px 20px;
+  height: 56px;
+  max-width: 100%;
+  width: 100%;
+  outline: none;
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background: #f8f8f8
+    url(https://template.hasthemes.com/mitech/assets/images/icons/selector-icon.webp)
+    no-repeat center right 20px;
+  background-color: #f8f8f8;
+}
+
+/*----------------------------contact us page new  form  -------------------------*/

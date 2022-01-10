@@ -9,6 +9,9 @@ import Select from "react-select";
 import makeAnimated from "react-select/animated";
 import dropdownData from "../data/dropdown";
 import SweetAlert from "react-bootstrap-sweetalert";
+
+import Bgimg from "../public/assets/svg/contact/contactbanner.png";
+
 const animatedComponents = makeAnimated();
 
 export default class contact extends Component {
@@ -171,7 +174,20 @@ export default class contact extends Component {
           <title>VVR Digital - Contact us</title>
         </Head>
 
-        <CommonTopBar page={"Contact Us"} />
+        <div className="aboutbanner" style={{ "--img": `url(${Bgimg})` }}>
+          <div className="" style={{ height: "85px" }} />
+
+          <div className="tc-l about-banner-hg align-centerdiv ">
+            <div className="hero-content  center w-100 ">
+              <div className="pattern-bg1 align-centerdiv "></div>
+              <div className="he-max-w center ">
+                <h1 className="f2 f1-l fw2 white semibold-font tc mt0 mt50 lh-title ">
+                  Contact Us
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <section className="lef-ri-pa pv5  about-section2">
           <div className="pv2">
             <section className="">
@@ -237,7 +253,116 @@ export default class contact extends Component {
             </section>
           </div>
         </section>
-        <div className="h2-l h6-m" />
+        <div class="contact-us-area appointment-contact-bg section-space--ptb_100">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="contact-title section-space--mb_50">
+                  <h3 class="mb-20">Need a hand?</h3>
+                  <p class="sub-title">
+                    Reach out to the world’s most reliable IT services.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="contact-form-wrap">
+                  <form
+                    className="contact-form"
+                    id="contact-form"
+                    action="assets/php/services-mail.php"
+                    method="post"
+                  >
+                    <div className="contact-form__two">
+                      <div className="contact-input">
+                        <div className="contact-inner">
+                          <input
+                            name="con_name"
+                            type="text"
+                            placeholder="Name *"
+                          />
+                        </div>
+                        <div className="contact-inner">
+                          <input
+                            name="con_email"
+                            type="email"
+                            placeholder="Email *"
+                          />
+                        </div>
+                      </div>
+                      <div className="contact-select">
+                        <div className="form-item contact-inner">
+                          <span className="inquiry">
+                            <select id="Visiting" name="Visiting">
+                              <option disabled="" selected="">
+                                Select Department to email
+                              </option>
+                              <option value="Your inquiry about">
+                                Your inquiry about
+                              </option>
+                              <option value="General Information Request">
+                                General Information Request
+                              </option>
+                              <option value="Partner Relations">
+                                Partner Relations
+                              </option>
+                              <option value="Careers">Careers</option>
+                              <option value="Software Licencing">
+                                Software Licencing
+                              </option>
+                            </select>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="contact-inner contact-message">
+                        <textarea
+                          name="con_message"
+                          placeholder="Please describe what you need."
+                        ></textarea>
+                      </div>
+                      <div className="comment-submit-btn">
+                        <div className="measure pa2   w-100">
+                          <input type="submit" className="dn" />
+
+                          <button
+                            type="submit"
+                            className="f-16 fw4 tc min-211 grow medium-font no-underline white dib  pv3 pointer br3 bg-165df5 animation-request"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div className="col-lg-5 ms-auto">
+                <div className="contact-info-three text-left">
+                  <h6 className="heading font-weight--reguler">
+                    Reach out now!
+                  </h6>
+                  <h3 className="call-us">
+                    <a href="tel:123 567990">(+00) 123 567990</a>
+                  </h3>
+                  <div className="text">
+                    Start the collaboration with us while figuring out the best
+                    solution based on your needs.
+                  </div>
+                  <div className="location-button mt-20">
+                    <a href="#" className="location-text-button">
+                      <span className="button-icon">
+                        <i className="blue fas fa-map-marker-alt"></i>
+                      </span>
+                      <span className="button-text">View on Google map</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="h2-l h6-m" />
         <div className="width-50a center  ">
           <h2 className="tc">Get in Touch, And We Can Work Together! </h2>
           <div className=" f2 fw4 regular-font pv4-l pv5-ns pv5">
@@ -287,36 +412,7 @@ export default class contact extends Component {
                   aria-describedby="telephone-desc"
                 />
               </div>
-              {/* <div className="measure fl w-50-ns w-100 pa2">
-              <label className="f6 b db mb2 clr-6D839D regular-font">
-                storage <span className="normal black-60"></span>
-              </label>
-              <div className="flex"></div>
-              <input
-                id="storage"
-                value={state.storage}
-                onChange={(e) => handleInputChange(e)}
-                className="input-reset fl f-16 clr-132 brd-crl br4 pa-08  mb2 db "
-                type="number"
-                required
-                style={{ width: "78%" }}
-                aria-describedby="mobile-desc"
-              />
-              <span>
-                <select
-                  style={{ fontSize: "14.4px", padding: "0.94em" }}
-                  id="storageUnit"
-                  value={state.storageUnit}
-                  onChange={(e) => handleInputChange(e)}
-                  className=" clr-132 brd-crl fr br4 mb2 db  w-20 bg-white"
-                  name=""
-                >
-                  <option value="GB">GB</option>
-                  <option value="TB">TB</option>
-                  <option value="PB">PB</option>
-                </select>
-              </span>
-            </div> */}
+            
 
               <div className="measure fl w-50-ns w-100 pa2">
                 <label className="f6 b db mb2 clr-6D839D regular-font">
@@ -363,8 +459,7 @@ export default class contact extends Component {
                   className="f-16 clr-132 w-100 pa-08 db border-box hover-black w-100   brd-crl br4  br2 mb2"
                   aria-describedby="other-desc"
                 ></textarea>
-                {/* <input id="storage" className="input-reset brd-crl br4 pa1 mb2 db w-100" type="text" aria-describedby="storage-desc"/> */}
-              </div>
+                </div>
 
               <div className="pa2 fl w-100">
                 <ReCAPTCHA
@@ -397,10 +492,10 @@ export default class contact extends Component {
               </SweetAlert>
             ) : null}
           </div>
-        </div>
+        </div> */}
         {/* <div className="h5-l h6-m" /> */}
-        <div className="h2-l h6-m" />
-        <section className="lef-ri-pa pv2">
+        <div className=" h6-m " />
+        <section className="lef-ri-pa pb5 mb5">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12957.7982491441!2d139.8073929!3d35.7151607!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ea0646f8dc66c0b!2sVVR%20Digital!5e0!3m2!1sen!2sin!4v1634440671810!5m2!1sen!2sin"
             width="100%"
