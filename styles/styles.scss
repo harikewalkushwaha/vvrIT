@@ -998,9 +998,19 @@ li {
   color: #fff !important;
 }
 
+.vvr_vacancies__inner {
+  padding: 10px 10px 10px;
+  background-color: #fff;
+  height: 100%;
+  transition: 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .stm_vacancies__inner {
   padding: 30px 25px 25px;
-  background-color: #f2f4fa;
+  background-color: #fff;
   height: 100%;
   transition: 0.3s;
   display: flex;
