@@ -17,7 +17,7 @@ export default function about() {
             <div className="pattern-bg1 align-centerdiv "></div>
             <div className="he-max-w center ">
               <h1 className="f2 f1-l fw2 white semibold-font tc mt0 mt50 lh-title ">
-                Contact Us
+                Career
               </h1>
             </div>
           </div>
