@@ -23,11 +23,9 @@ export default function about() {
           </div>
         </div>
       </div>
-      <div className=" center pt5-ns ">
+      {/* <div className=" center pt5-ns ">
         <section className="lef-ri-pa pv2">
-          {/* <h2 className="medium-font f-40 fw4 tc clr-132 mt0 mb3  width-100 belowline">
-            Our Story
-          </h2> */}
+        
           <div className="dt-ns dt--fixed-ns w-100">
             <div className=" dtc-l v-mid wow fadeInLeft">
               <img
@@ -56,7 +54,7 @@ export default function about() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
       <section
         name="website-development"
         id="website-development"
@@ -167,10 +165,7 @@ export default function about() {
           <div className="row rwpading">
             <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a
-                  href="https://consulting.stylemixthemes.com/jakarta/careers_archive/deputy-principal-construction-manager-2/"
-                  className="title"
-                >
+                <a href="/career/inside" className="title">
                   <h5 className="cardunderline">
                     Deputy Principal Construction Manager
                   </h5>
@@ -178,10 +173,7 @@ export default function about() {
                 <div className="location info">Brooklyn, NY, US</div>
                 <div className="department info">Project Management</div>
                 <div className="read-more">
-                  <a
-                    href="https://consulting.stylemixthemes.com/jakarta/careers_archive/deputy-principal-construction-manager-2/"
-                    className="base_font_color"
-                  >
+                  <a href="/career/inside" className="base_font_color">
                     Read more <img src={RightArrow} />
                   </a>
                   <span className="date">January 8, 2020 </span>
@@ -190,10 +182,7 @@ export default function about() {
             </div>
             <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a
-                  href="https://consulting.stylemixthemes.com/jakarta/careers_archive/deputy-principal-construction-manager-2/"
-                  className="title"
-                >
+                <a href="/career/inside" className="title">
                   <h5 className="cardunderline">
                     Deputy Principal Construction Manager
                   </h5>
@@ -201,10 +190,7 @@ export default function about() {
                 <div className="location info">Brooklyn, NY, US</div>
                 <div className="department info">Project Management</div>
                 <div className="read-more">
-                  <a
-                    href="https://consulting.stylemixthemes.com/jakarta/careers_archive/deputy-principal-construction-manager-2/"
-                    className="base_font_color"
-                  >
+                  <a href="/career/inside" className="base_font_color">
                     Read more <img src={RightArrow} />
                   </a>
                   <span className="date">January 8, 2020 </span>
@@ -213,10 +199,7 @@ export default function about() {
             </div>
             <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a
-                  href="https://consulting.stylemixthemes.com/jakarta/careers_archive/deputy-principal-construction-manager-2/"
-                  className="title"
-                >
+                <a href="/career/inside" className="title">
                   <h5 className="cardunderline">
                     Deputy Principal Construction Manager
                   </h5>
@@ -224,10 +207,7 @@ export default function about() {
                 <div className="location info">Brooklyn, NY, US</div>
                 <div className="department info">Project Management</div>
                 <div className="read-more">
-                  <a
-                    href="https://consulting.stylemixthemes.com/jakarta/careers_archive/deputy-principal-construction-manager-2/"
-                    className="base_font_color"
-                  >
+                  <a href="/career/inside" className="base_font_color">
                     Read more <img src={RightArrow} />
                   </a>
                   <span className="date">January 8, 2020 </span>
@@ -238,10 +218,7 @@ export default function about() {
           <div className="row rwpading">
             <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a
-                  href="https://consulting.stylemixthemes.com/jakarta/careers_archive/deputy-principal-construction-manager-2/"
-                  className="title"
-                >
+                <a href="/career/inside" className="title">
                   <h5 className="cardunderline">
                     Deputy Principal Construction Manager
                   </h5>
@@ -249,10 +226,7 @@ export default function about() {
                 <div className="location info">Brooklyn, NY, US</div>
                 <div className="department info">Project Management</div>
                 <div className="read-more">
-                  <a
-                    href="https://consulting.stylemixthemes.com/jakarta/careers_archive/deputy-principal-construction-manager-2/"
-                    className="base_font_color"
-                  >
+                  <a href="/career/inside" className="base_font_color">
                     Read more <img src={RightArrow} />
                   </a>
                   <span className="date">January 8, 2020 </span>
@@ -261,10 +235,7 @@ export default function about() {
             </div>
             <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a
-                  href="https://consulting.stylemixthemes.com/jakarta/careers_archive/deputy-principal-construction-manager-2/"
-                  className="title"
-                >
+                <a href="/career/inside" className="title">
                   <h5 className="cardunderline">
                     Deputy Principal Construction Manager
                   </h5>
@@ -272,10 +243,7 @@ export default function about() {
                 <div className="location info">Brooklyn, NY, US</div>
                 <div className="department info">Project Management</div>
                 <div className="read-more">
-                  <a
-                    href="https://consulting.stylemixthemes.com/jakarta/careers_archive/deputy-principal-construction-manager-2/"
-                    className="base_font_color"
-                  >
+                  <a href="/career/inside" className="base_font_color">
                     Read more <img src={RightArrow} />
                   </a>
                   <span className="date">January 8, 2020 </span>
@@ -284,10 +252,7 @@ export default function about() {
             </div>
             <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a
-                  href="https://consulting.stylemixthemes.com/jakarta/careers_archive/deputy-principal-construction-manager-2/"
-                  className="title"
-                >
+                <a href="/career/inside" className="title">
                   <h5 className="cardunderline">
                     Deputy Principal Construction Manager
                   </h5>
@@ -295,10 +260,7 @@ export default function about() {
                 <div className="location info">Brooklyn, NY, US</div>
                 <div className="department info">Project Management</div>
                 <div className="read-more">
-                  <a
-                    href="https://consulting.stylemixthemes.com/jakarta/careers_archive/deputy-principal-construction-manager-2/"
-                    className="base_font_color"
-                  >
+                  <a href="/career/inside" className="base_font_color">
                     Read more <img src={RightArrow} />
                   </a>
                   <span className="date">January 8, 2020 </span>
