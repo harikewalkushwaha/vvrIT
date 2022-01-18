@@ -20,6 +20,9 @@ import Hana from "../public/assets/testimonials/Hana.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
+import ScrollAnimation from "react-animate-on-scroll";
+
+import "animate.css/animate.min.css";
 import {
   webdevelopment,
   marketing,
@@ -172,7 +175,7 @@ export default function index() {
             {/* <div className="shape shape-4">
               <img src="/assets/img/12.svg" alt="shape" />
             </div> */}
-            <div className="tc-l banner-hg mob-distab lef-ri-pa ">
+            <div className="tc-l banner-hg mob-distab lef-ri-pa pt5">
               <div className="hero-content mob-bannercon pt6-l center w-100">
                 {/* <div className="pattern-bg absolute left-0 ">
                 <AirbonLogo className="mw-100" />
@@ -190,16 +193,18 @@ export default function index() {
                           }}
                         />
                       </Title>
-                      <Subheading className="fw1 f-1em white regular-font o-80 mt3 mb4 lh-copy tj ">
-                        Looking to start a new business or boost an existing
-                        one? Here at VVR Digital.
-                        <br />
-                        we’ve got all the right tools to help you out. Not only
-                        can we enable a thriving online
-                        <br />
-                        Not only can we enable a thriving online presence, but
-                        we also provide end-to-end business support.
-                      </Subheading>
+                      <ScrollAnimation animateIn="animate__fadeInLeft animate__delay-3s	3s">
+                        <Subheading className="fw1 f-1em white regular-font o-80 mt3 mb4 lh-copy tj ">
+                          Looking to start a new business or boost an existing
+                          one? Here at VVR Digital.
+                          <br />
+                          we’ve got all the right tools to help you out. Not
+                          only can we enable a thriving online
+                          <br />
+                          Not only can we enable a thriving online presence, but
+                          we also provide end-to-end business support.
+                        </Subheading>
+                      </ScrollAnimation>
                     </BannerContent>
                     <div className=" absolute">
                       <a href="/contact" className="link">
@@ -256,7 +261,10 @@ export default function index() {
           <div className="dt-ns dt--fixed-ns w-100">
             <div className=" dtc-l v-mid wow fadeInLeft">
               <div>
-                <h2 className="medium-font f-40 fw4 fw4 clr-132 mt0-ns  pt3 mb3 w-70per width-100  aboutmission">
+                <h2
+                  className="medium-font f-40 fw4 fw4 clr-132 mt0-ns  pt3 mb3 w-70per width-100  aboutmission"
+                  data-aos="fade-down"
+                >
                   WE STARTED <br />
                   WITH A DREAM
                   <br />
@@ -288,7 +296,10 @@ export default function index() {
         // style={{ "--img": `url(${BackGround})` business}}
       >
         <section className="lef-ri-pa pv2">
-          <h2 className="medium-font f-40 fw4 tc  mt0 mb3  width-100 belowline imgspace">
+          <h2
+            className="medium-font f-40 fw4 tc  mt0 mb3  width-100 belowline imgspace"
+            data-aos="fade-up"
+          >
             Our Businesses
           </h2>
 
@@ -404,7 +415,13 @@ export default function index() {
                   </div>
                 </div>
               </div> */}
-              <div className="col-md-4 ph0">
+              <div
+                className="col-md-4 ph0"
+                data-aos="fade-up-right"
+                data-aos-duration="3000"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 <a
                   href="#"
                   class="projects-wrap style-01 wow move-up animated"
@@ -434,7 +451,11 @@ export default function index() {
                   </div>
                 </a>
               </div>
-              <div className="col-md-4 ph0">
+              <div
+                className="col-md-4 ph0"
+                data-aos="zoom-in-up"
+                data-aos-duration="3000"
+              >
                 <a
                   href="#"
                   className="projects-wrap style-01 wow move-up animated"
@@ -464,7 +485,13 @@ export default function index() {
                   </div>
                 </a>
               </div>
-              <div className="col-md-4 ph0">
+              <div
+                className="col-md-4 ph0"
+                data-aos="fade-up-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="3000"
+              >
                 <a
                   href="#"
                   className="projects-wrap style-01 wow move-up animated"

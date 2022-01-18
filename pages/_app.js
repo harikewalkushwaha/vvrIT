@@ -6,6 +6,8 @@ import "tachyons";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 //import "bootstrap/dist/css/bootstrap.min.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 config.autoAddCss = false;
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -38,6 +40,11 @@ function MyApp({ Component, pageProps }) {
     setopenQuote(value);
   };
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
+
   // useEffect(() => {
   //   new WOW.WOW().init();
   //   document.documentElement.lang = "en-us";
@@ -61,7 +68,6 @@ function MyApp({ Component, pageProps }) {
           integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
           crossorigin="anonymous"
         />
-
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
@@ -90,6 +96,7 @@ function MyApp({ Component, pageProps }) {
           as="font"
           crossOrigin=""
         />
+
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
       </Head>
 
