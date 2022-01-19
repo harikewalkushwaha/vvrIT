@@ -33,17 +33,16 @@ export default function about() {
           <div className="col-md-9">
             <div className="">
               <h2 className="consulting-custom-title">
-                Deputy principal construction manager
+                Native bilingual Japanese Teacher :
               </h2>
             </div>
             <div className="wpb_text_column.wpb_content_element">
               <div className="wpb_wrapper">
                 <p>
-                  Consulting WordPress Theme is always looking for talented
-                  people to become its team members. We realize that productive
-                  people are always a good addition to our organization. So if
-                  you have the financial acumen and the passion to work with
-                  some of the biggest companies in the world, join in!
+                  VVR Group is always looking for passionate and talented people
+                  to become a part of our team. If you have passion for teaching
+                  and looking for a perfect work life balance then this is a
+                  place for you.
                 </p>
               </div>
             </div>
@@ -55,7 +54,7 @@ export default function about() {
                     <i className="fa fa-suitcase"></i>
                   </div>
                   <div className="text-hiring">
-                    Department: <strong>Project Management</strong>
+                    Department: <strong>Japanese language team</strong>
                   </div>
                 </div>
                 <div className="info">
@@ -63,7 +62,7 @@ export default function about() {
                     <i className="fa fa-map-marker"></i>
                   </div>
                   <div className="text-hiring">
-                    Project Location(s): <strong>Brooklyn, NY, US</strong>
+                    Project Location(s): <strong>Remote</strong>
                   </div>
                 </div>
                 <div className="info">
@@ -71,7 +70,7 @@ export default function about() {
                     <i className="fa fa-graduation-cap"></i>
                   </div>
                   <div className="text-hiring">
-                    Education: <strong>Master's Degree</strong>
+                    Education: <strong>Certified Japanese teacher</strong>
                   </div>
                 </div>
                 <div className="info">
@@ -79,7 +78,7 @@ export default function about() {
                     <i className="fa fa-credit-card"></i>
                   </div>
                   <div className="text-hiring">
-                    Compensation: <strong>22K per annum</strong>
+                    Compensation: <strong>Freelance </strong>
                   </div>
                 </div>
               </div>
@@ -90,7 +89,7 @@ export default function about() {
                   <a href="/career/inside" className="title">
                     <h5 className="cardunderline">Responsibilities</h5>
                   </a>
-                  <p>
+                  {/* <p>
                     <span
                       style={{
                         fontSize: "13px",
@@ -98,11 +97,11 @@ export default function about() {
                         color: "#808080",
                       }}
                     >
-                      Candidates can look forward to regular client contact, a
-                      role in business development and proposal
-                      writing/methodology creation, and a
+                      Planning, preparation and delivering one on one and Group
+                      lessons to multinational students (online - mainly through
+                      Zoom.)
                     </span>
-                  </p>
+                  </p> */}
                   <ul
                     style={{
                       fontSize: "13px",
@@ -111,25 +110,33 @@ export default function about() {
                     }}
                   >
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i>Assisting
-                      senior consultants;
+                      <i className="fa fa-check tickicon pr2"></i> Planning,
+                      preparation and delivering one on one and Group lessons to
+                      multinational students (online - mainly through Zoom.)
                     </li>
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i>Providing
-                      legal and scholarly research;
+                      <i className="fa fa-check tickicon pr2"></i>To take
+                      classes for JLPT, Business, Spoken and industry specific
+                      courses (multinational students)
                     </li>
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i>Creating
-                      reports &amp; Gathering Data
+                      <i className="fa fa-check tickicon pr2"></i>
+                      Create/update/modify the course and course material if
+                      required.
                     </li>
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i>Analyzing Data
-                      and understanding results
+                      <i className="fa fa-check tickicon pr2"></i>Assess the
+                      students and provide constructive feedback through
+                      scheduled feedback sessions.
                     </li>
                     <li>
+                      <i className="fa fa-check tickicon pr2"></i>Check student
+                      homework and clear doubts.
+                    </li>
+                    {/* <li>
                       <i className="fa fa-check tickicon pr2"></i>Arranging
                       client coordination
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -144,41 +151,44 @@ export default function about() {
                         </h5>
                         <ul>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>Limited
-                            experience at consultancy preferred;
+                            <i className="fa fa-check tickicon pr2"></i>
+                            Well-verse with online tools example Zoom,Skype,
+                            Power Point Google Class room, Google forms etc.
                           </li>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>Great
-                            interpersonal communication skills;
+                            <i className="fa fa-check tickicon pr2"></i>Working
+                            proficiency in English.
                           </li>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>Keen eye
-                            for spotting data trends;
+                            <i className="fa fa-check tickicon pr2"></i>Having 3
+                            to 7 Years of experience in teaching Japanese
+                            language.
                           </li>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>Great
-                            analytical skills;
+                            <i className="fa fa-check tickicon pr2"></i>Creative
+                            and have a passion for teaching Japanese.
                           </li>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>A keen
-                            grasp of information technology;
+                            <i className="fa fa-check tickicon pr2"></i>Good
+                            with PowerPoint.
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>
-                            Professional demeanor;
+                            Flexible to work in different time zones.
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>
-                            Personal accountability and strong work ethic;
+                            Should be able to take the online classes in
+                            disturbance free environment.
                           </li>
-                          <li>
+                          {/* <li>
                             <i className="fa fa-check tickicon pr2"></i>
                             Professional, able to interact with vendors/clients;
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>
                             Positive, “can do” attitude.
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>
@@ -296,9 +306,10 @@ export default function about() {
                                             color: "#ffffff",
                                           }}
                                         >
-                                          Contact us at the Consulting WP office
-                                          nearest to you or submit a business
-                                          inquiry online.
+                                          You can reach us on&nbsp;
+                                          <a href="mailto:recruitment@thevvrgroup.com">
+                                            recruitment@thevvrgroup.com
+                                          </a>
                                         </span>
                                       </p>
                                     </div>
@@ -306,11 +317,10 @@ export default function about() {
                                   <div className="vc_btn3-container vc_btn3-inline">
                                     <a
                                       class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-icon-left vc_btn3-color-white"
-                                      href="/jakarta/contact-us/"
+                                      href="https://docs.google.com/forms/d/1wp5rJ1jBFbI40-BLChcsg3IZlOKJNGwuVWPALmGUPO4/edit"
                                       title=""
                                     >
-                                      <i class="vc_btn3-icon fa fa-phone-square"></i>{" "}
-                                      contacts
+                                      Apply Now
                                     </a>
                                   </div>
                                 </div>

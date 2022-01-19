@@ -64,26 +64,32 @@ export default function about() {
           <section className="">
             <article className=" center ">
               <h2 className="medium-font f-40 fw4  tc clr-132 mt0 mb3  width-100 belowline">
-                What's It Like To Work At Us?
+                What's It's Like To work with us
               </h2>
               <div className="dt-ns dt--fixed-ns w-100">
                 <div className=" dtc-l v-mid wow fadeInLeft">
                   <h2 className="medium-font f-40 fw4   clr-132 mt0 mb3  width-100 ">
-                    Trackle Every Hurdle.
+                    Have your say
                   </h2>
                   <div>
                     <p className="clr-6D839D regular-font w-80per f-18px lh-copy mv0 width-100">
-                      It is crucial for businesses to have a website presence,
-                      since a website becomes the face of the business. Our team
-                      of experts will take the essence of your business and help
-                      you create a website that truly reflects who you are as a
-                      company while highlighting and respecting your core
-                      values.{" "}
+                      We are an organization where every voice matters.
+                    </p>
+                    <p className="clr-6D839D regular-font w-80per f-18px lh-copy mv0 width-100">
+                      We make sure each and every member of our company gets the
+                      opportunity to have a say on decision making . As an
+                      organization we like participative attitude where everyone
+                      can contribute to new ideas and strategies actively.
+                    </p>
+                    <p className="clr-6D839D regular-font w-80per f-18px lh-copy mv0 width-100">
+                      We don’t limit employees to one particular role but
+                      believe in giving more opportunities to explore different
+                      roles and responsibilities.
                     </p>
                   </div>
                 </div>
                 <div className=" dtc-l v-mid wow fadeInRight">
-                  <img src="/assets/svg/career/7.png" className="pt5 mw-100" />
+                  <img src="/assets/svg/career/12.png" className="pt5 mw-100" />
                 </div>
               </div>
             </article>
@@ -101,21 +107,22 @@ export default function about() {
               <div className="dt-ns dt--fixed-ns w-100">
                 <div className=" dtc-l  wow fadeInLeft">
                   <div>
-                    <img src="/assets/svg/career/8.png" className=" mw-100" />
+                    <img src="/assets/svg/career/13.png" className=" mw-100" />
                   </div>
                 </div>
                 <div className=" dtc-l   v-mid wow fadeInRight">
                   <div>
                     <h2 className="medium-font f-40 fw4  pl4 clr-132 mt0 mb3 width-100 ">
-                      Three Pointers, Same Direction.
+                      Supportive
                     </h2>
 
                     <p className="clr-6D839D regular-font tl pl4 f-18px w-80per lh-copy mv0 width-100">
-                      We create modern Android and IOS Mobile apps to put your
-                      business right in the hands of your customers. The Digital
-                      Age demands everything to be easy, accessible and speedy.
-                      And Mobile Applications are the embodiment of the digital
-                      age.
+                      We are a group of young enthusiast who are trying to build
+                      a place for people who are looking for growth in their
+                      life. Just enjoy what you do and keep working hard.
+                      Working with us leads to higher job satisfaction and
+                      increased productivity which helps you to grow personally
+                      and professionally.
                     </p>
                   </div>
                 </div>
@@ -136,20 +143,54 @@ export default function about() {
                 <div className=" dtc-l v-mid wow fadeInLeft">
                   <div>
                     <h2 className="medium-font f-40 fw4   clr-132 mt0 mb3  width-100 ">
-                      Trackle Every Hurdle.
+                      Communication is a top priority
                     </h2>
                     <p className="clr-6D839D regular-font w-80per f-18px lh-copy mv0 width-100">
-                      It is crucial for businesses to have a website presence,
-                      since a website becomes the face of the business. Our team
-                      of experts will take the essence of your business and help
-                      you create a website that truly reflects who you are as a
-                      company while highlighting and respecting your core
-                      values.
+                      Communication is the key to everything. We make sure we
+                      communicate with everyone through virtual meetings in
+                      different intervals of time so that all of us can share or
+                      thoughts and feel heard.
                     </p>
                   </div>
                 </div>
                 <div className=" dtc-l  wow fadeInRight">
-                  <img src="/assets/svg/career/9.png" className="pt5 mw-100" />
+                  <img src="/assets/svg/career/14.png" className="pt5 mw-100" />
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <section
+        className="lef-ri-pa pt5 about-banner-bg about-section2"
+        name="Mobile-development"
+        id="Mobile-development"
+      >
+        <div className="pv2">
+          <section className="">
+            <article className=" center ">
+              <div className="dt-ns dt--fixed-ns w-100">
+                <div className=" dtc-l  wow fadeInLeft">
+                  <div>
+                    <img src="/assets/svg/career/15.png" className=" mw-100" />
+                  </div>
+                </div>
+                <div className=" dtc-l   v-mid wow fadeInRight">
+                  <div>
+                    <h2 className="medium-font f-40 fw4  pl4 clr-132 mt0 mb3 width-100 ">
+                      Employees satisfaction
+                    </h2>
+
+                    <p className="clr-6D839D regular-font tl pl4 f-18px w-80per lh-copy mv0 width-100">
+                      Job satisfaction of our employees is the most important
+                      thing for us. We believe everyone should get an
+                      opportunity to do what they love doing and feel
+                      recognized. So we encourage each one of us to enjoy what
+                      you do and keep working hard to become best version of our
+                      selves.
+                    </p>
+                  </div>
                 </div>
               </div>
             </article>
@@ -165,9 +206,9 @@ export default function about() {
           <div className="row rwpading">
             <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a href="/career/inside" className="title">
+                <a href="/career/nbJt" className="title">
                   <h5 className="cardunderline">
-                    Deputy Principal Construction Manager
+                    Native bilingual Japanese Teacher
                   </h5>
                 </a>
                 <div className="location info">Brooklyn, NY, US</div>
@@ -182,9 +223,9 @@ export default function about() {
             </div>
             <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a href="/career/inside" className="title">
+                <a href="/career/Nonnbjt" className="title">
                   <h5 className="cardunderline">
-                    Deputy Principal Construction Manager
+                    Non Native bilingual Japanese Teacher
                   </h5>
                 </a>
                 <div className="location info">Brooklyn, NY, US</div>
@@ -199,9 +240,9 @@ export default function about() {
             </div>
             <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a href="/career/inside" className="title">
+                <a href="/career/nbEt" className="title">
                   <h5 className="cardunderline">
-                    Deputy Principal Construction Manager
+                    Native bilingual English Teacher
                   </h5>
                 </a>
                 <div className="location info">Brooklyn, NY, US</div>
@@ -218,9 +259,9 @@ export default function about() {
           <div className="row rwpading">
             <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a href="/career/inside" className="title">
+                <a href="/career/nonNbet" className="title">
                   <h5 className="cardunderline">
-                    Deputy Principal Construction Manager
+                    Non Native bilingual English Teacher
                   </h5>
                 </a>
                 <div className="location info">Brooklyn, NY, US</div>
@@ -235,10 +276,8 @@ export default function about() {
             </div>
             <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a href="/career/inside" className="title">
-                  <h5 className="cardunderline">
-                    Deputy Principal Construction Manager
-                  </h5>
+                <a href="/career/marketingIntern" className="title">
+                  <h5 className="cardunderline">Marketing Intern</h5>
                 </a>
                 <div className="location info">Brooklyn, NY, US</div>
                 <div className="department info">Project Management</div>
@@ -252,10 +291,8 @@ export default function about() {
             </div>
             <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a href="/career/inside" className="title">
-                  <h5 className="cardunderline">
-                    Deputy Principal Construction Manager
-                  </h5>
+                <a href="/career/contentWriter" className="title">
+                  <h5 className="cardunderline">Content Writer</h5>
                 </a>
                 <div className="location info">Brooklyn, NY, US</div>
                 <div className="department info">Project Management</div>

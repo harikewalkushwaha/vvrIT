@@ -195,14 +195,16 @@ export default function index() {
                       </Title>
                       <ScrollAnimation animateIn="animate__fadeInLeft animate__delay-3s	3s">
                         <Subheading className="fw1 f-1em white regular-font o-80 mt3 mb4 lh-copy tj ">
-                          Looking to start a new business or boost an existing
-                          one? Here at VVR Digital.
+                          VVR Group is an ambitious and dynamic
+                          multidisciplinary startup, based in Tokyo, Japan.
+                          <br /> Our primary focus lies in building successful
+                          businesses based on our varying skill sets.
                           <br />
-                          we’ve got all the right tools to help you out. Not
-                          only can we enable a thriving online
+                          As of today, we work in the fields of Online Learning,
+                          Digital Marketing, Web Development and Hospitality.
                           <br />
-                          Not only can we enable a thriving online presence, but
-                          we also provide end-to-end business support.
+                          Our Businesses include, VVR Learning, VVR Digital and
+                          VVR Life
                         </Subheading>
                       </ScrollAnimation>
                     </BannerContent>
@@ -271,12 +273,12 @@ export default function index() {
                   TO HELP ,
                 </h2>
                 <p className="clr-6D839D regular-font w-80per f-18px lh-copy mv0 width-100">
-                  We are a team of digitally driven individuals, working in our
-                  fields of proficiency to enhance and realign your business to
-                  the ever-changing trends of digital and off-line marketing. We
-                  want to help businesses establish themselves online, and do it
-                  in a way that provides the highest possible quality at
-                  competitive rates.
+                  VVR Group is an ambitious and dynamic multidisciplinary
+                  startup, based in Tokyo, Japan. Our primary focus lies in
+                  building successful businesses based on our varying skill
+                  sets.As of today, we work in the fields of Online Learning,
+                  Digital Marketing, Web Development and Hospitality. Our
+                  Businesses include, VVR Learning, VVR Digital and VVR Life
                 </p>
               </div>
             </div>
@@ -436,15 +438,16 @@ export default function index() {
                       />
                     </div>
                     <div className="content">
-                      <h6 className="heading">Mitech-Smart Vision</h6>
-                      <div className="post-categories">Cyber Security</div>
+                      <h6 className="heading">VVR Learning</h6>
+                      <div className="post-categories">www.vvrlearning.com</div>
                       <div className="text12">
-                        At Mitech, we have a holistic and integrated approach
-                        towards core modernization to experience technological
-                        evolution.
+                        We believe that learning a language is a rich experience
+                        that should be made accessible and easy to anyone who
+                        wishes to take it up. we offer quality language learning
+                        at affordable rates.
                       </div>
                       <div className="box-projects-arrow">
-                        <span className="button-text">View case study</span>
+                        <span className="button-text">View details</span>
                         <i className="fa fa-long-arrow-right ml-1"></i>
                       </div>
                     </div>
@@ -470,15 +473,16 @@ export default function index() {
                       />
                     </div>
                     <div className="content">
-                      <h6 className="heading">Mitech-Smart Vision</h6>
-                      <div className="post-categories">Cyber Security</div>
+                      <h6 className="heading">VVR Digital</h6>
+                      <div className="post-categories">www.vvrdigital.com</div>
                       <div className="text12">
-                        At Mitech, we have a holistic and integrated approach
-                        towards core modernization to experience technological
-                        evolution.
+                        VVR Digital is a team of digitally driven individuals,
+                        working in their fields of proficiency to enhance and
+                        realign businesses to the ever-changing trends of
+                        digital and off-line marketing.
                       </div>
                       <div className="box-projects-arrow">
-                        <span className="button-text">View case study</span>
+                        <span className="button-text">View Details</span>
                         <i className="fa fa-long-arrow-right ml-1"></i>
                       </div>
                     </div>
@@ -506,15 +510,16 @@ export default function index() {
                       />
                     </div>
                     <div className="content">
-                      <h6 className="heading">Mitech-Smart Vision</h6>
-                      <div className="post-categories">Cyber Security</div>
+                      <h6 className="heading">VVR Life</h6>
+                      <div className="post-categories">www.vvrlife.com</div>
                       <div className="text12">
-                        At Mitech, we have a holistic and integrated approach
-                        towards core modernization to experience technological
-                        evolution.
+                        VVR Life is our newest initiative and is still in the
+                        initial stages of development. We are in the process of
+                        creating an eco-friendly getaway in Dharamsala and
+                        Mcleodganj, Himachal Pradesh.
                       </div>
                       <div className="box-projects-arrow">
-                        <span className="button-text">View case study</span>
+                        <span className="button-text">View details</span>
                         <i className="fa fa-long-arrow-right ml-1"></i>
                       </div>
                     </div>
