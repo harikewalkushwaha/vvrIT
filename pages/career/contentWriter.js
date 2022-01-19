@@ -32,17 +32,14 @@ export default function about() {
         <div className="row pv2">
           <div className="col-md-9">
             <div className="">
-              <h2 className="consulting-custom-title">
-                Native bilingual Japanese Teacher :
-              </h2>
+              <h2 className="consulting-custom-title">Full Stack Developer</h2>
             </div>
             <div className="wpb_text_column.wpb_content_element">
               <div className="wpb_wrapper">
                 <p>
                   VVR Group is always looking for passionate and talented people
-                  to become a part of our team. If you have passion for teaching
-                  and looking for a perfect work life balance then this is a
-                  place for you.
+                  to become a part of our team. If you love coding and bring
+                  ideas into reality then this is the place for you.
                 </p>
               </div>
             </div>
@@ -54,7 +51,7 @@ export default function about() {
                     <i className="fa fa-suitcase"></i>
                   </div>
                   <div className="text-hiring">
-                    Department: <strong>Japanese language team</strong>
+                    Department: <strong>Development team</strong>
                   </div>
                 </div>
                 <div className="info">
@@ -70,7 +67,7 @@ export default function about() {
                     <i className="fa fa-graduation-cap"></i>
                   </div>
                   <div className="text-hiring">
-                    Education: <strong>Certified Japanese teacher</strong>
+                    Education: <strong>Major in IT</strong>
                   </div>
                 </div>
                 <div className="info">
@@ -110,33 +107,50 @@ export default function about() {
                     }}
                   >
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i> Planning,
-                      preparation and delivering one on one and Group lessons to
-                      multinational students (online - mainly through Zoom.)
+                      <i className="fa fa-check tickicon pr2"></i> Developing
+                      frontend website architecture.
                     </li>
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i>To take
-                      classes for JLPT, Business, Spoken and industry specific
-                      courses (multinational students)
+                      <i className="fa fa-check tickicon pr2"></i>Designing user
+                      interactions on web pages.
+                    </li>
+                    <li>
+                      <i className="fa fa-check tickicon pr2"></i>Developing
+                      back end website applications.
+                    </li>
+                    <li>
+                      <i className="fa fa-check tickicon pr2"></i>Creating
+                      servers and databases for functionality.
+                    </li>
+                    <li>
+                      <i className="fa fa-check tickicon pr2"></i>Ensuring
+                      cross-platform optimization for mobile phones.
                     </li>
                     <li>
                       <i className="fa fa-check tickicon pr2"></i>
-                      Create/update/modify the course and course material if
-                      required.
+                      Ensuring responsiveness of applications.
                     </li>
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i>Assess the
-                      students and provide constructive feedback through
-                      scheduled feedback sessions.
+                      <i className="fa fa-check tickicon pr2"></i>Working
+                      alongside graphic designers for web design features.
                     </li>
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i>Check student
-                      homework and clear doubts.
+                      <i className="fa fa-check tickicon pr2"></i> Seeing
+                      through a project form conception to finished product.
                     </li>
-                    {/* <li>
-                      <i className="fa fa-check tickicon pr2"></i>Arranging
-                      client coordination
-                    </li> */}
+                    <li>
+                      <i className="fa fa-check tickicon pr2"></i>Designing and
+                      developing APIs.
+                    </li>
+                    <li>
+                      <i className="fa fa-check tickicon pr2"></i>Meeting both
+                      technical and consumer needs.
+                    </li>
+                    <li>
+                      <i className="fa fa-check tickicon pr2"></i>Staying
+                      abreast of developments in web applications and
+                      programming languages.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -151,35 +165,35 @@ export default function about() {
                         </h5>
                         <ul>
                           <li>
+                            <i className="fa fa-check tickicon pr2"></i>Degree
+                            in Computer Science.
+                          </li>
+                          <li>
+                            <i className="fa fa-check tickicon pr2"></i>Strong
+                            project management skills.
+                          </li>
+                          <li>
                             <i className="fa fa-check tickicon pr2"></i>
-                            Well-verse with online tools example Zoom,Skype,
-                            Power Point Google Class room, Google forms etc.
+                            Proficiency with fundamental front end languages
+                            such as HTML, CSS and JavaScript.
                           </li>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>Working
-                            proficiency in English.
+                            <i className="fa fa-check tickicon pr2"></i>
+                            Familiarity with JavaScript frameworks such as
+                            Angular JS, React and Amber.
                           </li>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>Having 3
-                            to 7 Years of experience in teaching Japanese
-                            language.
+                            <i className="fa fa-check tickicon pr2"></i>
+                            Familiarity with database technology such as MySQL,
+                            Oracle, and MongoDB.
                           </li>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>Creative
-                            and have a passion for teaching Japanese.
+                            <i className="fa fa-check tickicon pr2"></i>
+                            Excellent verbal communication skills.
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>Good
-                            with PowerPoint.
-                          </li>
-                          <li>
-                            <i className="fa fa-check tickicon pr2"></i>
-                            Flexible to work in different time zones.
-                          </li>
-                          <li>
-                            <i className="fa fa-check tickicon pr2"></i>
-                            Should be able to take the online classes in
-                            disturbance free environment.
+                            problem solving skills. Attention to details.
                           </li>
                           {/* <li>
                             <i className="fa fa-check tickicon pr2"></i>

@@ -204,15 +204,20 @@ export default function about() {
             Open Positions
           </h2>
           <div className="row rwpading">
-            <div className="col-sm-6 col-md-4 vvr_rmar">
+            <div
+              className="col-sm-6 col-md-4 vvr_rmar"
+              data-aos="zoom-in-down"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="stm_vacancies__inner">
                 <a href="/career/nbJt" className="title">
                   <h5 className="cardunderline">
                     Native bilingual Japanese Teacher
                   </h5>
                 </a>
-                <div className="location info">Brooklyn, NY, US</div>
-                <div className="department info">Project Management</div>
+                <div className="location info">Remote Work</div>
+                <div className="department info">Teacher</div>
                 <div className="read-more">
                   <a href="/career/inside" className="base_font_color">
                     Read more <img src={RightArrow} />
@@ -221,15 +226,20 @@ export default function about() {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 vvr_rmar">
+            <div
+              className="col-sm-6 col-md-4 vvr_rmar"
+              data-aos="zoom-in-down"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="stm_vacancies__inner">
                 <a href="/career/Nonnbjt" className="title">
                   <h5 className="cardunderline">
                     Non Native bilingual Japanese Teacher
                   </h5>
                 </a>
-                <div className="location info">Brooklyn, NY, US</div>
-                <div className="department info">Project Management</div>
+                <div className="location info">Remote Work</div>
+                <div className="department info">Teacher</div>
                 <div className="read-more">
                   <a href="/career/inside" className="base_font_color">
                     Read more <img src={RightArrow} />
@@ -238,15 +248,20 @@ export default function about() {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 vvr_rmar">
+            <div
+              className="col-sm-6 col-md-4 vvr_rmar"
+              data-aos="zoom-in-down"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="stm_vacancies__inner">
                 <a href="/career/nbEt" className="title">
                   <h5 className="cardunderline">
                     Native bilingual English Teacher
                   </h5>
                 </a>
-                <div className="location info">Brooklyn, NY, US</div>
-                <div className="department info">Project Management</div>
+                <div className="location info">Remote Work</div>
+                <div className="department info">Teacher</div>
                 <div className="read-more">
                   <a href="/career/inside" className="base_font_color">
                     Read more <img src={RightArrow} />
@@ -257,15 +272,20 @@ export default function about() {
             </div>
           </div>
           <div className="row rwpading">
-            <div className="col-sm-6 col-md-4 vvr_rmar">
+            <div
+              className="col-sm-6 col-md-4 vvr_rmar"
+              data-aos="zoom-in-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="stm_vacancies__inner">
                 <a href="/career/nonNbet" className="title">
                   <h5 className="cardunderline">
                     Non Native bilingual English Teacher
                   </h5>
                 </a>
-                <div className="location info">Brooklyn, NY, US</div>
-                <div className="department info">Project Management</div>
+                <div className="location info">Remote Work</div>
+                <div className="department info">Teacher</div>
                 <div className="read-more">
                   <a href="/career/inside" className="base_font_color">
                     Read more <img src={RightArrow} />
@@ -274,13 +294,18 @@ export default function about() {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 vvr_rmar">
+            <div
+              className="col-sm-6 col-md-4 vvr_rmar"
+              data-aos="zoom-in-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="stm_vacancies__inner">
                 <a href="/career/marketingIntern" className="title">
                   <h5 className="cardunderline">Marketing Intern</h5>
                 </a>
-                <div className="location info">Brooklyn, NY, US</div>
-                <div className="department info">Project Management</div>
+                <div className="location info">Remote Work</div>
+                <div className="department info">Teacher</div>
                 <div className="read-more">
                   <a href="/career/inside" className="base_font_color">
                     Read more <img src={RightArrow} />
@@ -289,13 +314,18 @@ export default function about() {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-md-4 vvr_rmar">
+            <div
+              className="col-sm-6 col-md-4 vvr_rmar"
+              data-aos="zoom-in-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="stm_vacancies__inner">
                 <a href="/career/contentWriter" className="title">
-                  <h5 className="cardunderline">Content Writer</h5>
+                  <h5 className="cardunderline">Full stack Developer</h5>
                 </a>
-                <div className="location info">Brooklyn, NY, US</div>
-                <div className="department info">Project Management</div>
+                <div className="location info">Remote Work</div>
+                <div className="department info">Teacher</div>
                 <div className="read-more">
                   <a href="/career/inside" className="base_font_color">
                     Read more <img src={RightArrow} />

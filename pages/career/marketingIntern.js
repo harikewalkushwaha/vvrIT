@@ -32,16 +32,14 @@ export default function about() {
         <div className="row pv2">
           <div className="col-md-9">
             <div className="">
-              <h2 className="consulting-custom-title">
-                Native bilingual Japanese Teacher :
-              </h2>
+              <h2 className="consulting-custom-title">Marketing Intern </h2>
             </div>
             <div className="wpb_text_column.wpb_content_element">
               <div className="wpb_wrapper">
                 <p>
                   VVR Group is always looking for passionate and talented people
-                  to become a part of our team. If you have passion for teaching
-                  and looking for a perfect work life balance then this is a
+                  to become a part of our team. If you enjoy doing something
+                  creative and like to bring ideas into reality then this is a
                   place for you.
                 </p>
               </div>
@@ -54,7 +52,7 @@ export default function about() {
                     <i className="fa fa-suitcase"></i>
                   </div>
                   <div className="text-hiring">
-                    Department: <strong>Japanese language team</strong>
+                    Department: <strong>Marketing Team</strong>
                   </div>
                 </div>
                 <div className="info">
@@ -70,7 +68,7 @@ export default function about() {
                     <i className="fa fa-graduation-cap"></i>
                   </div>
                   <div className="text-hiring">
-                    Education: <strong>Certified Japanese teacher</strong>
+                    Education: <strong>Major in Marketing</strong>
                   </div>
                 </div>
                 <div className="info">
@@ -78,7 +76,7 @@ export default function about() {
                     <i className="fa fa-credit-card"></i>
                   </div>
                   <div className="text-hiring">
-                    Compensation: <strong>Freelance </strong>
+                    Compensation: <strong>Intern </strong>
                   </div>
                 </div>
               </div>
@@ -110,28 +108,28 @@ export default function about() {
                     }}
                   >
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i> Planning,
-                      preparation and delivering one on one and Group lessons to
-                      multinational students (online - mainly through Zoom.)
+                      <i className="fa fa-check tickicon pr2"></i> Handle social
+                      media platforms of VVR Group, Instagram, Facebook,
+                      Linkedin, Youtube.
                     </li>
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i>To take
-                      classes for JLPT, Business, Spoken and industry specific
-                      courses (multinational students)
+                      <i className="fa fa-check tickicon pr2"></i> Handle social
+                      media platforms of VVR Group, Instagram, Facebook,
+                      Linkedin, Youtube.
                     </li>
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i>
-                      Create/update/modify the course and course material if
-                      required.
+                      <i className="fa fa-check tickicon pr2"></i> Research
+                      marketing trends.
                     </li>
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i>Assess the
-                      students and provide constructive feedback through
-                      scheduled feedback sessions.
+                      <i className="fa fa-check tickicon pr2"></i> Assist in
+                      marketing and advertising promotional activities(eg.
+                      Social media, and web).
                     </li>
                     <li>
-                      <i className="fa fa-check tickicon pr2"></i>Check student
-                      homework and clear doubts.
+                      <i className="fa fa-check tickicon pr2"></i> Monitor all
+                      social media platforms for trending news, ideas and
+                      feedback.
                     </li>
                     {/* <li>
                       <i className="fa fa-check tickicon pr2"></i>Arranging
@@ -156,39 +154,43 @@ export default function about() {
                             Power Point Google Class room, Google forms etc.
                           </li>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>Working
-                            proficiency in English.
-                          </li>
-                          <li>
-                            <i className="fa fa-check tickicon pr2"></i>Having 3
-                            to 7 Years of experience in teaching Japanese
-                            language.
-                          </li>
-                          <li>
-                            <i className="fa fa-check tickicon pr2"></i>Creative
-                            and have a passion for teaching Japanese.
-                          </li>
-                          <li>
-                            <i className="fa fa-check tickicon pr2"></i>Good
-                            with PowerPoint.
+                            <i className="fa fa-check tickicon pr2"></i>
+                            Familiarity with social media platforms &
+                            strategies.
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>
-                            Flexible to work in different time zones.
+                            Flexible work schedule
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>
-                            Should be able to take the online classes in
-                            disturbance free environment.
+                            Ability to multitask & take initiative.
                           </li>
-                          {/* <li>
-                            <i className="fa fa-check tickicon pr2"></i>
-                            Professional, able to interact with vendors/clients;
+                          <li>
+                            <i className="fa fa-check tickicon pr2"></i>Have
+                            already graduated/currently in any year of study.
+                          </li>
+                          <li>
+                            <i className="fa fa-check tickicon pr2"></i>Have
+                            already graduated/currently in any year of study.
+                          </li>
+                          <li>
+                            <i className="fa fa-check tickicon pr2"></i>Have
+                            already graduated/currently in any year of study.
+                          </li>
+                          <li>
+                            <i className="fa fa-check tickicon pr2"></i> Have
+                            already graduated/currently in any year of study.
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>
-                            Positive, “can do” attitude.
-                          </li> */}
+                            Hardworking and dedicated outlook.
+                          </li>
+                          <li>
+                            <i className="fa fa-check tickicon pr2"></i>
+                            Knowledge of designing tools will be a plus i.e
+                            Canva, Figma etc.
+                          </li>
                         </ul>
                       </div>
                     </div>

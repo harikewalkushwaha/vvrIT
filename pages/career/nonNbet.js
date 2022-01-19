@@ -33,7 +33,7 @@ export default function about() {
           <div className="col-md-9">
             <div className="">
               <h2 className="consulting-custom-title">
-                Native bilingual Japanese Teacher :
+                Non native bilingual English Teacher
               </h2>
             </div>
             <div className="wpb_text_column.wpb_content_element">
@@ -54,7 +54,7 @@ export default function about() {
                     <i className="fa fa-suitcase"></i>
                   </div>
                   <div className="text-hiring">
-                    Department: <strong>Japanese language team</strong>
+                    Department: <strong>English language team</strong>
                   </div>
                 </div>
                 <div className="info">
@@ -70,7 +70,7 @@ export default function about() {
                     <i className="fa fa-graduation-cap"></i>
                   </div>
                   <div className="text-hiring">
-                    Education: <strong>Certified Japanese teacher</strong>
+                    Education: <strong>Major in English</strong>
                   </div>
                 </div>
                 <div className="info">
@@ -116,8 +116,8 @@ export default function about() {
                     </li>
                     <li>
                       <i className="fa fa-check tickicon pr2"></i>To take
-                      classes for JLPT, Business, Spoken and industry specific
-                      courses (multinational students)
+                      classes for General English, Business and Spoken
+                      (multinational students)
                     </li>
                     <li>
                       <i className="fa fa-check tickicon pr2"></i>
@@ -156,17 +156,17 @@ export default function about() {
                             Power Point Google Class room, Google forms etc.
                           </li>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>Working
-                            proficiency in English.
+                            <i className="fa fa-check tickicon pr2"></i>
+                            Professional Working proficiency in English.
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>Having 3
-                            to 7 Years of experience in teaching Japanese
+                            to 7 Years of experience in teaching English
                             language.
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>Creative
-                            and have a passion for teaching Japanese.
+                            and have a passion for teaching English.
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>Good

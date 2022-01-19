@@ -436,6 +436,8 @@
   color: #333;
   border: none;
   font-size: 14px;
+  overflow: hidden;
+  display: flex;
 }
 .vc_column_container {
   padding-left: 0;

@@ -33,7 +33,7 @@ export default function about() {
           <div className="col-md-9">
             <div className="">
               <h2 className="consulting-custom-title">
-                Native bilingual Japanese Teacher :
+                Native bilingual Japanese Teacher
               </h2>
             </div>
             <div className="wpb_text_column.wpb_content_element">

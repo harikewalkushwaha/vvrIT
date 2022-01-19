@@ -33,7 +33,7 @@ export default function about() {
           <div className="col-md-9">
             <div className="">
               <h2 className="consulting-custom-title">
-                Native bilingual Japanese Teacher :
+                Non native bilingual Japanese Teacher
               </h2>
             </div>
             <div className="wpb_text_column.wpb_content_element">
@@ -70,7 +70,7 @@ export default function about() {
                     <i className="fa fa-graduation-cap"></i>
                   </div>
                   <div className="text-hiring">
-                    Education: <strong>Certified Japanese teacher</strong>
+                    Education: <strong>JLPT N2 and above </strong>
                   </div>
                 </div>
                 <div className="info">
@@ -116,8 +116,7 @@ export default function about() {
                     </li>
                     <li>
                       <i className="fa fa-check tickicon pr2"></i>To take
-                      classes for JLPT, Business, Spoken and industry specific
-                      courses (multinational students)
+                      classes of N5 and N4 level, multinational students.
                     </li>
                     <li>
                       <i className="fa fa-check tickicon pr2"></i>
@@ -156,8 +155,14 @@ export default function about() {
                             Power Point Google Class room, Google forms etc.
                           </li>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>Working
-                            proficiency in English.
+                            <i className="fa fa-check tickicon pr2"></i>Fluent
+                            in Japanese and English (reading, writing and
+                            speaking).
+                          </li>
+                          <li>
+                            <i className="fa fa-check tickicon pr2"></i>JLPT N2
+                            and above (Working/living experience in Japan would
+                            be a plus)
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>Having 3
@@ -165,8 +170,8 @@ export default function about() {
                             language.
                           </li>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>Creative
-                            and have a passion for teaching Japanese.
+                            <i className="fa fa-check tickicon pr2"></i>
+                            Creative and have a passion for teaching Japanese.
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>Good
@@ -174,12 +179,12 @@ export default function about() {
                           </li>
                           <li>
                             <i className="fa fa-check tickicon pr2"></i>
-                            Flexible to work in different time zones.
+                            Flexible to work in different time zones
                           </li>
                           <li>
-                            <i className="fa fa-check tickicon pr2"></i>
-                            Should be able to take the online classes in
-                            disturbance free environment.
+                            <i className="fa fa-check tickicon pr2"></i>Should
+                            be able to take the online classes in disturbance
+                            free environment.
                           </li>
                           {/* <li>
                             <i className="fa fa-check tickicon pr2"></i>
