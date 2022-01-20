@@ -295,6 +295,8 @@ export default function index() {
 
       <div
         className=" center pt5-ns pb5-ns "
+        id="business"
+        name="business"
         // style={{ "--img": `url(${BackGround})` business}}
       >
         <section className="lef-ri-pa pv2">
@@ -568,7 +570,6 @@ export default function index() {
                   </div>
                   <div>
                     <p className="pl4">
-                      {" "}
                       <hr></hr>
                     </p>
                   </div>
@@ -790,7 +791,10 @@ export default function index() {
                         className="workclr-hana tc"
                         style={{ "--img": `url(${Hana})` }}
                       ></div> */}
-                      <img src="/assets/testimonials/Hana.png" className="tc" />
+                      <img
+                        src="/assets/testimonials/Jonal.png"
+                        className="tc"
+                      />
                       <p className="name">Jonel Alquinto</p>
                     </div>
                   </div>
@@ -828,22 +832,15 @@ export default function index() {
                 style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
               >
                 <div className="">
-                  {/* <span>
-                    <img
-                      style={{ width: "20px", float: "right" }}
-                      src="/assets/img/icon.svg"
-                    />
-                  </span> */}
                   <div
                     className=" align-items-center"
                     style={{ alignItems: "center" }}
                   >
                     <div className=" user-img tc">
-                      {/* <div
-                        className="workclr-hana tc"
-                        style={{ "--img": `url(${Hana})` }}
-                      ></div> */}
-                      <img src="/assets/testimonials/Hana.png" className="tc" />
+                      <img
+                        src="/assets/testimonials/David.png"
+                        className="tc"
+                      />
                       <p className="name">David Penaherrera</p>
                     </div>
                   </div>
@@ -882,23 +879,138 @@ export default function index() {
                 style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
               >
                 <div className="">
-                  {/* <span>
-                    <img
-                      style={{ width: "20px", float: "right" }}
-                      src="/assets/img/icon.svg"
-                    />
-                  </span> */}
                   <div
                     className=" align-items-center"
                     style={{ alignItems: "center" }}
                   >
                     <div className=" user-img tc">
-                      {/* <div
-                        className="workclr-hana tc"
-                        style={{ "--img": `url(${Hana})` }}
-                      ></div> */}
                       <img src="/assets/testimonials/Hana.png" className="tc" />
                       <p className="name">Hana</p>
+                    </div>
+                  </div>
+
+                  <p
+                    className="mb-4 pt3"
+                    style={{ marginBottom: "2rem", fontSize: "1rem" }}
+                  >
+                    I have a great experience learning Japanese with VVR
+                    Learning. <br />
+                    The teacher is really nice and good. All the best!
+                    <br></br>
+                  </p>
+                  <div className="">
+                    <span className="star">
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                    </span>
+
+                    <p className="">VVR Learning</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+            <div className="">
+              <div
+                className="testimony-wrap "
+                style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
+              >
+                <div className="">
+                  <div
+                    className=" align-items-center"
+                    style={{ alignItems: "center" }}
+                  >
+                    <div className=" user-img tc">
+                      <img src="/assets/testimonials/Riya.png" className="tc" />
+                      <p className="name">Riya</p>
+                    </div>
+                  </div>
+
+                  <p
+                    className="mb-4 pt3"
+                    style={{ marginBottom: "2rem", fontSize: "1rem" }}
+                  >
+                    I found the demo class extremely helpful and informative.
+                    <br />
+                    Teacher's examples were very relevant and I felt that I
+                    gained a lot of knowledge. <br />I am very impressed with
+                    the teaching methods. Thank you.
+                    <br></br>
+                  </p>
+                  <div className="">
+                    <span className="star">
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                    </span>
+
+                    <p className="">VVR Learning</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+            <div className="">
+              <div
+                className="testimony-wrap "
+                style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
+              >
+                <div className="">
+                  <div
+                    className=" align-items-center"
+                    style={{ alignItems: "center" }}
+                  >
+                    <div className=" user-img tc">
+                      <img src="/assets/testimonials/Ben.png" className="tc" />
+                      <p className="name">Ben</p>
+                    </div>
+                  </div>
+
+                  <p
+                    className="mb-4 pt3"
+                    style={{ marginBottom: "2rem", fontSize: "1rem" }}
+                  >
+                    The team have made it very easy for me to study when it’s
+                    suitable for me and at a pace that works for me. <br />
+                    Overall I am happy and have chosen to continue with them
+                    after my first course finished.
+                  </p>
+                  <div className="">
+                    <span className="star">
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                    </span>
+
+                    <p className="">VVR Learning</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+            <div className="">
+              <div
+                className="testimony-wrap "
+                style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
+              >
+                <div className="">
+                  <div
+                    className=" align-items-center"
+                    style={{ alignItems: "center" }}
+                  >
+                    <div className=" user-img tc">
+                      <img src="/assets/testimonials/Sau.png" className="tc" />
+                      <p className="name">Sau</p>
                     </div>
                   </div>
 
@@ -910,6 +1022,87 @@ export default function index() {
                     Learning.
                     <br /> The teacher is really nice and good. All the best!{" "}
                     <br></br>
+                  </p>
+                  <div className="">
+                    <span className="star">
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                    </span>
+
+                    <p className="">VVR Learning</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+            <div className="">
+              <div
+                className="testimony-wrap "
+                style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
+              >
+                <div className="">
+                  <div
+                    className=" align-items-center"
+                    style={{ alignItems: "center" }}
+                  >
+                    <div className=" user-img tc">
+                      <img src="/assets/testimonials/Sau.png" className="tc" />
+                      <p className="name">Sau</p>
+                    </div>
+                  </div>
+
+                  <p
+                    className="mb-4 pt3"
+                    style={{ marginBottom: "2rem", fontSize: "1rem" }}
+                  >
+                    I have a great experience learning Japanese with VVR
+                    Learning.
+                    <br /> The teacher is really nice and good. All the best!{" "}
+                    <br></br>
+                  </p>
+                  <div className="">
+                    <span className="star">
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                      <span className="fa fa-star"></span>
+                    </span>
+
+                    <p className="">VVR Learning</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="fl w-100-mob w-25-l w-50  pa2  customewidth wow fadeInDown">
+            <div className="">
+              <div
+                className="testimony-wrap "
+                style={{ paddingBottom: "1.5rem", paddingTop: "1.3rem" }}
+              >
+                <div className="">
+                  <div
+                    className=" align-items-center"
+                    style={{ alignItems: "center" }}
+                  >
+                    <div className=" user-img tc">
+                      <img src="/assets/testimonials/Sau.png" className="tc" />
+                      <p className="name">Maraki Sam</p>
+                    </div>
+                  </div>
+
+                  <p
+                    className="mb-4 pt3"
+                    style={{ marginBottom: "2rem", fontSize: "1rem" }}
+                  >
+                    Amazing to work with :)
+                    <br />
                   </p>
                   <div className="">
                     <span className="star">

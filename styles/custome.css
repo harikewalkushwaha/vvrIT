@@ -344,6 +344,7 @@
 .react-multi-carousel-track {
   transition: -webkit-transform 3000ms ease 0s !important;
 }
+
 @media only screen and (max-width: 600px) {
 }
 /*---------Our business vvr learning-------------*/
@@ -603,3 +604,84 @@
 }
 
 /*---------------career inside page ----------*/
+
+/*--------------about vvr learning team----------*/
+
+.staff {
+  overflow: hidden;
+  margin-bottom: 30px;
+  background: #fff;
+  box-shadow: 0px 10px 23px -8px rgb(0 0 0 / 11%);
+  transition: all 0.3s ease;
+}
+
+.align-items-stretch {
+  align-items: stretch !important;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.ftco-animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.staff .img-wrap {
+  /* height: 300px; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.staff .teamtext {
+  position: relative;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.staff .teamtext h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+}
+.staff .teamtext h3 a {
+  color: #000000;
+}
+.staff .teamtext .position {
+  text-transform: uppercase;
+  /* color: #b3b3b3; */
+  color: #4986fc;
+  display: block;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.staff .teamtext .faded {
+  opacity: 1;
+}
+.effecthover img {
+  transition: 0.5s all ease-in-out;
+}
+.effecthover img:hover {
+  -webkit-transform: translateY(-15px);
+  transform: scale(1.1);
+}
+.t-name {
+  text-align: center;
+}
+.t-name h4 {
+  color: #044a67;
+  margin-top: 5px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.teamaligncenter {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+/*---------------------about vvr learning team end -------------*/

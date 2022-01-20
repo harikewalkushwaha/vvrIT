@@ -231,7 +231,7 @@ export default function about() {
                                     id="menu-item-416"
                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-416"
                                   >
-                                    <a href="https://consulting.stylemixthemes.com/jakarta/company-overview/">
+                                    <a href="/about#overview">
                                       Company Overview
                                     </a>
                                   </li>
@@ -239,48 +239,38 @@ export default function about() {
                                     id="menu-item-411"
                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-411"
                                   >
-                                    <a href="https://consulting.stylemixthemes.com/jakarta/company-overview/careers/">
-                                      Careers
-                                    </a>
+                                    <a href="/career">Careers</a>
                                   </li>
                                   <li
                                     id="menu-item-380"
                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-380"
                                   >
-                                    <a href="https://consulting.stylemixthemes.com/jakarta/company-overview/company-history/">
-                                      Company History
-                                    </a>
+                                    <a href="/about#history">Company History</a>
                                   </li>
                                   <li
                                     id="menu-item-347"
                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-347"
                                   >
-                                    <a href="https://consulting.stylemixthemes.com/jakarta/company-overview/our-approach/">
-                                      Our approach
-                                    </a>
+                                    <a href="/about#approach">Our approach</a>
                                   </li>
                                   <li
                                     id="menu-item-392"
                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-392"
                                   >
-                                    <a href="https://consulting.stylemixthemes.com/jakarta/company-overview/our-partners/">
-                                      Partners
-                                    </a>
+                                    <a href="/#business">Our Business</a>
                                   </li>
                                   <li
                                     id="menu-item-445"
                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"
                                   >
-                                    <a href="https://consulting.stylemixthemes.com/jakarta/company-overview/our-team-list/">
-                                      Our team list
-                                    </a>
+                                    <a href="/about#team">Our team list</a>
                                   </li>
                                   <li
                                     id="menu-item-465"
                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-465"
                                   >
-                                    <a href="https://consulting.stylemixthemes.com/jakarta/company-overview/our-team-grid/">
-                                      Our team grid
+                                    <a href="https://www.linkedin.com/company/the-vvr-group/about/">
+                                      Follow us on linkdin
                                     </a>
                                   </li>
                                 </ul>

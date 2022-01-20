@@ -2,14 +2,16 @@ import Head from "next/head";
 import React, { useEffect, useState, useRef, useImperativeHandle } from "react";
 import CommonTopBar from "../components/commons/commonTopBar";
 import BackGround from "../public/assets/svg/about/6.png";
-import BackGround1 from "../public/assets/svg/about/4.png";
-import BackGround2 from "../public/assets/svg/about/VikasProfile.png";
+
 import RightArrow from "../components/assets/svg/Home Page/Arrow.svg";
-import LeftArrow from "../components/assets/svg/Home Page/leftarrow.png";
-import { data } from "../data/cust_stories";
-import ReactLogoArrow from "../components/assets/svg/Home Page/Arrow.svg";
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
+import teamData from "../data/team";
+
+import digitalData from "../data/vvrdigital";
+
 import Link from "next/link";
 
 import video1 from "../public/assets/video/Japvideovvr.mp4";
@@ -27,6 +29,26 @@ var sectionStyle = {
   backgroundSize: "cover",
   backgroundImage: `url(${BackGround})`,
 };
+const responsive2 = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -45,6 +67,78 @@ const responsive = {
   },
 };
 export default function about() {
+  const TeamImagesLoop = teamData.map((item) => {
+    return (
+      <div className="staff" style={{ marginRight: "25px" }}>
+        <div className="img-wrap d-flex align-items-stretch">
+          <div className="img align-self-stretch effecthover">
+            <Link href={`/${item.url}`}>
+              <img
+                src={`../assets/team/${item.img}`}
+                style={{ maxWidth: "100%" }}
+              />
+            </Link>
+          </div>
+        </div>
+        <div className="teamtext pt-3">
+          {/* <h3>
+            <Link href={`/${item.url}`}>
+              <a>{item.name}</a>
+            </Link>
+          </h3>
+          <span className="position mb-2">{item.desig}</span> */}
+          {/* <div className="faded">
+            <p>{item.slidedsc}</p>
+          </div> */}
+          <div class="t-name">
+            <h4 class="h-underline2">
+              <Link href={`/${item.url}`}>
+                <a>{item.name}</a>
+              </Link>
+            </h4>
+            <h6>{item.desig}</h6>
+          </div>
+        </div>
+      </div>
+    );
+  });
+
+  const vvrDigital = digitalData.map((item) => {
+    return (
+      <div className="staff" style={{ marginRight: "25px" }}>
+        <div className="img-wrap d-flex align-items-stretch">
+          <div className="img align-self-stretch effecthover">
+            <Link href={`/${item.url}`}>
+              <img
+                src={`../assets/vvrdigitalteam/${item.img}`}
+                style={{ maxWidth: "100%" }}
+              />
+            </Link>
+          </div>
+        </div>
+        <div className="teamtext pt-3">
+          {/* <h3>
+            <Link href={`/${item.url}`}>
+              <a>{item.name}</a>
+            </Link>
+          </h3>
+          <span className="position mb-2">{item.desig}</span> */}
+          {/* <div className="faded">
+            <p>{item.slidedsc}</p>
+          </div> */}
+          <div class="t-name">
+            <h4 class="h-underline2">
+              <Link href={`/${item.url}`}>
+                <a>{item.name}</a>
+              </Link>
+            </h4>
+            <h6>{item.desig}</h6>
+          </div>
+        </div>
+      </div>
+    );
+  });
+
   const [activeTab, setActiveTab] = useState("webdevelopment");
   const [showCards, setshowCards] = useState(webdevelopment);
   useEffect(() => {
@@ -108,7 +202,11 @@ export default function about() {
           organizations with the highest classification in the cloud
         </p>
       </div> */}
-      <section className="lef-ri-pa pv5 about-banner-bg about-section2">
+      <section
+        className="lef-ri-pa pv5 about-banner-bg about-section2"
+        id="overview"
+        name="overview"
+      >
         <div className="pv2">
           <section className="">
             <article className="center">
@@ -201,7 +299,11 @@ export default function about() {
       </section>
       {/* <div className="h3-l h6-m" /> */}
 
-      <section className=" pb5-ns about-banner-bg about-section2">
+      <section
+        className=" pb5-ns about-banner-bg about-section2"
+        id="approach"
+        name="approach"
+      >
         <div className="pv2">
           <section className="">
             <article className=" center ">
@@ -433,7 +535,7 @@ export default function about() {
         </div>
       </section> */}
 
-      <section className="lef-ri-pa pb5">
+      <section className="lef-ri-pa pb5" id="history" name="history">
         <div className="dt-ns dt--fixed-ns w-100">
           <div className=" dtc-l  wow fadeInLeft">
             <div className="tabs-main">
@@ -527,8 +629,8 @@ export default function about() {
                 <h2 className="medium-font f-40-ns fw4 clr-132 mt0 mb3 tc width-100 belowline">
                   Our Management Team
                 </h2>
-                <div className="row pt3">
-                  <div
+                <div className="row pt3 teamaligncenter">
+                  {/* <div
                     className="col-sm-6 col-md-3 wow fadeInLeft "
                     data-wow-duration="1000ms"
                     data-wow-delay="300ms"
@@ -562,7 +664,7 @@ export default function about() {
                       <h5>Business manager</h5>
                     </div>
                     <div className="visible-xs-block visible-sm-block pt20"></div>
-                  </div>
+                  </div> */}
                   <div
                     className="col-sm-6 col-md-3 wow fadeInLeft teamspace-mobile"
                     data-wow-duration="1000ms"
@@ -576,7 +678,7 @@ export default function about() {
                   >
                     <figure className="item-img-wrap">
                       <img
-                        src="https://www.rafamemmel.com/templates/corpboot/template/assets/img/staff1.jpg"
+                        src="/assets/team/VikasProfile.png"
                         className="img-responsive"
                         alt="team"
                       />
@@ -593,8 +695,8 @@ export default function about() {
                       </div>
                     </figure>
                     <div className="team-name">
-                      <h4 className="h-underline2">John Doe</h4>
-                      <h5>Business manager</h5>
+                      <h4 className="h-underline2">Vikas Verma</h4>
+                      <h5>Founder</h5>
                     </div>
                     <div className="visible-xs-block visible-sm-block pt20"></div>
                   </div>
@@ -611,7 +713,7 @@ export default function about() {
                   >
                     <figure className="item-img-wrap">
                       <img
-                        src="https://www.rafamemmel.com/templates/corpboot/template/assets/img/staff1.jpg"
+                        src="/assets/team/RieProfile.png"
                         className="img-responsive"
                         alt="team"
                       />
@@ -628,12 +730,12 @@ export default function about() {
                       </div>
                     </figure>
                     <div className="team-name">
-                      <h4 className="h-underline2">John Doe</h4>
-                      <h5>Business manager</h5>
+                      <h4 className="h-underline2">Rie Mori</h4>
+                      <h5>Co-Founder</h5>
                     </div>
                     <div className="visible-xs-block visible-sm-block pt20"></div>
                   </div>
-                  <div
+                  {/* <div
                     className="col-sm-6 col-md-3 wow fadeInRight teamspace-mobile"
                     data-wow-duration="1000ms"
                     data-wow-delay="200ms"
@@ -668,13 +770,55 @@ export default function about() {
                       <h5>Business manager</h5>
                     </div>
                     <div className="visible-xs-block visible-sm-block pt20"></div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
         </section>
       </div>
+
+      <section className=" lef-ri-pa pb5 ">
+        <h2 className="medium-font f-40-ns fw4 clr-132 mt0 mb3 tc width-100 belowline">
+          VVR Learning Team
+        </h2>
+        <div className="row">
+          <Carousel
+            responsive={responsive2}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={3000}
+            keyBoardControl={true}
+            customTransition="all .5s ease "
+            transitionDuration={500}
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+          >
+            {TeamImagesLoop}
+          </Carousel>
+        </div>
+      </section>
+
+      <section className=" lef-ri-pa pb5 ">
+        <h2 className="medium-font f-40-ns fw4 clr-132 mt0 mb3 tc width-100 belowline">
+          VVR Digital Team
+        </h2>
+        <div className="row">
+          <Carousel
+            responsive={responsive2}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={3000}
+            keyBoardControl={true}
+            customTransition="all .5s ease "
+            transitionDuration={500}
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+          >
+            {vvrDigital}
+          </Carousel>
+        </div>
+      </section>
 
       <div className=" center pt5-ns">
         <section className="lef-ri-pa pb5">
@@ -935,7 +1079,7 @@ export default function about() {
                   customTransition="all .5s ease"
                   transitionDuration={5000}
                   arrows={false}
-                  containerClass="carousel-container"
+                  containerClass="carousel-container "
                   removeArrowOnDeviceType={["tablet", "mobile"]}
                   //deviceType={this.props.deviceType}
                   renderButtonGroupOutside={true}
@@ -952,6 +1096,13 @@ export default function about() {
                   <img src="/assets/gallery/4.png" alt="" />
 
                   <img src="/assets/gallery/5.png" alt="" />
+                  <img src="/assets/gallery/6.png" alt="" />
+                  <img src="/assets/gallery/7.png" alt="" />
+                  <img src="/assets/gallery/8.png" alt="" />
+                  <img src="/assets/gallery/9.png" alt="" />
+                  <img src="/assets/gallery/10.png" alt="" />
+                  <img src="/assets/gallery/11.png" alt="" />
+                  <img src="/assets/gallery/12.png" alt="" />
                 </Carousel>
               </div>
             </article>

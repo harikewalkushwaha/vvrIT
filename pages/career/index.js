@@ -204,12 +204,7 @@ export default function about() {
             Open Positions
           </h2>
           <div className="row rwpading">
-            <div
-              className="col-sm-6 col-md-4 vvr_rmar"
-              data-aos="zoom-in-down"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
+            <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
                 <a href="/career/nbJt" className="title">
                   <h5 className="cardunderline">
@@ -219,21 +214,16 @@ export default function about() {
                 <div className="location info">Remote Work</div>
                 <div className="department info">Teacher</div>
                 <div className="read-more">
-                  <a href="/career/inside" className="base_font_color">
+                  <a href="/career/nbJt" className="base_font_color">
                     Read more <img src={RightArrow} />
                   </a>
-                  <span className="date">January 8, 2020 </span>
+                  <span className="date">January 20, 2022 </span>
                 </div>
               </div>
             </div>
-            <div
-              className="col-sm-6 col-md-4 vvr_rmar"
-              data-aos="zoom-in-down"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
+            <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a href="/career/Nonnbjt" className="title">
+                <a href="/career/nonNbjt" className="title">
                   <h5 className="cardunderline">
                     Non Native bilingual Japanese Teacher
                   </h5>
@@ -241,19 +231,14 @@ export default function about() {
                 <div className="location info">Remote Work</div>
                 <div className="department info">Teacher</div>
                 <div className="read-more">
-                  <a href="/career/inside" className="base_font_color">
+                  <a href="/career/nonNbjt" className="base_font_color">
                     Read more <img src={RightArrow} />
                   </a>
-                  <span className="date">January 8, 2020 </span>
+                  <span className="date">January 20, 2022 </span>
                 </div>
               </div>
             </div>
-            <div
-              className="col-sm-6 col-md-4 vvr_rmar"
-              data-aos="zoom-in-down"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
+            <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
                 <a href="/career/nbEt" className="title">
                   <h5 className="cardunderline">
@@ -263,21 +248,16 @@ export default function about() {
                 <div className="location info">Remote Work</div>
                 <div className="department info">Teacher</div>
                 <div className="read-more">
-                  <a href="/career/inside" className="base_font_color">
+                  <a href="/career/nbEt" className="base_font_color">
                     Read more <img src={RightArrow} />
                   </a>
-                  <span className="date">January 8, 2020 </span>
+                  <span className="date">January 20, 2022 </span>
                 </div>
               </div>
             </div>
           </div>
           <div className="row rwpading">
-            <div
-              className="col-sm-6 col-md-4 vvr_rmar"
-              data-aos="zoom-in-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
+            <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
                 <a href="/career/nonNbet" className="title">
                   <h5 className="cardunderline">
@@ -287,50 +267,40 @@ export default function about() {
                 <div className="location info">Remote Work</div>
                 <div className="department info">Teacher</div>
                 <div className="read-more">
-                  <a href="/career/inside" className="base_font_color">
+                  <a href="/career/nonNbet" className="base_font_color">
                     Read more <img src={RightArrow} />
                   </a>
-                  <span className="date">January 8, 2020 </span>
+                  <span className="date">January 20, 2022 </span>
                 </div>
               </div>
             </div>
-            <div
-              className="col-sm-6 col-md-4 vvr_rmar"
-              data-aos="zoom-in-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
+            <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
                 <a href="/career/marketingIntern" className="title">
                   <h5 className="cardunderline">Marketing Intern</h5>
                 </a>
                 <div className="location info">Remote Work</div>
-                <div className="department info">Teacher</div>
+                <div className="department info">Intern</div>
                 <div className="read-more">
-                  <a href="/career/inside" className="base_font_color">
+                  <a href="/career/marketingIntern" className="base_font_color">
                     Read more <img src={RightArrow} />
                   </a>
-                  <span className="date">January 8, 2020 </span>
+                  <span className="date">January 20, 2022 </span>
                 </div>
               </div>
             </div>
-            <div
-              className="col-sm-6 col-md-4 vvr_rmar"
-              data-aos="zoom-in-up"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
+            <div className="col-sm-6 col-md-4 vvr_rmar">
               <div className="stm_vacancies__inner">
-                <a href="/career/contentWriter" className="title">
+                <a href="/career/developer" className="title">
                   <h5 className="cardunderline">Full stack Developer</h5>
                 </a>
                 <div className="location info">Remote Work</div>
-                <div className="department info">Teacher</div>
+                <div className="department info">Developer</div>
                 <div className="read-more">
-                  <a href="/career/inside" className="base_font_color">
+                  <a href="/career/developer" className="base_font_color">
                     Read more <img src={RightArrow} />
                   </a>
-                  <span className="date">January 8, 2020 </span>
+                  <span className="date">January 20, 2022 </span>
                 </div>
               </div>
             </div>
@@ -341,7 +311,7 @@ export default function about() {
       <section className="lef-ri-pa mb6">
         <div className=" conatiner">
           <h2 className="medium-font f-40 fw4  tc clr-132 pv5  width-100 belowline">
-            Amazing Life At Us.
+            Life at VVR
           </h2>
           <div className="row rwpading">
             <div className="col-sm-6 col-md-4 vvr_rmar">
